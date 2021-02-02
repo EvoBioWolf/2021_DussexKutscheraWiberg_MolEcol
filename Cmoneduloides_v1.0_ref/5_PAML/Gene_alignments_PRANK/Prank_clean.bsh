@@ -1,0 +1,44 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-10:00:00
+#SBATCH -J Prank_clean
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load bwa
+module load Stampy
+#module load samtools
+module load prank
+module load biopython
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+
+cp ${crowdata}/nobackup/bams/Cmon_Ref/PAML/Ns/genes/*.fa ${SNIC_TMP}/
+cp ${crowdata}/nobackup/batch_scripts/Cmon_Ref/PAML/pamlCleaner.py ${SNIC_TMP}/
+
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+for i in *.fa
+do
+prank -f='paml' -translate -d=$i -o=$i -once
+done
+
+for i in *.phy
+do
+python pamlCleaner.py -phy $i
+done
+
+#################################################
+####
+## Copy .out files to nobackup
+####
+
+cp ${SNIC_TMP}/*.phy   ${crowdata}/nobackup/bams/Cmon_Ref/PAML/Ns/genes

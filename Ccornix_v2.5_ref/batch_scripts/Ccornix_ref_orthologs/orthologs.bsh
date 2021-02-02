@@ -1,0 +1,29 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core -n 1
+#SBATCH -t 0-04:00:00
+#SBATCH -J ortholog_sets_Ccornix
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load samtools
+module load BEDTools
+module load cufflinks/2.2.1
+
+crowdata=/proj/b2013182
+# Copy files from home to tmp directory
+# Annotation C. cornix: NCBI version
+cp ${crowdata}/private/annotation/Ccornix/201506_annotation_files/Ccornix_NCBI_annotation_scaffrnm_nomito_lCDS.gff ${SNIC_TMP}/ 
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_${1}.fa ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Get features with gffread
+gffread -g consensus_${1}.fa -x ${1}_orthologs.fa Ccornix_NCBI_annotation_scaffrnm_nomito_lCDS.gff
+
+# Copy .fa files to private
+cp ${SNIC_TMP}/${1}_orthologs.fa ${crowdata}/private/bams/Ccornix_ref/orthologs/

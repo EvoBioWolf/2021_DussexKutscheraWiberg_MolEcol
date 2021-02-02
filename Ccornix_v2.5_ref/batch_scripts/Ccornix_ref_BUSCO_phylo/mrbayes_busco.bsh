@@ -1,0 +1,29 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 2-0:00:00
+#SBATCH -J crows_raxml
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+module load raxml/8.2.4-gcc
+
+crowdata=/proj/b2013182/
+species_set=${1}
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/
+
+# Copy the files from the directory
+cp ${outdir}/all_busco_alns.fas ${SNIC_TMP}/
+
+# Concatenate the fasta files.
+cd ${SNIC_TMP}/
+raxmlHPC -m GTRCAT -c 40 -b 179854 -s all_busco_alns.fas -o Tgut -T 4 -n crows_tree
+
+# Copy the files back
+cp crows_* ${outdir}/
+

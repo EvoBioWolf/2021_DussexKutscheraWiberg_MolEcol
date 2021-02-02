@@ -1,0 +1,45 @@
+
+Pipeline for merging the .bam files
+
+1) move to the batch scripts directory. This will ensure logs are saved in this directory.
+
+$ cd /proj/b2013182/nobackup/batch_scripts/Ccornix_ref_merge_bams/
+
+2) run the merging scripts for each species
+
+# C. corax
+$ sbatch merge_bams.bsh bwa_Ccorx Ccorx
+
+# C. woodfordii
+$ sbatch merge_bams.bsh bwa_Cwoo Cwoo
+
+# C. moneduloides
+$ sbatch merge_bams.bsh bwa_Cmon Cmon
+
+# C. monedula
+$ sbatch merge_bams.bsh bwa_Cmone Cmone
+
+# C. brachyrhynchos
+$ sbatch merge_bams.bsh bwa_Cbrach Cbrach
+
+# C. tasmanicus
+$ sbatch merge_bams.bsh bwa_Ctas Ctas
+
+# C. frugilegus
+$ sbatch merge_bams.bsh bwa_Cfru Cfru
+
+# C. hawaiiensis
+$ sbatch merge_bams.bsh bwa_Chaw Chaw
+
+# C. dauricus
+$ sbatch merge_bams.bsh bwa_Cdau Cdau
+
+# C. kubaryi
+$ sbatch merge_bams.bsh bwa_Ckub Ckub
+
+# C. splendens
+$ sbatch merge_bams.bsh bwa_Csple Csple
+
+$ sbatch 4sp_merge_bams.bsh 4sp_Ccornix
+
+$ sbatch 3sp_merge_bams.bsh 3sp_Ccornix

@@ -1,0 +1,51 @@
+
+Pipeline for building a consensus genome for each species.
+
+1) move to the batch scripts directory. This will ensure logs are saved in this directory.
+
+$ cd /proj/b2013182/nobackup/batch_scripts/Ccornix_ref_consensus_mpileup/
+
+2) run the consensus calling batch script for each species
+
+# C. corax
+$ sbatch mpileup_consensus.bsh bwa_Ccorx Ccorx
+
+# C. woodfordii
+$ sbatch mpileup_consensus.bsh bwa_Cwoo Cwoo
+
+# C. moneduloides
+$ sbatch mpileup_consensus.bsh bwa_Cmon_ Cmon
+
+# C. monedula
+$ sbatch mpileup_consensus.bsh bwa_Cmone Cmone
+
+# C. brachyrhynchos
+$ sbatch mpileup_consensus.bsh bwa_Cbrach Cbrach
+
+# C. tasmanicus
+$ sbatch mpileup_consensus.bsh bwa_Ctas Ctas
+
+# C. frugilegus
+$ sbatch mpileup_consensus.bsh bwa_Cfru Cfru
+
+# C. hawaiiensis
+$ sbatch mpileup_consensus.bsh bwa_Chaw Chaw
+
+# C. dauricus
+$ sbatch mpileup_consensus.bsh bwa_Cdau Cdau
+
+# C. kubaryi
+$ sbatch mpileup_consensus.bsh bwa_Ckub Ckub
+
+# C. splendens
+$ sbatch mpileup_consensus.bsh bwa_Csple Csple
+
+# 4sp C. corone
+$ sbatch 4sp_consensus_mpileup.bsh 4sp_Ccornix
+
+# 3sp C. corone
+$ sbatch 3sp_consensus_mpileup.bsh 3sp_Ccornix
+
+# N. columbiana
+$ sbatch mpileup_consensus.bsh bwa_SRR Ncol
+

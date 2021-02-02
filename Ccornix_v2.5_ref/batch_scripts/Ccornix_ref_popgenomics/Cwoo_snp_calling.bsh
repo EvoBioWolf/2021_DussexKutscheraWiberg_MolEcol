@@ -1,0 +1,51 @@
+#!/bin/bash -l
+#SBATCH -A snic2017-1-599
+#SBATCH	-p core -n 3
+#SBATCH -t 3-00:00:00
+#SBATCH -J Cwoo_mpileup_consensus
+
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load bioinfo-tools
+module load samtools/1.3
+module load GATK/3.4.0
+module load bcftools/1.3.1
+module load htslib/1.3
+# Define variables
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp /crex/proj/uppstore2017157/b2013182_nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_Cwoo*indraln.bam ${SNIC_TMP}/
+cp /crex/proj/uppstore2017157/b2013182/private/bams/Ccornix_ref/consensus_per_species/genome_HC_allpaths41687_v2.5_mskReps.fa ${SNIC_TMP}/
+
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+samtools faidx genome_HC_allpaths41687_v2.5_mskReps.fa
+
+# Make list of bam files to pass to mpileup
+ls -1 *.bam > Cwoo_sorted_bams 
+
+# Make consensus
+samtools mpileup -f genome_HC_allpaths41687_v2.5_mskReps.fa -b Cwoo_sorted_bams -g -t DP -u -s | bcftools call -c -M -O v - > Cwoo.vcf
+
+# Create .dict and .fai files
+java -jar /sw/apps/bioinfo/picard/2.10.3/milou/picard.jar CreateSequenceDictionary R=genome_HC_allpaths41687_v2.5_mskReps.fa O=genome_HC_allpaths41687_v2.5_mskReps.dict
+samtools faidx genome_HC_allpaths41687_v2.5_mskReps.fa
+
+# Remove INDELS from consensus.vcf
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5_mskReps.fa --variant:VCF Cwoo.vcf -o Cwoo_snps.vcf --selectTypeToExclude INDEL
+
+# Zip and indext the vcf files
+bgzip Cwoo.vcf
+tabix -p vcf Cwoo.vcf.gz
+bgzip Cwoo_snps.vcf
+tabix -p vcf Cwoo_snps.vcf.gz
+
+# Move files back to
+cp ${SNIC_TMP}/Cwoo.vc* /crex/proj/uppstore2017157/b2013182/private/bams/Ccornix_ref/pop_genomics/
+cp ${SNIC_TMP}/Cwoo_snps.vc* /crex/proj/uppstore2017157/b2013182/private/bams/Ccornix_ref/pop_genomics/
+

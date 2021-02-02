@@ -1,0 +1,75 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 3
+#SBATCH -t 8-00:00:00
+#SBATCH -J mpileup_consensus_ancestral
+
+# STEP 3: FILTER THE CONSENSUS VCF FILE
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load bcftools/1.3
+module load samtools/1.3
+module load htslib/1.3
+module load GATK/3.4.0
+module load vcftools/0.1.14
+
+crowdata=/proj/b2013182
+
+# Copy reference genome
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths*_v2.5* ${SNIC_TMP}/
+
+# Copy vcf file
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_3sp_Ccornix_Cdau_Cfru.vc* ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/consensus_3sp_Ccornix_Cdau_Cfru_snps.vc* ${SNIC_TMP}/
+
+# Move to the temp directory
+cd ${SNIC_TMP}
+
+# List files to log
+ls -h ${SNIC_TMP}/
+
+# Filter the vcf file to get only trully polymorphic SNPs
+# I am using the vcf files where INDELs have already been removes
+vcftools --gzvcf consensus_3sp_Ccornix_Cdau_Cfru_snps.vcf.gz \
+--maf 0.00001 --max-maf 0.99999 --min-alleles 2 --recode --recode-INFO-all \
+--out consensus_3sp_Ccornix_Cdau_Cfru_snps_trueSNPs
+# Next make a coordinate file of the positions of these truly polymorphic SNPs
+# Coordinate file contains only scaffold and position information.
+grep -v '^#' consensus_3sp_Ccornix_Cdau_Cfru_snps_trueSNPs.recode.vcf | awk '{print $1 "\t" $2}' > consensus_3sp_Ccornix_Cdau_Cfru_snps_trueSNPs.tab
+
+# Zip and index the vcf file
+bgzip consensus_3sp_Ccornix_Cdau_Cfru_snps_trueSNPs.recode.vcf
+tabix -p vcf consensus_3sp_Ccornix_Cdau_Cfru_snps_trueSNPs.recode.vcf.gz
+
+# Get the positions of all sites with depth < 5x
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5.fasta --variant:VCF consensus_3sp_Ccornix_Cdau_Cfru.vcf.gz -o consensus_3sp_Ccornix_Cdau_Cfru_lowDP.vcf.gz -select "DP < 5"
+bgzip -cd consensus_3sp_Ccornix_Cdau_Cfru_lowDP.vcf.gz | grep -v '^#' | awk '{print $1 "\t" $2}' > consensus_3sp_Ccornix_Cdau_Cfru_lowDP.tab
+
+# Combine the bed files, sort by position, take only unique rows, remove all "chrM" entries
+cat consensus_3sp_Ccornix_Cdau_Cfru_lowDP.tab consensus_3sp_Ccornix_Cdau_Cfru_snps_trueSNPs.tab | sort -k1,1 -k2,2n -u > consensus_3sp_Ccornix_Cdau_Cfru_snps_lowDP_trueSNPs.tab
+
+# List files to log
+ls -h ${SNIC_TMP}/
+
+# Convert consensus .vcf to .fasta with bcftools
+# by default bcftools consensus will replace all sites in the reference genome with the alternative allele if there is one.
+# the "-m" option takes a file of regions to mask with an "N"
+bcftools consensus -m consensus_3sp_Ccornix_Cdau_Cfru_snps_lowDP_trueSNPs.tab \
+--fasta-ref genome_HC_allpaths41687_v2.5.fasta consensus_3sp_Ccornix_Cdau_Cfru_snps.vcf.gz > consensus_3sp_Ccornix_Cdau_Cfru_unfixed_mskVars.fa
+
+# Rename headers  so that they have the 'scaffold_10' format instead of '1 scaffold_10:1' one
+perl -pne 's/>\d+\s+(.*):.*/>\1/' consensus_3sp_Ccornix_Cdau_Cfru_unfixed_mskVars.fa > consensus_3sp_Ccornix_Cdau_Cfru_mskVars.fa
+
+# Move files back to
+cp ${SNIC_TMP}/consensus_3sp_Ccornix_Cdau_Cfru_mskVars.fa ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/
+
+
+
+
+
+

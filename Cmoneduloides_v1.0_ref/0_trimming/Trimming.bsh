@@ -1,0 +1,75 @@
+#!/bin/bash -l
+
+#SBATCH -A b2013182
+#SBATCH	-p node -N 1
+#SBATCH -t 0-07:00:00
+#SBATCH -J trimming_Cwoodfordi
+#SBATCH -C usage_mail
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load trimmomatic
+#trimmomatic adapters in: ${TRIMMOMATIC_HOME}/adapters
+
+#####
+##Copy files from home to tmp directory
+#####
+cp ${crowreads}/*C.woodfordi* ${SNIC_TMP}/
+
+#####
+##Rename files to make them easier to cycle through
+#####
+
+mv ${SNIC_TMP}/DNA_pair_1_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-4_lane_L001_species_C.woodfordi_MLK92_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK92_S1_R1.fq.gz
+mv ${SNIC_TMP}/DNA_pair_2_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-4_lane_L001_species_C.woodfordi_MLK92_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK92_S1_R2.fq.gz
+
+mv ${SNIC_TMP}/DNA_pair_1_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-4_lane_L002_species_C.woodfordi_MLK92_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK92_S2_R1.fq.gz
+mv ${SNIC_TMP}/DNA_pair_2_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-4_lane_L002_species_C.woodfordi_MLK92_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK92_S2_R2.fq.gz
+
+mv ${SNIC_TMP}/DNA_pair_1_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-5_lane_L001_species_C.woodfordi_MLK164_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK164_S1_R1.fq.gz
+mv ${SNIC_TMP}/DNA_pair_2_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-5_lane_L001_species_C.woodfordi_MLK164_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK164_S1_R2.fq.gz
+
+mv ${SNIC_TMP}/DNA_pair_1_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-5_lane_L002_species_C.woodfordi_MLK164_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK164_S2_R1.fq.gz
+mv ${SNIC_TMP}/DNA_pair_2_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-5_lane_L002_species_C.woodfordi_MLK164_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK164_S2_R2.fq.gz
+
+mv ${SNIC_TMP}/DNA_pair_1_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-6_lane_L001_species_C.woodfordi_MLK166_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK166_S1_R1.fq.gz
+mv ${SNIC_TMP}/DNA_pair_2_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-6_lane_L001_species_C.woodfordi_MLK166_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK166_S1_R2.fq.gz
+
+mv ${SNIC_TMP}/DNA_pair_1_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-6_lane_L002_species_C.woodfordi_MLK166_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK166_S2_R1.fq.gz
+mv ${SNIC_TMP}/DNA_pair_2_Illumina_ins_350_RL_100_date_131023_FCID_H7F5UADXX_BC_na_libraryfolder_715-6_lane_L002_species_C.woodfordi_MLK166_tissue_muscle.fq.gz \
+${SNIC_TMP}/Cwoo_MLK166_S2_R2.fq.gz
+
+#####
+##Trim Illumina adapters
+#####
+
+for f in $(ls ${SNIC_TMP}/*R1* | sed 's/R1.fq.gz//g'); 
+do java -jar ${TRIMMOMATIC_HOME}/trimmomatic.jar PE -phred33 -threads 6 \
+${f}R1.fq.gz ${f}R2.fq.gz  \
+${f}tqc_pe_R1.fq.gz ${f}ftqc_se_R1.fq.gz \
+${f}tqc_pe_R2.fq.gz ${f}ftqc_se_R2.fq.gz \
+ILLUMINACLIP:${TRIMMOMATIC_HOME}/adapters/TruSeq3-PE.fa:2:30:10 ILLUMINACLIP:${TRIMMOMATIC_HOME}/adapters/TruSeq2-PE.fa:2:30:10; 
+done 
+
+wait
+
+#####
+##Copy files to project folder from tmp directory
+#####
+
+cp ${SNIC_TMP}/*pe*.fq.gz /proj/b2013182/nobackup/trimmed_reads/
+cp ${SNIC_TMP}/*se*.fq.gz /proj/b2013182/nobackup/trimmed_reads/

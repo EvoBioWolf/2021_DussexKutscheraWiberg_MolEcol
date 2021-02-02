@@ -1,0 +1,855 @@
+bwa_Cbrach_USA_CA_B01_S1_sorted_rmdup
+bwa_Cbrach_USA_CA_B01_S1_sorted_rmdup 121 U01 L001j Illumina U01.121_120913_L001j
+@RG	ID:121	LB:L001j	PL:illumina	SM:U01	PU:U01.121_120913_L001j
+--
+bwa_Cbrach_USA_CA_B01_S1_sorted_rmdup
+bwa_Cbrach_USA_CA_B01_S1_sorted_rmdup 121 U01 L001j Illumina U01.121_120913_L001j
+@RG	ID:121	LB:L001j	PL:illumina	SM:U01	PU:U01.121_120913_L001j
+--
+bwa_Cbrach_USA_CA_B01_S2_sorted_rmdup
+bwa_Cbrach_USA_CA_B01_S2_sorted_rmdup 122 U01 L002j Illumina U01.122_120913_L002j
+@RG	ID:122	LB:L002j	PL:illumina	SM:U01	PU:U01.122_120913_L002j
+--
+bwa_Cbrach_USA_CA_B01_S3_sorted_rmdup
+bwa_Cbrach_USA_CA_B01_S3_sorted_rmdup 12 U01 L008n Illumina U01.12_120801_L008n
+@RG	ID:12	LB:L008n	PL:illumina	SM:U01	PU:U01.12_120801_L008n
+--
+bwa_Cbrach_USA_CA_B01_S4_sorted_rmdup
+bwa_Cbrach_USA_CA_B01_S4_sorted_rmdup 314 U01 L001l Illumina U01.314_120815_L001l
+@RG	ID:314	LB:L001l	PL:illumina	SM:U01	PU:U01.314_120815_L001l
+--
+bwa_Cbrach_USA_CA_B01_S5_sorted_rmdup
+bwa_Cbrach_USA_CA_B01_S5_sorted_rmdup 369 U01 L005f Illumina U01.369_130304_L005f
+@RG	ID:369	LB:L005f	PL:illumina	SM:U01	PU:U01.369_130304_L005f
+--
+bwa_Cbrach_USA_CA_B03_S1_sorted_rmdup
+bwa_Cbrach_USA_CA_B03_S1_sorted_rmdup 130 U06 L005j Illumina U06.130_120913_L005j
+@RG	ID:130	LB:L005j	PL:illumina	SM:U06	PU:U06.130_120913_L005j
+--
+bwa_Cbrach_USA_CA_B03_S2_sorted_rmdup
+bwa_Cbrach_USA_CA_B03_S2_sorted_rmdup 253 U06 L001h Illumina U06.253_120927_L001h
+@RG	ID:253	LB:L001h	PL:illumina	SM:U06	PU:U06.253_120927_L001h
+--
+bwa_Cbrach_USA_CA_B03_S3_sorted_rmdup
+bwa_Cbrach_USA_CA_B03_S3_sorted_rmdup 254 U06 L002h Illumina U06.254_120927_L002h
+@RG	ID:254	LB:L002h	PL:illumina	SM:U06	PU:U06.254_120927_L002h
+--
+bwa_Cbrach_USA_CA_B03_S4_sorted_rmdup
+bwa_Cbrach_USA_CA_B03_S4_sorted_rmdup 255 U06 L003h Illumina U06.255_120927_L003h
+@RG	ID:255	LB:L003h	PL:illumina	SM:U06	PU:U06.255_120927_L003h
+--
+bwa_Cbrach_USA_CA_B03_S5_sorted_rmdup
+bwa_Cbrach_USA_CA_B03_S5_sorted_rmdup 375 U06 L004f Illumina U06.375_130304_L004f
+@RG	ID:375	LB:L004f	PL:illumina	SM:U06	PU:U06.375_130304_L004f
+--
+bwa_Cbrach_USA_CA_B08_S1_sorted_rmdup
+bwa_Cbrach_USA_CA_B08_S1_sorted_rmdup 559 U08 L1b Illumina U08.559_BGIDIDIT_L1b
+@RG	ID:559	LB:L1b	PL:illumina	SM:U08	PU:U08.559_BGIDIDIT_L1b
+--
+bwa_Cbrach_USA_CA_B08_S2_sorted_rmdup
+bwa_Cbrach_USA_CA_B08_S2_sorted_rmdup 560 U08 L2b Illumina U08.560_BGIDIDIT_L2b
+@RG	ID:560	LB:L2b	PL:illumina	SM:U08	PU:U08.560_BGIDIDIT_L2b
+--
+bwa_Cbrach_USA_NJ_B02_S1_sorted_rmdup
+bwa_Cbrach_USA_NJ_B02_S1_sorted_rmdup 123 U02 L007j Illumina U02.123_120913_L007j
+@RG	ID:123	LB:L007j	PL:illumina	SM:U02	PU:U02.123_120913_L007j
+--
+bwa_Cbrach_USA_NJ_B02_S2_sorted_rmdup
+bwa_Cbrach_USA_NJ_B02_S2_sorted_rmdup 251 U02 L007h Illumina U02.251_120927_L007h
+@RG	ID:251	LB:L007h	PL:illumina	SM:U02	PU:U02.251_120927_L007h
+--
+bwa_Cbrach_USA_NJ_B02_S3_sorted_rmdup
+bwa_Cbrach_USA_NJ_B02_S3_sorted_rmdup 252 U02 L008h Illumina U02.252_120927_L008h
+@RG	ID:252	LB:L008h	PL:illumina	SM:U02	PU:U02.252_120927_L008h
+--
+bwa_Cbrach_USA_NJ_B02_S4_sorted_rmdup
+bwa_Cbrach_USA_NJ_B02_S4_sorted_rmdup 288 U02 L001i Illumina U02.288_120927_L001i
+@RG	ID:288	LB:L001i	PL:illumina	SM:U02	PU:U02.288_120927_L001i
+--
+bwa_Cbrach_USA_NJ_B02_S5_sorted_rmdup
+bwa_Cbrach_USA_NJ_B02_S5_sorted_rmdup 289 U02 L002i Illumina U02.289_120927_L002i
+@RG	ID:289	LB:L002i	PL:illumina	SM:U02	PU:U02.289_120927_L002i
+--
+bwa_Cbrach_USA_NJ_B02_S6_sorted_rmdup
+bwa_Cbrach_USA_NJ_B02_S6_sorted_rmdup 374 U02 L005f Illumina U02.374_130304_L005f
+@RG	ID:374	LB:L005f	PL:illumina	SM:U02	PU:U02.374_130304_L005f
+--
+bwa_Cbrach_USA_NY_B03_S1_sorted_rmdup
+bwa_Cbrach_USA_NY_B03_S1_sorted_rmdup 124 U03 L001j Illumina U03.124_120913_L001j
+@RG	ID:124	LB:L001j	PL:illumina	SM:U03	PU:U03.124_120913_L001j
+--
+bwa_Cbrach_USA_NY_B03_S2_sorted_rmdup
+bwa_Cbrach_USA_NY_B03_S2_sorted_rmdup 125 U03 L002j Illumina U03.125_120913_L002j
+@RG	ID:125	LB:L002j	PL:illumina	SM:U03	PU:U03.125_120913_L002j
+--
+bwa_Cbrach_USA_NY_B03_S3_sorted_rmdup
+bwa_Cbrach_USA_NY_B03_S3_sorted_rmdup 13 U03 L008n Illumina U03.13_120801_L008n
+@RG	ID:13	LB:L008n	PL:illumina	SM:U03	PU:U03.13_120801_L008n
+--
+bwa_Cbrach_USA_NY_B03_S4_sorted_rmdup
+bwa_Cbrach_USA_NY_B03_S4_sorted_rmdup 315 U03 L001l Illumina U03.315_120815_L001l
+@RG	ID:315	LB:L001l	PL:illumina	SM:U03	PU:U03.315_120815_L001l
+--
+bwa_Cbrach_USA_NY_B03_S5_sorted_rmdup
+bwa_Cbrach_USA_NY_B03_S5_sorted_rmdup 371 U03 L005f Illumina U03.371_130304_L005f
+@RG	ID:371	LB:L005f	PL:illumina	SM:U03	PU:U03.371_130304_L005f
+--
+bwa_Cbrach_USA_NY_B04_S1_sorted_rmdup
+bwa_Cbrach_USA_NY_B04_S1_sorted_rmdup 126 U04 L003j Illumina U04.126_120913_L003j
+@RG	ID:126	LB:L003j	PL:illumina	SM:U04	PU:U04.126_120913_L003j
+--
+bwa_Cbrach_USA_NY_B04_S2_sorted_rmdup
+bwa_Cbrach_USA_NY_B04_S2_sorted_rmdup 127 U04 L004j Illumina U04.127_120913_L004j
+@RG	ID:127	LB:L004j	PL:illumina	SM:U04	PU:U04.127_120913_L004j
+--
+bwa_Cbrach_USA_NY_B04_S3_sorted_rmdup
+bwa_Cbrach_USA_NY_B04_S3_sorted_rmdup 26 U04 L001m Illumina U04.26_120806_L001m
+@RG	ID:26	LB:L001m	PL:illumina	SM:U04	PU:U04.26_120806_L001m
+--
+bwa_Cbrach_USA_NY_B04_S4_sorted_rmdup
+bwa_Cbrach_USA_NY_B04_S4_sorted_rmdup 316 U04 L002l Illumina U04.316_120815_L002l
+@RG	ID:316	LB:L002l	PL:illumina	SM:U04	PU:U04.316_120815_L002l
+--
+bwa_Cbrach_USA_NY_B04_S5_sorted_rmdup
+bwa_Cbrach_USA_NY_B04_S5_sorted_rmdup 377 U04 L004f Illumina U04.377_130304_L004f
+@RG	ID:377	LB:L004f	PL:illumina	SM:U04	PU:U04.377_130304_L004f
+--
+bwa_Cbrach_USA_NY_B05_S1_sorted_rmdup
+bwa_Cbrach_USA_NY_B05_S1_sorted_rmdup 128 U05 L003j Illumina U05.128_120913_L003j
+@RG	ID:128	LB:L003j	PL:illumina	SM:U05	PU:U05.128_120913_L003j
+--
+bwa_Cbrach_USA_NY_B05_S2_sorted_rmdup
+bwa_Cbrach_USA_NY_B05_S2_sorted_rmdup 129 U05 L004j Illumina U05.129_120913_L004j
+@RG	ID:129	LB:L004j	PL:illumina	SM:U05	PU:U05.129_120913_L004j
+--
+bwa_Cbrach_USA_NY_B05_S3_sorted_rmdup
+bwa_Cbrach_USA_NY_B05_S3_sorted_rmdup 27 U05 L001m Illumina U05.27_120806_L001m
+@RG	ID:27	LB:L001m	PL:illumina	SM:U05	PU:U05.27_120806_L001m
+--
+bwa_Cbrach_USA_NY_B05_S4_sorted_rmdup
+bwa_Cbrach_USA_NY_B05_S4_sorted_rmdup 317 U05 L002l Illumina U05.317_120815_L002l
+@RG	ID:317	LB:L002l	PL:illumina	SM:U05	PU:U05.317_120815_L002l
+--
+bwa_C.cornix_B_So_H04_S1_sorted_rmdup
+bwa_C.cornix_B_So_H04_S1_sorted_rmdup 448 B04 L007i Illumina B04.448_130920_L007i
+@RG	ID:448	LB:L007i	PL:illumina	SM:B04	PU:B04.448_130920_L007i
+--
+bwa_C.cornix_B_So_H04_S2_sorted_rmdup
+bwa_C.cornix_B_So_H04_S2_sorted_rmdup 468 B04 L002c Illumina B04.468_131003_L002c
+@RG	ID:468	LB:L002c	PL:illumina	SM:B04	PU:B04.468_131003_L002c
+--
+bwa_C.cornix_B_So_H04_S3_sorted_rmdup
+bwa_C.cornix_B_So_H04_S3_sorted_rmdup 545 B04 L005e Illumina B04.545_140312_L005e
+@RG	ID:545	LB:L005e	PL:illumina	SM:B04	PU:B04.545_140312_L005e
+--
+bwa_C.cornix_B_So_H04_S4_sorted_rmdup
+bwa_C.cornix_B_So_H04_S4_sorted_rmdup 546 B04 L006e Illumina B04.546_140312_L006e
+@RG	ID:546	LB:L006e	PL:illumina	SM:B04	PU:B04.546_140312_L006e
+--
+bwa_C.cornix_B_So_H04_S5_sorted_rmdup
+bwa_C.cornix_B_So_H04_S5_sorted_rmdup 557 B04 L002j Illumina B04.557_140515_L002j
+@RG	ID:557	LB:L002j	PL:illumina	SM:B04	PU:B04.557_140515_L002j
+--
+bwa_C.cornix_ISR_TA_H01_S1_sorted_rmdup
+bwa_C.cornix_ISR_TA_H01_S1_sorted_rmdup 440 Z01 L006i Illumina Z01.440_130920_L006i
+@RG	ID:440	LB:L006i	PL:illumina	SM:Z01	PU:Z01.440_130920_L006i
+--
+bwa_C.cornix_ISR_TA_H01_S2_sorted_rmdup
+bwa_C.cornix_ISR_TA_H01_S2_sorted_rmdup 460 Z01 L001c Illumina Z01.460_131003_L001c
+@RG	ID:460	LB:L001c	PL:illumina	SM:Z01	PU:Z01.460_131003_L001c
+--
+bwa_C.cornix_ISR_TA_H01_S5_sorted_rmdup
+bwa_C.cornix_ISR_TA_H01_S5_sorted_rmdup 549 Z01 L001j Illumina Z01.549_140515_L001j
+@RG	ID:549	LB:L001j	PL:illumina	SM:Z01	PU:Z01.549_140515_L001j
+--
+bwa_C.cornix_ITA_Ro_H11_S1_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H11_S1_sorted_rmdup 477 IT11 L007d Illumina IT11.477_140227_L007d
+@RG	ID:477	LB:L007d	PL:illumina	SM:IT11	PU:IT11.477_140227_L007d
+--
+bwa_C.cornix_ITA_Ro_H11_S2_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H11_S2_sorted_rmdup 478 IT11 L008d Illumina IT11.478_140227_L008d
+@RG	ID:478	LB:L008d	PL:illumina	SM:IT11	PU:IT11.478_140227_L008d
+--
+bwa_C.cornix_ITA_Ro_H11_S3_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H11_S3_sorted_rmdup 517 IT11 L001e Illumina IT11.517_140312_L001e
+@RG	ID:517	LB:L001e	PL:illumina	SM:IT11	PU:IT11.517_140312_L001e
+--
+bwa_C.cornix_ITA_Ro_H11_S4_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H11_S4_sorted_rmdup 518 IT11 L002e Illumina IT11.518_140312_L002e
+@RG	ID:518	LB:L002e	PL:illumina	SM:IT11	PU:IT11.518_140312_L002e
+--
+bwa_C.cornix_ITA_Ro_H12_S1_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H12_S1_sorted_rmdup 446 IT12 L007i Illumina IT12.446_130920_L007i
+@RG	ID:446	LB:L007i	PL:illumina	SM:IT12	PU:IT12.446_130920_L007i
+--
+bwa_C.cornix_ITA_Ro_H12_S2_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H12_S2_sorted_rmdup 466 IT12 L002c Illumina IT12.466_131003_L002c
+@RG	ID:466	LB:L002c	PL:illumina	SM:IT12	PU:IT12.466_131003_L002c
+--
+bwa_C.cornix_ITA_Ro_H12_S3_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H12_S3_sorted_rmdup 541 IT12 L005e Illumina IT12.541_140312_L005e
+@RG	ID:541	LB:L005e	PL:illumina	SM:IT12	PU:IT12.541_140312_L005e
+--
+bwa_C.cornix_ITA_Ro_H12_S4_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H12_S4_sorted_rmdup 542 IT12 L006e Illumina IT12.542_140312_L006e
+@RG	ID:542	LB:L006e	PL:illumina	SM:IT12	PU:IT12.542_140312_L006e
+--
+bwa_C.cornix_ITA_Ro_H12_S5_sorted_rmdup
+bwa_C.cornix_ITA_Ro_H12_S5_sorted_rmdup 555 IT12 L002j Illumina IT12.555_140515_L002j
+@RG	ID:555	LB:L002j	PL:illumina	SM:IT12	PU:IT12.555_140515_L002j
+--
+bwa_C.cornix_PL_Wa_H22_S1_sorted_rmdup
+bwa_C.cornix_PL_Wa_H22_S1_sorted_rmdup 91 P10 L005ga Illumina P10.91_120913_L005ga
+@RG	ID:91	LB:L005ga	PL:illumina	SM:P10	PU:P10.91_120913_L005ga
+--
+bwa_C.cornix_PL_Wa_H22_S2_sorted_rmdup
+bwa_C.cornix_PL_Wa_H22_S2_sorted_rmdup 214 P10 L001h Illumina P10.214_120927_L001h
+@RG	ID:214	LB:L001h	PL:illumina	SM:P10	PU:P10.214_120927_L001h
+--
+bwa_C.cornix_PL_Wa_H22_S3_sorted_rmdup
+bwa_C.cornix_PL_Wa_H22_S3_sorted_rmdup 215 P10 L002h Illumina P10.215_120927_L002h
+@RG	ID:215	LB:L002h	PL:illumina	SM:P10	PU:P10.215_120927_L002h
+--
+bwa_C.cornix_PL_Wa_H22_S4_sorted_rmdup
+bwa_C.cornix_PL_Wa_H22_S4_sorted_rmdup 216 P10 L003h Illumina P10.216_120927_L003h
+@RG	ID:216	LB:L003h	PL:illumina	SM:P10	PU:P10.216_120927_L003h
+--
+bwa_C.cornix_S_Up_H03_S2_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S2_sorted_rmdup 100 S01 L003ga Illumina S01.100_120913_L003ga
+@RG	ID:100	LB:L003ga	PL:illumina	SM:S01	PU:S01.100_120913_L003ga
+--
+bwa_C.cornix_S_Up_H03_S3_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S3_sorted_rmdup 101 S01 L004ga Illumina S01.101_120913_L004ga
+@RG	ID:101	LB:L004ga	PL:illumina	SM:S01	PU:S01.101_120913_L004ga
+--
+bwa_C.cornix_S_Up_H03_S4_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S4_sorted_rmdup 308 S01 L002aa Illumina S01.308_120815_L002aa
+@RG	ID:308	LB:L002aa	PL:illumina	SM:S01	PU:S01.308_120815_L002aa
+--
+bwa_C.cornix_S_Up_H03_S5_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S5_sorted_rmdup 334 S01 L004lb Illumina S01.334_121026_L004lb
+@RG	ID:334	LB:L004lb	PL:illumina	SM:S01	PU:S01.334_121026_L004lb
+--
+bwa_C.cornix_S_Up_H09_S1_sorted_rmdup
+bwa_C.cornix_S_Up_H09_S1_sorted_rmdup 24 S02 L001f Illumina S02.24_120806_L001f
+@RG	ID:24	LB:L001f	PL:illumina	SM:S02	PU:S02.24_120806_L001f
+--
+bwa_C.cornix_S_Up_H09_S2_sorted_rmdup
+bwa_C.cornix_S_Up_H09_S2_sorted_rmdup 102 S02 L003ga Illumina S02.102_120913_L003ga
+@RG	ID:102	LB:L003ga	PL:illumina	SM:S02	PU:S02.102_120913_L003ga
+--
+bwa_C.cornix_S_Up_H09_S3_sorted_rmdup
+bwa_C.cornix_S_Up_H09_S3_sorted_rmdup 103 S02 L004ga Illumina S02.103_120913_L004ga
+@RG	ID:103	LB:L004ga	PL:illumina	SM:S02	PU:S02.103_120913_L004ga
+--
+bwa_C.cornix_S_Up_H09_S4_sorted_rmdup
+bwa_C.cornix_S_Up_H09_S4_sorted_rmdup 309 S02 L002aa Illumina S02.309_120815_L002aa
+@RG	ID:309	LB:L002aa	PL:illumina	SM:S02	PU:S02.309_120815_L002aa
+--
+bwa_C.cornix_S_Up_H09_S5_sorted_rmdup
+bwa_C.cornix_S_Up_H09_S5_sorted_rmdup 335 S02 L002lb Illumina S02.335_121026_L002lb
+@RG	ID:335	LB:L002lb	PL:illumina	SM:S02	PU:S02.335_121026_L002lb
+--
+bwa_C.corone_D_Ko_C04_S2_sorted_rmdup
+bwa_C.corone_D_Ko_C04_S2_sorted_rmdup 36 D02 L001g Illumina D02.36_120913_L001g
+@RG	ID:36	LB:L001g	PL:illumina	SM:D02	PU:D02.36_120913_L001g
+--
+bwa_C.corone_D_Ko_C04_S3_sorted_rmdup
+bwa_C.corone_D_Ko_C04_S3_sorted_rmdup 37 D02 L002g Illumina D02.37_120913_L002g
+@RG	ID:37	LB:L002g	PL:illumina	SM:D02	PU:D02.37_120913_L002g
+--
+bwa_C.corone_D_Ko_C04_S4_sorted_rmdup
+bwa_C.corone_D_Ko_C04_S4_sorted_rmdup 291 D02 L001a Illumina D02.291_120815_L001a
+@RG	ID:291	LB:L001a	PL:illumina	SM:D02	PU:D02.291_120815_L001a
+--
+bwa_C.corone_D_Ko_C04_S5_sorted_rmdup
+bwa_C.corone_D_Ko_C04_S5_sorted_rmdup 324 D02 L004la Illumina D02.324_121026_L004la
+@RG	ID:324	LB:L004la	PL:illumina	SM:D02	PU:D02.324_121026_L004la
+--
+bwa_C.corone_D_Ko_C13_S1_sorted_rmdup
+bwa_C.corone_D_Ko_C13_S1_sorted_rmdup 41 D05 L005g Illumina D05.41_120913_L005g
+@RG	ID:41	LB:L005g	PL:illumina	SM:D05	PU:D05.41_120913_L005g
+--
+bwa_C.corone_D_Ko_C13_S2_sorted_rmdup
+bwa_C.corone_D_Ko_C13_S2_sorted_rmdup 156 D05 L001ha Illumina D05.156_120927_L001ha
+@RG	ID:156	LB:L001ha	PL:illumina	SM:D05	PU:D05.156_120927_L001ha
+--
+bwa_C.corone_D_Ko_C13_S3_sorted_rmdup
+bwa_C.corone_D_Ko_C13_S3_sorted_rmdup 157 D05 L002ha Illumina D05.157_120927_L002ha
+@RG	ID:157	LB:L002ha	PL:illumina	SM:D05	PU:D05.157_120927_L002ha
+--
+bwa_C.corone_D_Ko_C13_S4_sorted_rmdup
+bwa_C.corone_D_Ko_C13_S4_sorted_rmdup 158 D05 L003ha Illumina D05.158_120927_L003ha
+@RG	ID:158	LB:L003ha	PL:illumina	SM:D05	PU:D05.158_120927_L003ha
+--
+bwa_C.corone_D_Ko_C13_S5_sorted_rmdup
+bwa_C.corone_D_Ko_C13_S5_sorted_rmdup 325 D05 L002la Illumina D05.325_121026_L002la
+@RG	ID:325	LB:L002la	PL:illumina	SM:D05	PU:D05.325_121026_L002la
+--
+bwa_C.corone_D_Ko_C15_S1_sorted_rmdup
+bwa_C.corone_D_Ko_C15_S1_sorted_rmdup 42 D06 L005g Illumina D06.42_120913_L005g
+@RG	ID:42	LB:L005g	PL:illumina	SM:D06	PU:D06.42_120913_L005g
+--
+bwa_C.corone_D_Ko_C15_S2_sorted_rmdup
+bwa_C.corone_D_Ko_C15_S2_sorted_rmdup 159 D06 L001ha Illumina D06.159_120927_L001ha
+@RG	ID:159	LB:L001ha	PL:illumina	SM:D06	PU:D06.159_120927_L001ha
+--
+bwa_C.corone_D_Ko_C15_S3_sorted_rmdup
+bwa_C.corone_D_Ko_C15_S3_sorted_rmdup 160 D06 L002ha Illumina D06.160_120927_L002ha
+@RG	ID:160	LB:L002ha	PL:illumina	SM:D06	PU:D06.160_120927_L002ha
+--
+bwa_C.corone_D_Ko_C15_S4_sorted_rmdup
+bwa_C.corone_D_Ko_C15_S4_sorted_rmdup 161 D06 L003ha Illumina D06.161_120927_L003ha
+@RG	ID:161	LB:L003ha	PL:illumina	SM:D06	PU:D06.161_120927_L003ha
+--
+bwa_C.corone_D_Ko_C15_S5_sorted_rmdup
+bwa_C.corone_D_Ko_C15_S5_sorted_rmdup 326 D06 L001la Illumina D06.326_121026_L001la
+@RG	ID:326	LB:L001la	PL:illumina	SM:D06	PU:D06.326_121026_L001la
+--
+bwa_C.corone_D_Ra_C05_S1_sorted_rmdup
+bwa_C.corone_D_Ra_C05_S1_sorted_rmdup 48 D10 L007g Illumina D10.48_120913_L007g
+@RG	ID:48	LB:L007g	PL:illumina	SM:D10	PU:D10.48_120913_L007g
+--
+bwa_C.corone_D_Ra_C05_S2_sorted_rmdup
+bwa_C.corone_D_Ra_C05_S2_sorted_rmdup 164 D10 L007ha Illumina D10.164_120927_L007ha
+@RG	ID:164	LB:L007ha	PL:illumina	SM:D10	PU:D10.164_120927_L007ha
+--
+bwa_C.corone_D_Ra_C05_S3_sorted_rmdup
+bwa_C.corone_D_Ra_C05_S3_sorted_rmdup 165 D10 L008ha Illumina D10.165_120927_L008ha
+@RG	ID:165	LB:L008ha	PL:illumina	SM:D10	PU:D10.165_120927_L008ha
+--
+bwa_C.corone_D_Ra_C05_S4_sorted_rmdup
+bwa_C.corone_D_Ra_C05_S4_sorted_rmdup 264 D10 L001k Illumina D10.264_120927_L001k
+@RG	ID:264	LB:L001k	PL:illumina	SM:D10	PU:D10.264_120927_L001k
+--
+bwa_C.corone_D_Ra_C05_S5_sorted_rmdup
+bwa_C.corone_D_Ra_C05_S5_sorted_rmdup 265 D10 L002k Illumina D10.265_120927_L002k
+@RG	ID:265	LB:L002k	PL:illumina	SM:D10	PU:D10.265_120927_L002k
+--
+bwa_C.corone_D_Ra_C05_S6_sorted_rmdup
+bwa_C.corone_D_Ra_C05_S6_sorted_rmdup 328 D10 L002la Illumina D10.328_121026_L002la
+@RG	ID:328	LB:L002la	PL:illumina	SM:D10	PU:D10.328_121026_L002la
+--
+bwa_C.corone_D_Ra_C16_S1_sorted_rmdup
+bwa_C.corone_D_Ra_C16_S1_sorted_rmdup 52 D13 L005g Illumina D13.52_120913_L005g
+@RG	ID:52	LB:L005g	PL:illumina	SM:D13	PU:D13.52_120913_L005g
+--
+bwa_C.corone_D_Ra_C16_S2_sorted_rmdup
+bwa_C.corone_D_Ra_C16_S2_sorted_rmdup 169 D13 L001ha Illumina D13.169_120927_L001ha
+@RG	ID:169	LB:L001ha	PL:illumina	SM:D13	PU:D13.169_120927_L001ha
+--
+bwa_C.corone_D_Ra_C16_S4_sorted_rmdup
+bwa_C.corone_D_Ra_C16_S4_sorted_rmdup 171 D13 L003ha Illumina D13.171_120927_L003ha
+@RG	ID:171	LB:L003ha	PL:illumina	SM:D13	PU:D13.171_120927_L003ha
+--
+bwa_C.corone_D_Ra_C16_S5_sorted_rmdup
+bwa_C.corone_D_Ra_C16_S5_sorted_rmdup 329 D13 L002la Illumina D13.329_121026_L002la
+@RG	ID:329	LB:L002la	PL:illumina	SM:D13	PU:D13.329_121026_L002la
+--
+bwa_C.corone_E_Vi_C01_S1_sorted_rmdup
+bwa_C.corone_E_Vi_C01_S1_sorted_rmdup 55 E01 L007g Illumina E01.55_120913_L007g
+@RG	ID:55	LB:L007g	PL:illumina	SM:E01	PU:E01.55_120913_L007g
+--
+bwa_C.corone_E_Vi_C01_S2_sorted_rmdup
+bwa_C.corone_E_Vi_C01_S2_sorted_rmdup 177 E01 L007ha Illumina E01.177_120927_L007ha
+@RG	ID:177	LB:L007ha	PL:illumina	SM:E01	PU:E01.177_120927_L007ha
+--
+bwa_C.corone_E_Vi_C01_S3_sorted_rmdup
+bwa_C.corone_E_Vi_C01_S3_sorted_rmdup 178 E01 L008ha Illumina E01.178_120927_L008ha
+@RG	ID:178	LB:L008ha	PL:illumina	SM:E01	PU:E01.178_120927_L008ha
+--
+bwa_C.corone_E_Vi_C01_S4_sorted_rmdup
+bwa_C.corone_E_Vi_C01_S4_sorted_rmdup 268 E01 L001k Illumina E01.268_120927_L001k
+@RG	ID:268	LB:L001k	PL:illumina	SM:E01	PU:E01.268_120927_L001k
+--
+bwa_C.corone_E_Vi_C01_S5_sorted_rmdup
+bwa_C.corone_E_Vi_C01_S5_sorted_rmdup 269 E01 L002k Illumina E01.269_120927_L002k
+@RG	ID:269	LB:L002k	PL:illumina	SM:E01	PU:E01.269_120927_L002k
+--
+bwa_C.corone_E_Vi_C57_S1_sorted_rmdup
+bwa_C.corone_E_Vi_C57_S1_sorted_rmdup 74 E14 L005g Illumina E14.74_120913_L005g
+@RG	ID:74	LB:L005g	PL:illumina	SM:E14	PU:E14.74_120913_L005g
+--
+bwa_C.corone_E_Vi_C57_S2_sorted_rmdup
+bwa_C.corone_E_Vi_C57_S2_sorted_rmdup 195 E14 L001ha Illumina E14.195_120927_L001ha
+@RG	ID:195	LB:L001ha	PL:illumina	SM:E14	PU:E14.195_120927_L001ha
+--
+bwa_C.corone_E_Vi_C57_S3_sorted_rmdup
+bwa_C.corone_E_Vi_C57_S3_sorted_rmdup 196 E14 L002ha Illumina E14.196_120927_L002ha
+@RG	ID:196	LB:L002ha	PL:illumina	SM:E14	PU:E14.196_120927_L002ha
+--
+bwa_C.corone_E_Vi_C57_S4_sorted_rmdup
+bwa_C.corone_E_Vi_C57_S4_sorted_rmdup 197 E14 L003ha Illumina E14.197_120927_L003ha
+@RG	ID:197	LB:L003ha	PL:illumina	SM:E14	PU:E14.197_120927_L003ha
+--
+bwa_C.corone_E_Vi_C58_S1_sorted_rmdup
+bwa_C.corone_E_Vi_C58_S1_sorted_rmdup 75 E15 L005g Illumina E15.75_120913_L005g
+@RG	ID:75	LB:L005g	PL:illumina	SM:E15	PU:E15.75_120913_L005g
+--
+bwa_C.corone_E_Vi_C58_S2_sorted_rmdup
+bwa_C.corone_E_Vi_C58_S2_sorted_rmdup 198 E15 L001ha Illumina E15.198_120927_L001ha
+@RG	ID:198	LB:L001ha	PL:illumina	SM:E15	PU:E15.198_120927_L001ha
+--
+bwa_C.corone_E_Vi_C58_S3_sorted_rmdup
+bwa_C.corone_E_Vi_C58_S3_sorted_rmdup 199 E15 L002ha Illumina E15.199_120927_L002ha
+@RG	ID:199	LB:L002ha	PL:illumina	SM:E15	PU:E15.199_120927_L002ha
+--
+bwa_C.corone_E_Vi_C58_S4_sorted_rmdup
+bwa_C.corone_E_Vi_C58_S4_sorted_rmdup 200 E15 L003ha Illumina E15.200_120927_L003ha
+@RG	ID:200	LB:L003ha	PL:illumina	SM:E15	PU:E15.200_120927_L003ha
+--
+bwa_Ccorx_2407-51841_S1_sorted_rmdup
+bwa_Ccorx_2407-51841_S1_sorted_rmdup 1020 2407-51841 L002u Illumina 2407-51841.1020_261114_L002u
+@RG	ID:1020	LB:L002u	PL:illumina	SM:2407-51841	PU:2407-51841.1020_261114_L002u
+--
+bwa_Cdau_DDCHN_Gu_D02_S1_sorted_rmdup
+bwa_Cdau_DDCHN_Gu_D02_S1_sorted_rmdup 558 DDCHN L1a Illumina DDCHN.558_NA_L1a
+@RG	ID:558	LB:L1a	PL:illumina	SM:DDCHN	PU:DDCHN.558_NA_L1a
+--
+bwa_Cdau_MON_Kh_D01_S1_sorted_rmdup
+bwa_Cdau_MON_Kh_D01_S1_sorted_rmdup 473 DD01 L007e Illumina DD01.473_140227_L007e
+@RG	ID:473	LB:L007e	PL:illumina	SM:DD01	PU:DD01.473_140227_L007e
+--
+bwa_Cdau_MON_Kh_D01_S2_sorted_rmdup
+bwa_Cdau_MON_Kh_D01_S2_sorted_rmdup 474 DD01 L008e Illumina DD01.474_140227_L008e
+@RG	ID:474	LB:L008e	PL:illumina	SM:DD01	PU:DD01.474_140227_L008e
+--
+bwa_Cdau_MON_Kh_D01_S3_sorted_rmdup
+bwa_Cdau_MON_Kh_D01_S3_sorted_rmdup 507 DD01 L001d Illumina DD01.507_140312_L001d
+@RG	ID:507	LB:L001d	PL:illumina	SM:DD01	PU:DD01.507_140312_L001d
+--
+bwa_Cdau_MON_Kh_D01_S4_sorted_rmdup
+bwa_Cdau_MON_Kh_D01_S4_sorted_rmdup 508 DD01 L002d Illumina DD01.508_140312_L002d
+@RG	ID:508	LB:L002d	PL:illumina	SM:DD01	PU:DD01.508_140312_L002d
+--
+bwa_Cdau_MON_Kh_D01_S5_sorted_rmdup
+bwa_Cdau_MON_Kh_D01_S5_sorted_rmdup 548 DD01 L001c Illumina DD01.548_140515_L001c
+@RG	ID:548	LB:L001c	PL:illumina	SM:DD01	PU:DD01.548_140515_L001c
+--
+bwa_Cdau_MON_Kh_D02_S1_sorted_rmdup
+bwa_Cdau_MON_Kh_D02_S1_sorted_rmdup 485 DD02 L007e Illumina DD02.485_140227_L007e
+@RG	ID:485	LB:L007e	PL:illumina	SM:DD02	PU:DD02.485_140227_L007e
+--
+bwa_Cdau_MON_Kh_D02_S2_sorted_rmdup
+bwa_Cdau_MON_Kh_D02_S2_sorted_rmdup 486 DD02 L008e Illumina DD02.486_140227_L008e
+@RG	ID:486	LB:L008e	PL:illumina	SM:DD02	PU:DD02.486_140227_L008e
+--
+bwa_Cdau_MON_Kh_D02_S3_sorted_rmdup
+bwa_Cdau_MON_Kh_D02_S3_sorted_rmdup 537 DD02 L001d Illumina DD02.537_140312_L001d
+@RG	ID:537	LB:L001d	PL:illumina	SM:DD02	PU:DD02.537_140312_L001d
+--
+bwa_Cdau_MON_Kh_D02_S4_sorted_rmdup
+bwa_Cdau_MON_Kh_D02_S4_sorted_rmdup 538 DD02 L002d Illumina DD02.538_140312_L002d
+@RG	ID:538	LB:L002d	PL:illumina	SM:DD02	PU:DD02.538_140312_L002d
+--
+bwa_Cdau_MON_Kh_D02_S5_sorted_rmdup
+bwa_Cdau_MON_Kh_D02_S5_sorted_rmdup 554 DD02 L001c Illumina DD02.554_140515_L001c
+@RG	ID:554	LB:L001c	PL:illumina	SM:DD02	PU:DD02.554_140515_L001c
+--
+bwa_Cdau_MON_Kh_D03_S1_sorted_rmdup
+bwa_Cdau_MON_Kh_D03_S1_sorted_rmdup 481 DD03 L007e Illumina DD03.481_140227_L007e
+@RG	ID:481	LB:L007e	PL:illumina	SM:DD03	PU:DD03.481_140227_L007e
+--
+bwa_Cdau_MON_Kh_D03_S2_sorted_rmdup
+bwa_Cdau_MON_Kh_D03_S2_sorted_rmdup 482 DD03 L008e Illumina DD03.482_140227_L008e
+@RG	ID:482	LB:L008e	PL:illumina	SM:DD03	PU:DD03.482_140227_L008e
+--
+bwa_Cdau_MON_Kh_D03_S3_sorted_rmdup
+bwa_Cdau_MON_Kh_D03_S3_sorted_rmdup 523 DD03 L001d Illumina DD03.523_140312_L001d
+@RG	ID:523	LB:L001d	PL:illumina	SM:DD03	PU:DD03.523_140312_L001d
+--
+bwa_Cdau_MON_Kh_D03_S4_sorted_rmdup
+bwa_Cdau_MON_Kh_D03_S4_sorted_rmdup 524 DD03 L002d Illumina DD03.524_140312_L002d
+@RG	ID:524	LB:L002d	PL:illumina	SM:DD03	PU:DD03.524_140312_L002d
+--
+bwa_Cdau_MON_Kh_D03_S5_sorted_rmdup
+bwa_Cdau_MON_Kh_D03_S5_sorted_rmdup 550 DD03 L001c Illumina DD03.550_140515_L001c
+@RG	ID:550	LB:L001c	PL:illumina	SM:DD03	PU:DD03.550_140515_L001c
+--
+bwa_Cfru_IRL_Lm_R01_S1_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S1_sorted_rmdup 225 R01 L007i Illumina R01.225_120927_L007i
+@RG	ID:225	LB:L007i	PL:illumina	SM:R01	PU:R01.225_120927_L007i
+--
+bwa_Cfru_IRL_Lm_R01_S4_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S4_sorted_rmdup 281 R01 L002j Illumina R01.281_120927_L002j
+@RG	ID:281	LB:L002j	PL:illumina	SM:R01	PU:R01.281_120927_L002j
+--
+bwa_Cfru_IRL_Lm_R01_S5_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S5_sorted_rmdup 99 R01 L007g Illumina R01.99_120913_L007g
+@RG	ID:99	LB:L007g	PL:illumina	SM:R01	PU:R01.99_120913_L007g
+--
+bwa_Cfru_IRL_Lm_R05_S1_sorted_rmdup
+bwa_Cfru_IRL_Lm_R05_S1_sorted_rmdup 137 R02 L003h Illumina R02.137_130912_L003h
+@RG	ID:137	LB:L003h	PL:illumina	SM:R02	PU:R02.137_130912_L003h
+--
+bwa_Cfru_RUS_Mu_R03_S1_sorted_rmdup
+bwa_Cfru_RUS_Mu_R03_S1_sorted_rmdup 433 RR01 L006k Illumina RR01.433_130920_L006k
+@RG	ID:433	LB:L006k	PL:illumina	SM:RR01	PU:RR01.433_130920_L006k
+--
+bwa_Cfru_RUS_Mu_R03_S2_sorted_rmdup
+bwa_Cfru_RUS_Mu_R03_S2_sorted_rmdup 453 RR01 L001l Illumina RR01.453_131003_L001l
+@RG	ID:453	LB:L001l	PL:illumina	SM:RR01	PU:RR01.453_131003_L001l
+--
+bwa_Cfru_RUS_Mu_R03_S3_sorted_rmdup
+bwa_Cfru_RUS_Mu_R03_S3_sorted_rmdup 497 RR01 L003m Illumina RR01.497_140312_L003m
+@RG	ID:497	LB:L003m	PL:illumina	SM:RR01	PU:RR01.497_140312_L003m
+--
+bwa_Cfru_RUS_Mu_R03_S4_sorted_rmdup
+bwa_Cfru_RUS_Mu_R03_S4_sorted_rmdup 498 RR01 L004m Illumina RR01.498_140312_L004m
+@RG	ID:498	LB:L004m	PL:illumina	SM:RR01	PU:RR01.498_140312_L004m
+--
+bwa_Cfru_RUS_Mu_R03_S5_sorted_rmdup
+bwa_Cfru_RUS_Mu_R03_S5_sorted_rmdup 547 RR01 L001n Illumina RR01.547_140515_L001n
+@RG	ID:547	LB:L001n	PL:illumina	SM:RR01	PU:RR01.547_140515_L001n
+--
+bwa_Cfru_RUS_Mu_R04_S1_sorted_rmdup
+bwa_Cfru_RUS_Mu_R04_S1_sorted_rmdup 444 RR02 L007k Illumina RR02.444_130920_L007k
+@RG	ID:444	LB:L007k	PL:illumina	SM:RR02	PU:RR02.444_130920_L007k
+--
+bwa_Cfru_RUS_Mu_R04_S2_sorted_rmdup
+bwa_Cfru_RUS_Mu_R04_S2_sorted_rmdup 464 RR02 L002l Illumina RR02.464_131003_L002l
+@RG	ID:464	LB:L002l	PL:illumina	SM:RR02	PU:RR02.464_131003_L002l
+--
+bwa_Cfru_RUS_Mu_R04_S3_sorted_rmdup
+bwa_Cfru_RUS_Mu_R04_S3_sorted_rmdup 533 RR02 L005m Illumina RR02.533_140312_L005m
+@RG	ID:533	LB:L005m	PL:illumina	SM:RR02	PU:RR02.533_140312_L005m
+--
+bwa_Cfru_RUS_Mu_R04_S4_sorted_rmdup
+bwa_Cfru_RUS_Mu_R04_S4_sorted_rmdup 534 RR02 L006m Illumina RR02.534_140312_L006m
+@RG	ID:534	LB:L006m	PL:illumina	SM:RR02	PU:RR02.534_140312_L006m
+--
+bwa_Cfru_RUS_Mu_R04_S5_sorted_rmdup
+bwa_Cfru_RUS_Mu_R04_S5_sorted_rmdup 553 RR02 L002n Illumina RR02.553_150514_L002n
+@RG	ID:553	LB:L002n	PL:illumina	SM:RR02	PU:RR02.553_150514_L002n
+--
+bwa_Chaw_Oli-Studbook67_S1_sorted_rmdup
+bwa_Chaw_Oli-Studbook67_S1_sorted_rmdup 1021 Oli-Studbook67 L001v Illumina Oli-Studbook67.1021_261114_L001v
+@RG	ID:1021	LB:L001v	PL:illumina	SM:Oli-Studbook67	PU:Oli-Studbook67.1021_261114_L001v
+--
+bwa_Ckub_Rota_21-23-1_S1_sorted_rmdup
+bwa_Ckub_Rota_21-23-1_S1_sorted_rmdup 1019 Rota_21-31-1 L002t Illumina Rota_21-31-1.1019_20514_L002t
+@RG	ID:1019	LB:L002t	PL:illumina	SM:Rota_21-31-1	PU:Rota_21-31-1.1019_20514_L002t
+--
+bwa_Cmone_S_Ri_J01_S1_sorted_rmdup
+bwa_Cmone_S_Ri_J01_S1_sorted_rmdup 135 J01 L003k Illumina J01.135_120913_L003k
+@RG	ID:135	LB:L003k	PL:illumina	SM:J01	PU:J01.135_120913_L003k
+--
+bwa_Cmone_S_Ri_J02_S1_sorted_rmdup
+bwa_Cmone_S_Ri_J02_S1_sorted_rmdup 429 J05 L007g Illumina J05.429_130920_L007g
+@RG	ID:429	LB:L007g	PL:illumina	SM:J05	PU:J05.429_130920_L007g
+--
+bwa_Cmone_S_Ri_J02_S2_sorted_rmdup
+bwa_Cmone_S_Ri_J02_S2_sorted_rmdup 449 J05 L002f Illumina J05.449_131003_L002f
+@RG	ID:449	LB:L002f	PL:illumina	SM:J05	PU:J05.449_131003_L002f
+--
+bwa_Cmone_S_Ri_J03_S1_sorted_rmdup
+bwa_Cmone_S_Ri_J03_S1_sorted_rmdup 479 J03 L007e Illumina J03.479_140227_L007e
+@RG	ID:479	LB:L007e	PL:illumina	SM:J03	PU:J03.479_140227_L007e
+--
+bwa_Cmone_S_Ri_J03_S2_sorted_rmdup
+bwa_Cmone_S_Ri_J03_S2_sorted_rmdup 480 J03 L008e Illumina J03.480_140227_L008e
+@RG	ID:480	LB:L008e	PL:illumina	SM:J03	PU:J03.480_140227_L008e
+--
+bwa_Cmone_S_Ri_J03_S3_sorted_rmdup
+bwa_Cmone_S_Ri_J03_S3_sorted_rmdup 521 J03 L001d Illumina J03.521_140312_L001d
+@RG	ID:521	LB:L001d	PL:illumina	SM:J03	PU:J03.521_140312_L001d
+--
+bwa_Cmone_S_Ri_J03_S4_sorted_rmdup
+bwa_Cmone_S_Ri_J03_S4_sorted_rmdup 522 J03 L002d Illumina J03.522_140312_L002d
+@RG	ID:522	LB:L002d	PL:illumina	SM:J03	PU:J03.522_140312_L002d
+--
+bwa_Cmone_S_Ri_J08_S1_sorted_rmdup
+bwa_Cmone_S_Ri_J08_S1_sorted_rmdup 136 J02 L003k Illumina J02.136_120913_L003k
+@RG	ID:136	LB:L003k	PL:illumina	SM:J02	PU:J02.136_120913_L003k
+--
+bwa_Cmone_S_Ri_J08_S2_sorted_rmdup
+bwa_Cmone_S_Ri_J08_S2_sorted_rmdup 489 J02 L005d Illumina J02.489_140312_L005d
+@RG	ID:489	LB:L005d	PL:illumina	SM:J02	PU:J02.489_140312_L005d
+--
+bwa_Cmone_S_Ri_J08_S3_sorted_rmdup
+bwa_Cmone_S_Ri_J08_S3_sorted_rmdup 490 J02 L006d Illumina J02.490_140312_L006d
+@RG	ID:490	LB:L006d	PL:illumina	SM:J02	PU:J02.490_140312_L006d
+--
+bwa_Cmon_FS66096_S2_sorted_rmdup
+bwa_Cmon_FS66096_S2_sorted_rmdup 1001 FS66096 L001a Illumina FS66096.1001_140514_L001a
+@RG	ID:1001	LB:L001a	PL:illumina	SM:FS66096	PU:FS66096.1001_140514_L001a
+--
+bwa_Cmon_FS66096_S3_sorted_rmdup
+bwa_Cmon_FS66096_S3_sorted_rmdup 1002 FS66096 L007d Illumina FS66096.1002_140514_L007d
+@RG	ID:1002	LB:L007d	PL:illumina	SM:FS66096	PU:FS66096.1002_140514_L007d
+--
+bwa_Cmon_NC3_S1_sorted_rmdup
+bwa_Cmon_NC3_S1_sorted_rmdup 1003 NC3 L007b Illumina NC3.1003_130729_L007b
+@RG	ID:1003	LB:L007b	PL:illumina	SM:NC3	PU:NC3.1003_130729_L007b
+--
+bwa_Cmon_NC3_S2_sorted_rmdup
+bwa_Cmon_NC3_S2_sorted_rmdup 1004 NC3 L002e Illumina NC3.1004_130729_L002e
+@RG	ID:1004	LB:L002e	PL:illumina	SM:NC3	PU:NC3.1004_130729_L002e
+--
+bwa_Cmon_NC3_S3_sorted_rmdup
+bwa_Cmon_NC3_S3_sorted_rmdup 1005 NC3 L001e Illumina NC3.1005_130729_L001e
+@RG	ID:1005	LB:L001e	PL:illumina	SM:NC3	PU:NC3.1005_130729_L001e
+--
+bwa_Cmon_NC3_S4_sorted_rmdup
+bwa_Cmon_NC3_S4_sorted_rmdup 1006 NC3 L001e Illumina NC3.1006_130729_L001e
+@RG	ID:1006	LB:L001e	PL:illumina	SM:NC3	PU:NC3.1006_130729_L001e
+--
+bwa_Cmon_NC5_S1_sorted_rmdup
+bwa_Cmon_NC5_S1_sorted_rmdup 1007 NC5 L001f Illumina NC5.1007_131023_L001f
+@RG	ID:1007	LB:L001f	PL:illumina	SM:NC5	PU:NC5.1007_131023_L001f
+--
+bwa_Cmon_NC5_S2_sorted_rmdup
+bwa_Cmon_NC5_S2_sorted_rmdup 1008 NC5 L002f Illumina NC5.1008_131023_L002f
+@RG	ID:1008	LB:L002f	PL:illumina	SM:NC5	PU:NC5.1008_131023_L002f
+--
+bwa_Cmon_NC6_S1_sorted_rmdup
+bwa_Cmon_NC6_S1_sorted_rmdup 1009 NC6 L001f Illumina NC6.1009_131023_L001f
+@RG	ID:1009	LB:L001f	PL:illumina	SM:NC6	PU:NC6.1009_131023_L001f
+--
+bwa_Cmon_NC6_S2_sorted_rmdup
+bwa_Cmon_NC6_S2_sorted_rmdup 1010 NC6 L002f Illumina NC6.1010_131023_L002f
+@RG	ID:1010	LB:L002f	PL:illumina	SM:NC6	PU:NC6.1010_131023_L002f
+--
+bwa_Cmon_NC8_S1_sorted_rmdup
+bwa_Cmon_NC8_S1_sorted_rmdup 1011 NC8 L001f Illumina NC8.1011_131023_L001f
+@RG	ID:1011	LB:L001f	PL:illumina	SM:NC8	PU:NC8.1011_131023_L001f
+--
+bwa_Cmon_NC8_S2_sorted_rmdup
+bwa_Cmon_NC8_S2_sorted_rmdup 1012 NC8 L002f Illumina NC8.1012_131023_L002f
+@RG	ID:1012	LB:L002f	PL:illumina	SM:NC8	PU:NC8.1012_131023_L002f
+--
+bwa_C.orientalis_RUS_Pr_O01_S1_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O01_S1_sorted_rmdup 28 A01 L005gb Illumina A01.28_120913_L005gb
+@RG	ID:28	LB:L005gb	PL:illumina	SM:A01	PU:A01.28_120913_L005gb
+--
+bwa_C.orientalis_RUS_Pr_O01_S2_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O01_S2_sorted_rmdup 138 A01 L001hb Illumina A01.138_120927_L001hb
+@RG	ID:138	LB:L001hb	PL:illumina	SM:A01	PU:A01.138_120927_L001hb
+--
+bwa_C.orientalis_RUS_Pr_O01_S3_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O01_S3_sorted_rmdup 139 A01 L002hb Illumina A01.139_120927_L002hb
+@RG	ID:139	LB:L002hb	PL:illumina	SM:A01	PU:A01.139_120927_L002hb
+--
+bwa_C.orientalis_RUS_Pr_O01_S4_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O01_S4_sorted_rmdup 140 A01 L003hb Illumina A01.140_120927_L003hb
+@RG	ID:140	LB:L003hb	PL:illumina	SM:A01	PU:A01.140_120927_L003hb
+--
+bwa_C.orientalis_RUS_Pr_O01_S5_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O01_S5_sorted_rmdup 322 A01 L001l Illumina A01.322_121026_L001l
+@RG	ID:322	LB:L001l	PL:illumina	SM:A01	PU:A01.322_121026_L001l
+--
+bwa_C.orientalis_RUS_Pr_O02_S1_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S1_sorted_rmdup 29 A02 L007gb Illumina A02.29_120913_L007gb
+@RG	ID:29	LB:L007gb	PL:illumina	SM:A02	PU:A02.29_120913_L007gb
+--
+bwa_C.orientalis_RUS_Pr_O02_S2_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S2_sorted_rmdup 141 A02 L007hb Illumina A02.141_120927_L007hb
+@RG	ID:141	LB:L007hb	PL:illumina	SM:A02	PU:A02.141_120927_L007hb
+--
+bwa_C.orientalis_RUS_Pr_O02_S3_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S3_sorted_rmdup 142 A02 L008hb Illumina A02.142_120927_L008hb
+@RG	ID:142	LB:L008hb	PL:illumina	SM:A02	PU:A02.142_120927_L008hb
+--
+bwa_C.orientalis_RUS_Pr_O02_S4_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S4_sorted_rmdup 256 A02 L001ka Illumina A02.256_120927_L001ka
+@RG	ID:256	LB:L001ka	PL:illumina	SM:A02	PU:A02.256_120927_L001ka
+--
+bwa_C.orientalis_RUS_Pr_O02_S5_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S5_sorted_rmdup 257 A02 L002ka Illumina A02.257_120927_L002ka
+@RG	ID:257	LB:L002ka	PL:illumina	SM:A02	PU:A02.257_120927_L002ka
+--
+bwa_C.orientalis_RUS_Pr_O02_S6_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S6_sorted_rmdup 323 A02 L003l Illumina A02.323_121026_L003l
+@RG	ID:323	LB:L003l	PL:illumina	SM:A02	PU:A02.323_121026_L003l
+--
+bwa_C.orientalis_RUS_Pr_O02_S7_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O02_S7_sorted_rmdup 425 A02 L008ma Illumina A02.425_130426_L008ma
+@RG	ID:425	LB:L008ma	PL:illumina	SM:A02	PU:A02.425_130426_L008ma
+--
+bwa_C.orientalis_RUS_Pr_O03_S1_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O03_S1_sorted_rmdup 30 A03 L005gb Illumina A03.30_120913_L005gb
+@RG	ID:30	LB:L005gb	PL:illumina	SM:A03	PU:A03.30_120913_L005gb
+--
+bwa_C.orientalis_RUS_Pr_O03_S2_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O03_S2_sorted_rmdup 143 A03 L004hb Illumina A03.143_120927_L004hb
+@RG	ID:143	LB:L004hb	PL:illumina	SM:A03	PU:A03.143_120927_L004hb
+--
+bwa_C.orientalis_RUS_Pr_O03_S3_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O03_S3_sorted_rmdup 144 A03 L005hb Illumina A03.144_120927_L005hb
+@RG	ID:144	LB:L005hb	PL:illumina	SM:A03	PU:A03.144_120927_L005hb
+--
+bwa_C.orientalis_RUS_Pr_O03_S4_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O03_S4_sorted_rmdup 145 A03 L006hb Illumina A03.145_120927_L006hb
+@RG	ID:145	LB:L006hb	PL:illumina	SM:A03	PU:A03.145_120927_L006hb
+--
+bwa_C.orientalis_RUS_Pr_O03_S5_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O03_S5_sorted_rmdup 421 A03 L008ma Illumina A03.421_130426_L008ma
+@RG	ID:421	LB:L008ma	PL:illumina	SM:A03	PU:A03.421_130426_L008ma
+--
+bwa_C.orientalis_RUS_Pr_O04_S1_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O04_S1_sorted_rmdup 31 A04 L007gb Illumina A04.31_120913_L007gb
+@RG	ID:31	LB:L007gb	PL:illumina	SM:A04	PU:A04.31_120913_L007gb
+--
+bwa_C.orientalis_RUS_Pr_O04_S2_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O04_S2_sorted_rmdup 146 A04 L007hb Illumina A04.146_120927_L007hb
+@RG	ID:146	LB:L007hb	PL:illumina	SM:A04	PU:A04.146_120927_L007hb
+--
+bwa_C.orientalis_RUS_Pr_O04_S3_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O04_S3_sorted_rmdup 147 A04 L008hb Illumina A04.147_120927_L008hb
+@RG	ID:147	LB:L008hb	PL:illumina	SM:A04	PU:A04.147_120927_L008hb
+--
+bwa_C.orientalis_RUS_Pr_O04_S4_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O04_S4_sorted_rmdup 258 A04 L001ka Illumina A04.258_120927_L001ka
+@RG	ID:258	LB:L001ka	PL:illumina	SM:A04	PU:A04.258_120927_L001ka
+--
+bwa_C.orientalis_RUS_Pr_O04_S5_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O04_S5_sorted_rmdup 259 A04 L002ka Illumina A04.259_120927_L002ka
+@RG	ID:259	LB:L002ka	PL:illumina	SM:A04	PU:A04.259_120927_L002ka
+--
+bwa_C.orientalis_RUS_Pr_O05_S1_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O05_S1_sorted_rmdup 32 A05 L005gb Illumina A05.32_120913_L005gb
+@RG	ID:32	LB:L005gb	PL:illumina	SM:A05	PU:A05.32_120913_L005gb
+--
+bwa_C.orientalis_RUS_Pr_O05_S2_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O05_S2_sorted_rmdup 148 A05 L004hb Illumina A05.148_120927_L004hb
+@RG	ID:148	LB:L004hb	PL:illumina	SM:A05	PU:A05.148_120927_L004hb
+--
+bwa_C.orientalis_RUS_Pr_O05_S3_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O05_S3_sorted_rmdup 149 A05 L005hb Illumina A05.149_120927_L005hb
+@RG	ID:149	LB:L005hb	PL:illumina	SM:A05	PU:A05.149_120927_L005hb
+--
+bwa_C.orientalis_RUS_Pr_O05_S4_sorted_rmdup
+bwa_C.orientalis_RUS_Pr_O05_S4_sorted_rmdup 150 A05 L006hb Illumina A05.150_120927_L006hb
+@RG	ID:150	LB:L006hb	PL:illumina	SM:A05	PU:A05.150_120927_L006hb
+--
+bwa_C.orientalis_RUS_Tv_O01_S1_sorted_rmdup
+bwa_C.orientalis_RUS_Tv_O01_S1_sorted_rmdup 428 A18 L006b Illumina A18.428_130516_L006b
+@RG	ID:428	LB:L006b	PL:illumina	SM:A18	PU:A18.428_130516_L006b
+--
+bwa_Csplendens_CKW77_L002_sorted_rmdup
+bwa_Csplendens_CKW77_L002_sorted_rmdup 1023 CKW77 L002c Illumina CKW77.1023_11015_L002c
+@RG	ID:1023	LB:L002c	PL:illumina	SM:CKW77	PU:CKW77.1023_11015_L002c
+--
+bwa_Csplendens_CKW77_L003_sorted_rmdup
+bwa_Csplendens_CKW77_L003_sorted_rmdup 1024 CKW77 L003c Illumina CKW77.1024_11015_L003c
+@RG	ID:1024	LB:L003c	PL:illumina	SM:CKW77	PU:CKW77.1024_11015_L003c
+--
+bwa_Csplendens_CSW7069_L002_sorted_rmdup
+bwa_Csplendens_CSW7069_L002_sorted_rmdup 1025 CSW7069 L002c Illumina CSW7069.1025_11015_L002c
+@RG	ID:1025	LB:L002c	PL:illumina	SM:CSW7069	PU:CSW7069.1025_11015_L002c
+--
+bwa_Csplendens_CSW7069_L003_sorted_rmdup
+bwa_Csplendens_CSW7069_L003_sorted_rmdup 1026 CSW7069 L003c Illumina CSW7069.1026_11015_L003c
+@RG	ID:1026	LB:L003c	PL:illumina	SM:CSW7069	PU:CSW7069.1026_11015_L003c
+--
+bwa_Csplendens_EVL981_L002_sorted_rmdup
+bwa_Csplendens_EVL981_L002_sorted_rmdup 1027 EVL981 L002c Illumina EVL981.1027_11015_L002c
+@RG	ID:1027	LB:L002c	PL:illumina	SM:EVL981	PU:EVL981.1027_11015_L002c
+--
+bwa_Csplendens_EVL981_L003_sorted_rmdup
+bwa_Csplendens_EVL981_L003_sorted_rmdup 1028 EVL981 L003c Illumina EVL981.1028_11015_L003c
+@RG	ID:1028	LB:L003c	PL:illumina	SM:EVL981	PU:EVL981.1028_11015_L003c
+--
+bwa_Csplendens_LKW131_L002_sorted_rmdup
+bwa_Csplendens_LKW131_L002_sorted_rmdup 1029 LKW131 L002c Illumina LKW131.1029_11015_L002c
+@RG	ID:1029	LB:L002c	PL:illumina	SM:LKW131	PU:LKW131.1029_11015_L002c
+--
+bwa_Csplendens_LKW131_L003_sorted_rmdup
+bwa_Csplendens_LKW131_L003_sorted_rmdup 1030 LKW131 L003c Illumina LKW131.1030_11015_L003c
+@RG	ID:1030	LB:L003c	PL:illumina	SM:LKW131	PU:LKW131.1030_11015_L003c
+--
+bwa_Csplendens_PJG222_L002_sorted_rmdup
+bwa_Csplendens_PJG222_L002_sorted_rmdup 1031 PJG222 L002c Illumina PJG222.1031_11015_L002c
+@RG	ID:1031	LB:L002c	PL:illumina	SM:PJG222	PU:PJG222.1031_11015_L002c
+--
+bwa_Csplendens_PJG222_L003_sorted_rmdup
+bwa_Csplendens_PJG222_L003_sorted_rmdup 1032 PJG222 L003c Illumina PJG222.1032_11015_L003c
+@RG	ID:1032	LB:L003c	PL:illumina	SM:PJG222	PU:PJG222.1032_11015_L003c
+--
+bwa_Ctas_B44919_S1_sorted_rmdup
+bwa_Ctas_B44919_S1_sorted_rmdup 1022 B44919 L002v Illumina B44919.1022_261114_L002v
+@RG	ID:1022	LB:L002v	PL:illumina	SM:B44919	PU:B44919.1022_261114_L002v
+--
+bwa_Cwoo_MLK164_S1_sorted_rmdup
+bwa_Cwoo_MLK164_S1_sorted_rmdup 1015 MLK164 L001f Illumina MLK164.1015_131023_L001f
+@RG	ID:1015	LB:L001f	PL:illumina	SM:MLK164	PU:MLK164.1015_131023_L001f
+--
+bwa_Cwoo_MLK164_S2_sorted_rmdup
+bwa_Cwoo_MLK164_S2_sorted_rmdup 1016 MLK164 L002f Illumina MLK164.1016_131023_L002f
+@RG	ID:1016	LB:L002f	PL:illumina	SM:MLK164	PU:MLK164.1016_131023_L002f
+--
+bwa_Cwoo_MLK166_S1_sorted_rmdup
+bwa_Cwoo_MLK166_S1_sorted_rmdup 1017 MLK166 L001f Illumina MLK166.1017_131023_L001f
+@RG	ID:1017	LB:L001f	PL:illumina	SM:MLK166	PU:MLK166.1017_131023_L001f
+--
+bwa_Cwoo_MLK166_S2_sorted_rmdup
+bwa_Cwoo_MLK166_S2_sorted_rmdup 1018 MLK166 L002f Illumina MLK166.1018_131023_L002f
+@RG	ID:1018	LB:L002f	PL:illumina	SM:MLK166	PU:MLK166.1018_131023_L002f
+--
+bwa_Cwoo_MLK92_S1_sorted_rmdup
+bwa_Cwoo_MLK92_S1_sorted_rmdup 1013 MLK92 L001f Illumina MLK92.1013_131023_L001f
+@RG	ID:1013	LB:L001f	PL:illumina	SM:MLK92	PU:MLK92.1013_131023_L001f
+--
+bwa_Cwoo_MLK92_S2_sorted_rmdup
+bwa_Cwoo_MLK92_S2_sorted_rmdup 1014 MLK92 L002f Illumina MLK92.1014_131023_L002f
+@RG	ID:1014	LB:L002f	PL:illumina	SM:MLK92	PU:MLK92.1014_131023_L002f
+--
+bwa_Cwoo_CROW12_L003_sorted_rmdup
+bwa_Cwoo_CROW12_L003_sorted_rmdup 1034 CROW12 L003c Illumina CROW12.1034_151015_L003c
+@RG	ID:1034	LB:L003c	PL:illumina	SM:CROW12	PU:CROW12.1034_151015_L003c
+--
+bwa_Cwoo_CROWR21_L002_sorted_rmdup
+bwa_Cwoo_CROWR21_L002_sorted_rmdup 1035 CROWR21 L002c Illumina CROWR21.1035_151015_L002c
+@RG	ID:1035	LB:L002c	PL:illumina	SM:CROWR21	PU:CROWR21.1035_151015_L002c
+--
+bwa_Cwoo_CROWR21_L003_sorted_rmdup
+bwa_Cwoo_CROWR21_L003_sorted_rmdup 1036 CROWR21 L003c Illumina CROWR21.1036_151015_L003c
+@RG	ID:1036	LB:L003c	PL:illumina	SM:CROWR21	PU:CROWR21.1036_151015_L003c
+--
+bwa_Cwoo_CROW12_L002_sorted_rmdup
+bwa_Cwoo_CROW12_L002_sorted_rmdup 1033 CROW12 L002c Illumina CROW12.1033_151015_L002c
+@RG	ID:1033	LB:L002c	PL:illumina	SM:CROW12	PU:CROW12.1033_151015_L002c
+--
+bwa_C.cornix_RUS_No_H03_S1_sorted_rmdup
+bwa_C.cornix_RUS_No_H03_S1_sorted_rmdup 426 A12 L001f Illumina A12.426_130426_L001f
+@RG	ID:426	LB:L001f	PL:illumina	SM:A12	PU:A12.426_130426_L001f
+--
+bwa_C.cornix_S_Up_H03_S1_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S1_sorted_rmdup 23 S01 L008m Illumina S01.23_120806_L008m
+@RG	ID:23	LB:L008m	PL:illumina	SM:S01	PU:S01.23_120806_L008m
+--
+bwa_C.cornix_S_Up_H03_S2_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S2_sorted_rmdup 100 S01 L003ga Illumina S01.100_120913_L003ga
+@RG	ID:100	LB:L003ga	PL:illumina	SM:S01	PU:S01.100_120913_L003ga
+--
+bwa_C.cornix_S_Up_H03_S3_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S3_sorted_rmdup 101 S01 L004ga Illumina S01.101_120913_L004ga
+@RG	ID:101	LB:L004ga	PL:illumina	SM:S01	PU:S01.101_120913_L004ga
+--
+bwa_C.cornix_S_Up_H03_S4_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S4_sorted_rmdup 308 S01 L002aa Illumina S01.308_120815_L002aa
+@RG	ID:308	LB:L002aa	PL:illumina	SM:S01	PU:S01.308_120815_L002aa
+--
+bwa_C.cornix_S_Up_H03_S5_sorted_rmdup
+bwa_C.cornix_S_Up_H03_S5_sorted_rmdup 334 S01 L004lb Illumina S01.334_121026_L004lb
+@RG	ID:334	LB:L004lb	PL:illumina	SM:S01	PU:S01.334_121026_L004lb
+--
+bwa_Cfru_IRL_Lm_R01_S1_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S1_sorted_rmdup 225 R01 L007i Illumina R01.225_120927_L007i
+@RG	ID:225	LB:L007i	PL:illumina	SM:R01	PU:R01.225_120927_L007i
+--
+bwa_Cfru_IRL_Lm_R01_S2_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S2_sorted_rmdup 226 R01 L008i Illumina R01.226_120927_L008i
+@RG	ID:226	LB:L008i	PL:illumina	SM:R01	PU:R01.226_120927_L008i
+--
+bwa_Cfru_IRL_Lm_R01_S3_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S3_sorted_rmdup 280 R01 L001j Illumina R01.280_120927_L001j
+@RG	ID:280	LB:L001j	PL:illumina	SM:R01	PU:R01.280_120927_L001j
+--
+bwa_Cfru_IRL_Lm_R01_S4_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S4_sorted_rmdup 281 R01 L002j Illumina R01.281_120927_L002j
+@RG	ID:281	LB:L002j	PL:illumina	SM:R01	PU:R01.281_120927_L002j
+--
+bwa_Cfru_IRL_Lm_R01_S5_sorted_rmdup
+bwa_Cfru_IRL_Lm_R01_S5_sorted_rmdup 99 R01 L007g Illumina R01.99_120913_L007g
+@RG	ID:99	LB:L007g	PL:illumina	SM:R01	PU:R01.99_120913_L007g

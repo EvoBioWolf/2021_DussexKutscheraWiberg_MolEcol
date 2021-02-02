@@ -1,0 +1,106 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core -n 3
+#SBATCH -t 8-00:00:00
+#SBATCH -J 3sp_mpileup_consensus
+
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#species ID to name input list of bams: ${1}
+
+module load bioinfo-tools
+module load samtools/1.3
+module load GATK/3.4.0
+module load bcftools/1.3
+module load htslib/1.3
+# Define variables
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5* ${SNIC_TMP}/
+
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_B_So_H04_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_ISR_TA_H01_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_ITA_Ro_H11_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_ITA_Ro_H12_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_PL_Wa_H22_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_RUS_No_H03_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_S_Up_H03_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.cornix_S_Up_H09_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_D_Ko_C04_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_D_Ko_C13_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_D_Ko_C15_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_D_Ra_C05_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_D_Ra_C16_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_E_Vi_C01_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_E_Vi_C57_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.corone_E_Vi_C58_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.orientalis_RUS_Pr_O01_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.orientalis_RUS_Pr_O02_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.orientalis_RUS_Pr_O03_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.orientalis_RUS_Pr_O04_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.orientalis_RUS_Pr_O05_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_C.orientalis_RUS_Tv_O01_merged_mrkdup_indraln.bam ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Make list of bam files to pass to mpileup
+ls -1 bwa_C*.bam > ${1}_sorted_bams 
+
+# 1) MAKE A VCF FILE
+#####################
+# Make consensus
+samtools mpileup -f genome_HC_allpaths41687_v2.5.fasta -b ${1}_sorted_bams -g -t DP -u -s | bcftools call -c -M -O v - > consensus_${1}.vcf
+
+# Zip and indext the vcf files
+bgzip consensus_${1}.vcf
+tabix -p vcf consensus_${1}.vcf.gz
+
+# 2) FILTER THE VCF FILE
+########################
+# Remove INDELS from consensus.vcf
+# This keeps the genome lengths the same and means the annotation coordinates will match up.
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5.fasta --variant:VCF consensus_${1}.vcf.gz -o consensus_${1}_snps.vcf --selectTypeToExclude INDEL
+# Zip and indext the vcf files
+bgzip consensus_${1}_snps.vcf
+tabix -p vcf consensus_${1}_snps.vcf.gz
+
+# Get the positions of all sites with depth < 5x
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5.fasta --variant:VCF consensus_${1}.vcf.gz -o consensus_${1}_lowDP.vcf.gz -select "DP < 5"
+
+# Get the positions of all sites where the alternative allele has frequency > 0.5
+vcftools --gzvcf consensus_${1}.vcf.gz  --non-ref-af 0.5 --recode --recode-INFO-all --out consensus_${1}_SNPsaf0.5
+
+# Convert these vcf files to simple bed coordinate files by extracting the first two columns
+bgzip -cd consensus_${1}_lowDP.vcf.gz | grep -v '^#' | awk '{print $1 "\t" $2}' > consensus_${1}_lowDP.tab
+grep -v '^#' consensus_${1}_SNPsaf0.5.recode.vcf | awk '{print $1 "\t" $2}' > consensus_${1}_SNPsaf0.5.tab
+
+# Combine the bed files, sort by position, take only unique rows, remove all "chrM" entries
+cat consensus_${1}_lowDP.tab consensus_${1}_SNPsaf0.5.tab | sort -k1,1 -k2,2n -u > consensus_${1}_lowDP_SNPsaf0.5.tab
+
+# Zip and index the vcf file of true SNPs to save space
+bgzip consensus_${1}_SNPsaf0.5.recode.vcf
+tabix -p vcf consensus_${1}_SNPsaf0.5.recode.vcf.gz
+
+# 3) BUILD CONSENSUS GENOME
+###########################
+
+# Convert consensus .vcf (without indels) to .fasta, masking sites from the list file
+bcftools consensus --mask consensus_${1}_lowDP_SNPsaf0.5.tab --fasta-ref genome_HC_allpaths41687_v2.5.fasta consensus_${1}_snps.vcf.gz > ${1}_unfixed_af0.5.fa
+
+# Rename fasta headers
+perl -pne 's/>\d+\s+(.*):.*/>\1/' ${1}_unfixed_af0.5.fa > consensus_${1}_af0.5.fa
+
+# Move files back to
+cp ${SNIC_TMP}/consensus_${1}_af0.5.fa ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/
+cp ${SNIC_TMP}/consensus_${1}.vcf* ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/
+cp ${SNIC_TMP}/consensus_${1}_lowDP_SNPsaf0.5.tab ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/
+
+# Move files back to
+cp ${SNIC_TMP}/consensus*_snps.vc* ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/
+

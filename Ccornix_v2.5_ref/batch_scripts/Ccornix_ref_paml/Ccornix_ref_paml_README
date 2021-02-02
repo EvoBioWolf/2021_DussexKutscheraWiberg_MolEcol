@@ -1,0 +1,12 @@
+Pipeline for obtaining gene sequences using Ccornix reference annotation.
+
+1) Move to the batch scripts directory. This will ensure logs are saved in this directory.
+
+$ cd /proj/b2013182/nobackup/batch_scripts/Ccornix_ref_genomecov_masking/
+
+2) Run the extracting scripts for each species
+
+# 3sp_Ccornix
+$ sbatch Ccornix_ref_extract_genes.bsh 3sp_Ccornix
+
+

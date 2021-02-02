@@ -1,0 +1,11 @@
+Pipeline for obtaining Ccornix reference genome stats.
+
+1) move to the batch scripts directory. This will ensure logs are saved in this directory.
+
+$ cd /proj/b2013182/nobackup/batch_scripts/Ccornix_ref_genome_stats/
+
+2) Count base stats for Ccornix reference genome.
+
+#C. cornix
+$ sbatch Ccornix_genome_base_stats.bsh
+

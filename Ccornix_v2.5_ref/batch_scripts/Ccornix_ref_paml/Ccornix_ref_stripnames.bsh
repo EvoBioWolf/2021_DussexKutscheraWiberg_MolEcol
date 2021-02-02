@@ -1,0 +1,33 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J clean_fasta
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+
+crowdata=/proj/b2013182/
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/paml/${1}/${2}/
+
+# Copy the files from the directory
+cp ${outdir}*_clean.fasta ${SNIC_TMP}/
+
+# Clean the individual fasta files
+cd ${SNIC_TMP}/
+for f in $(ls *_clean.fasta | sed 's/_clean.fasta//g'); \
+do stripFastaNames.py -f ${f}_clean.fasta -of ${f}_clean_names; \
+done
+wait
+
+# Copy the files back
+for file in $(ls *_clean_names.fasta); do cp ${file} ${outdir}/; done
+
+# Cleanup
+rm ${SNIC_TMP}/*_clean.fasta
+rm ${SNIC_TMP}/*_clean_names.fasta

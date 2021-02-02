@@ -1,0 +1,54 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 0-06:00:00
+#SBATCH -J codeml
+
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load prank
+module load biopython
+module load paml/4.6
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+
+cp ${crowdata}/nobackup/bams/Cmon_Ref/PAML/$1/$2/*tree ${SNIC_TMP}/
+cp ${crowdata}/nobackup/bams/Cmon_Ref/PAML/$1/$2/*nuc_clean.phy ${SNIC_TMP}/
+cp ${crowdata}/nobackup/bams/Cmon_Ref/PAML/$1/$2/*ctl ${SNIC_TMP}/
+cp ${crowdata}/nobackup/batch_scripts/Cmon_Ref/PAML/createCodemlCtlFile.py  ${SNIC_TMP}/
+cp ${crowdata}/nobackup/batch_scripts/Cmon_Ref/PAML/expect_codeml_II.bsh ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+##################################
+### MODEL A (branch-site model)###
+##################################
+#(for i in $(ls *nuc_clean.phy);
+#do
+#python createCodemlCtlFile.py -seqfile $i -treefile tree_all_1.tree -noisy 1 -runmode 0 -model 2 -fix_omega 0 -NSsites 2 -verbose 0 -handle variable 
+#done)
+
+#(for i in $(ls *nuc_clean.phy);
+#do 
+#python createCodemlCtlFile.py -seqfile $i -treefile tree_all_1.tree -noisy 1 -runmode 0 -model 2 -omega 1 -fix_omega 1 -NSsites 2 -verbose 0 -handle fixed
+#done)
+
+### run codeml
+for i in $(ls *.ctl);
+do 
+${SNIC_TMP}/expect_codeml_II.bsh $i;
+done
+
+#################################################
+####
+## Copy .out files to nobackup
+####
+
+cp ${SNIC_TMP}/*.txt  ${crowdata}/nobackup/bams/Cmon_Ref/PAML/$1/$2

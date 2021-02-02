@@ -1,0 +1,51 @@
+#!/bin/bash -l
+#SBATCH -A snic2017-1-599
+#SBATCH	-p core -n 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J Cmon_plink_pca
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load bioinfo-tools
+module load samtools/1.3
+module load htslib/1.3
+module load vcftools/0.1.14
+module load picard/2.10.3
+module load plink/1.90b4.9
+module load GATK/3.5.0
+# Define variables
+crowdata=/crex/proj/uppstore2017157/b2013182/private/bams/Ccornix_ref/pop_genomics/
+
+# Copy files from home to tmp directory
+cp ${crowdata}/Cmon_snps.vc* ${SNIC_TMP}/
+cp /crex/proj/uppstore2017157/b2013182/private/bams/Ccornix_ref/consensus_per_species/genome_HC_allpaths41687_v2.5_mskReps.fa ${SNIC_TMP}/
+
+
+# Move to tmp/ directory and unzip
+cd ${SNIC_TMP}
+
+java -jar /sw/apps/bioinfo/picard/2.10.3/milou/picard.jar CreateSequenceDictionary R=genome_HC_allpaths41687_v2.5_mskReps.fa O=genome_HC_allpaths41687_v2.5_mskReps.dict
+
+samtools faidx genome_HC_allpaths41687_v2.5_mskReps.fa
+
+gunzip Cmon_snps.vcf.gz
+
+# Subset .vcf file to just SNPs and DP > 5
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5_mskReps.fa --variant:VCF Cmon_snps.vcf -o Cmon_SnpsOnly.vcf --selectTypeToInclude SNP -select "DP > 5"
+
+grep -v "chrM" Cmon_SnpsOnly.vcf > Cmon_SnpsOnly_noMito.vcf
+cp ${SNIC_TMP}/Cmon_SnpsOnly.vcf ${crowdata}/
+rm ${SNIC_TMP}/Cmon_SnpsOnly.vcf
+
+# Reformat to PLINK format
+vcftools --vcf Cmon_SnpsOnly_noMito.vcf --plink --out Cmon_plink
+
+# Run PLINK PCA
+plink --ped Cmon_plink.ped --map Cmon_plink.map --pca --out Cmon_plink_out
+
+# Move Results files back to
+cp ${SNIC_TMP}/Cmon_SnpsOnly* ${crowdata}/
+cp ${SNIC_TMP}/Cmon_plink_out* ${crowdata}/
+
+

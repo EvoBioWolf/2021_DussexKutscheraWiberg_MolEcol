@@ -1,0 +1,45 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core -n 1
+#SBATCH -t 0-04:00:00
+#SBATCH -J CDS_sets_Ccornix
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load samtools
+module load BEDTools
+module load cufflinks/2.2.1
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+### annotation C. cornix: NCBI version
+cp ${crowdata}/private/annotation/Ccornix/201506_annotation_files/Ccornix_NCBI_annotation_scaffrnm_nomito_lCDS.gff ${SNIC_TMP}/
+cp ${crowdata}/private/annotation/Ccornix/201506_annotation_files/Ccornix_NCBI_annotation_scaffrnm_nomito_labCDS.gff ${SNIC_TMP}/ 
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5.fas* ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+#### get features with gffread
+gffread -g genome_HC_allpaths41687_v2.5.fasta -x Ccornix_reference_lCDS_nucl.fa Ccornix_NCBI_annotation_scaffrnm_nomito_lCDS.gff
+gffread -g genome_HC_allpaths41687_v2.5.fasta -x Ccornix_reference_CDS_nucl.fa Ccornix_NCBI_annotation_scaffrnm_nomito_labCDS.gff
+gffread -g genome_HC_allpaths41687_v2.5.fasta -y Ccornix_reference_lCDS_pep.fa Ccornix_NCBI_annotation_scaffrnm_nomito_lCDS.gff
+gffread -g genome_HC_allpaths41687_v2.5.fasta -y Ccornix_reference_CDS_pep.fa Ccornix_NCBI_annotation_scaffrnm_nomito_labCDS.gff
+
+####replace fasta header data by species specific name
+sed -e 's/>\(rna.*\) \(gene=.*\)/>Ccornix_\1_\2/g' Ccornix_reference_lCDS_nucl.fa > Ccornix_reference_lCDS_rnm_nucl.fa
+sed -e 's/>\(rna.*\) \(gene=.*\)/>Ccornix_\1_\2/g' Ccornix_reference_CDS_nucl.fa > Ccornix_reference_CDS_rnm_nucl.fa
+sed -e 's/>\(rna.*\) \(gene=.*\)/>Ccornix_\1_\2/g' Ccornix_reference_lCDS_pep.fa > Ccornix_reference_lCDS_rnm_pep.fa
+sed -e 's/>\(rna.*\) \(gene=.*\)/>Ccornix_\1_\2/g' Ccornix_reference_CDS_pep.fa > Ccornix_reference_CDS_rnm_pep.fa
+
+#################################################
+####
+## Copy .fa files to private
+####
+cp ${SNIC_TMP}/Ccornix_reference_lCDS_rnm_nucl.fa ${crowdata}/private/bams/Ccornix_ref/orthologs/
+cp ${SNIC_TMP}/Ccornix_reference_CDS_rnm_nucl.fa ${crowdata}/private/bams/Ccornix_ref/orthologs/
+cp ${SNIC_TMP}/Ccornix_reference_lCDS_rnm_pep.fa ${crowdata}/private/bams/Ccornix_ref/orthologs/
+cp ${SNIC_TMP}/Ccornix_reference_CDS_rnm_pep.fa ${crowdata}/private/bams/Ccornix_ref/orthologs/

@@ -1,0 +1,52 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p node
+#SBATCH -N 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J merge_4species_bam_files
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#ID of bam files to use: ${1}
+#ID to name list of .bams: ${2}
+module load bioinfo-tools
+module load samtools/1.3
+module load bamtools/2.3.0
+
+crowdata=/proj/b2013182
+
+#copy files from home to tmp directory; merge C.corone, cornix, orientalis and torquatus
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.cornix_B_So_H04_S5_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H11_S1_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.cornix_RUS_No_H03_S1_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H03_S5_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H09_S5_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C13_S4_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C01_S1_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C16_S4_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C57_S1_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C04_S3_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Tv_O01_S1_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O01_S5_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S7_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O05_S3_sorted_rmdup.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O05_S1_sorted_rmdup.bam ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Create a list of all the _sorted.bam files
+ls -1 bwa_C*.bam > ${1}_sorted_bams
+
+# Merge the bams from the list
+bamtools merge -list ${1}_sorted_bams -out ${1}_all_samples.bam
+
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o ${1}_all_samples_rmdup_sorted.bam ${1}_all_samples.bam
+
+#################################################
+####
+## Copy _all_samples.bam files to nobackup
+####
+cp ${SNIC_TMP}/*all_samples_rmdup_sorted.bam ${crowdata}/private/bams/Ccornix_ref/merged_bams_per_species/

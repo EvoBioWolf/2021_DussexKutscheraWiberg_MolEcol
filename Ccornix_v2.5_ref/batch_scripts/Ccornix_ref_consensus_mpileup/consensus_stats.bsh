@@ -1,0 +1,27 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core -n 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J consensus_fastaStats
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#species ID to look for in vcf files: ${1}
+module load bioinfo-tools
+module load biopython/1.68
+
+# Define variables
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp ${crowdata}/private/bams/Ccornix_ref/masked_genomes/${1}_${2}_genome.fa ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+# Run fastaStats.py
+fastaStats.py -f ${1}_${2}_genome.fa -t p > consensus_${1}_${2}_fastastats.tab
+
+# Move files back to
+#cp ${SNIC_TMP}/*recode.vcf.gz ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf
+cp ${SNIC_TMP}/consensus_${1}_${2}_fastastats.tab ${crowdata}/private/bams/Ccornix_ref/masked_genomes/

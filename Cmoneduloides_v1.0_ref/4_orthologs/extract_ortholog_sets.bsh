@@ -1,0 +1,37 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 0-04:00:00
+#SBATCH -J ortholog_sets
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load cufflinks/2.2.1
+
+Usage
+#cd /proj/b2013182/private/bams/Cmon_Ref/Consensus_per_species_nodup
+#(for i in *.fa;  do sbatch /proj/b2013182/nobackup/batch_scripts/Cmon_Ref/orthologs/ortholog_sets_June2017.bsh ${i/_consensus_masked.fa/}; done)
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+cp ${crowdata}/private/annotation/Cmoneduloides/Liftovers/NCcrow_v2_renamed_CDS.gff ${SNIC_TMP}/ ### annotationNC crow
+cp ${crowdata}/private/bams/Cmon_Ref/Consensus_per_species/$1_consensus_masked.fa ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+#### which features of the gff to keep?
+gffread -g $1_consensus_masked.fa -x $1_orthologs.fa  NCcrow_v2_renamed_CDS.gff
+
+####replace Cmoneduloides by species specific name
+perl -pne 's/Cmoneduloides_(.*)/'$1'_\1/' $1_orthologs.fa > $1_renamed_orthologs.fa
+
+#################################################
+####
+## Copy .fa files to private
+####
+cp ${SNIC_TMP}/*renamed_orthologs.fa ${crowdata}/private/bams/Cmon_Ref/orthologs_datasets

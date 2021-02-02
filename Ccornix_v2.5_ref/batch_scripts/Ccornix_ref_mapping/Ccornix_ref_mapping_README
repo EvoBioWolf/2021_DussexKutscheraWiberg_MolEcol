@@ -1,0 +1,133 @@
+
+Pipeline for mapping reads from each species to C. cornix reference genome
+
+1) move to the trimmed reads directory
+
+$ cd /proj/b2013182/private/trimmed_reads/
+OR
+$ cd /proj/b2013182/nobackup/trimmed_reads/all_used_trimmed_reads/
+
+2) run the mapping batch script for each individual within a species separately
+
+# C. corax 
+$ for i in $(ls Ccorx*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. woodfordii 
+$ for i in $(ls Cwoo*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. moneduloides 
+$ for i in $(ls Cmon_*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. monedula 
+$ for i in $(ls Cmone*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. brachyrhynchos
+$ for i in $(ls Cbrach*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. tasmanicus
+$ for i in $(ls Ctas*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. orientalis
+$ for i in $(ls C.orie*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. frugilegus
+$ for i in $(ls Cfru*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. hawaiiensis
+$ for i in $(ls Chaw*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. cornix
+$ for i in $(ls C.cornix*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. corone
+$ for i in $(ls C.corone*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. dauricus
+$ for i in $(ls Cdau*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+# C. kubaryi
+$ for i in $(ls Ckub*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+#C. splendens
+$ for i in $(ls Csple*_tqc_pe_R1*.fq.gz | sed 's/_tqc_pe_R1.fq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/All_mapping_JAN16_1by1_Ccornix.bsh ${i}
+$ done
+
+#N. columbiana
+$ for i in $(ls SRR*pe*1*.fastq.gz | sed 's/pe_1.fastq.gz//g')
+$ do 
+$ sbatch /proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_mapping/Ncol_mapping_APR16_Ccornix.bsh ${i}
+$ done
+
+
+#3) Add readgroups
+$ for bam in $(find ${crowdata}/nobackup/POPseq/vcf/raw_bams/Ccornix_v2.5/ -name '*.bam' -exec basename {} \; | sed 's/.bam//g'); 
+$ 	do sbatch step1.1_readgroup_fix.sh ${bam}; 
+$ done
+
+$ sbatch getbamstats.sh rg.bam readgroups /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams
+
+#3) Mark duplicates
+$ for bam in $(find /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams/ -name '*rg.bam' -exec basename {} \; | sed 's/.bam//g'); 
+$ 	do sbatch step1.2_step1.3B_mark_dupl.sh ${bam}; 
+$ done
+
+$ sbatch getbamstats.sh rg_mrkdup.bam rg_mrkdups /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams
+
+#4) Merge bams
+$ sh step1.3_start_all_merge_jobs.sh
+
+#5) Mark duplicates
+$ for bam in $(find /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams/ -name '*merged.bam' -exec basename {} \; | sed 's/.bam//g'); 
+$ 	do sbatch step1.2_step1.3B_mark_dupl.sh ${bam};
+$ done
+
+$ sbatch getbamstats.sh rg_mrkdup.bam rg_mrkdups /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams
+
+#6) Indel realignment
+$ for bam in $(find /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams/ -name '*merged_mrkdup.bam' -exec basename {} \; | sed 's/.bam//g'); 
+$ 	do sbatch step2_indel_realignment_combined.sh ${bam};
+$ done
+
+$ sbatch getbamstats.sh rg_mrkdup.bam rg_mrkdups /proj/b2013182/nobackup/PHYLO/Ccornix_v2.5/processed_bams
+

@@ -1,0 +1,49 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p node -N 1
+#SBATCH -t 0-10:00:00
+#SBATCH -J mapping_bwa_1by1_Ccorn
+
+# This script maps reads to the C. cornix reference
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+# ${1} refers to the read files passed to this script as an argument
+
+module load bioinfo-tools
+module load bwa/0.7.13
+module load samtools/1.3
+
+crowdata=/proj/b2013182
+
+# copy files from home to tmp directory
+cp ${crowdata}/nobackup/trimmed_reads/all_used_trimmed_reads/${1}*pe* ${SNIC_TMP}/
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5* ${SNIC_TMP}/
+
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+####
+##map with BWA
+####
+
+## Mapping: make .bam files
+bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta ${1}_tqc_pe_R1.fq.gz ${1}_tqc_pe_R2.fq.gz | samtools view -Sb -q 10 - > bwa_${1}.bam
+
+##sorting for later use with mpileup
+samtools sort -@ 16 -m 4G -O bam -o bwa_${1}_sorted.bam bwa_${1}.bam
+
+# Copy unprocessed .bam files to home (before removing duplicate reads/alignments
+cp ${SNIC_TMP}/*sorted.bam ${crowdata}/nobackup/POPseq/vcf/raw_bams/Ccornix_v2.5/
+
+####remove duplicate reads/alignments
+for i in $(ls bwa_*${1}_sorted.bam | sed 's/.bam//'); do  samtools rmdup ${i}.bam ${i}_rmdup.bam; done
+
+####
+## Copy .bam files to home
+####
+cp ${SNIC_TMP}/*_rmdup.bam ${crowdata}/private/bams/Ccornix_ref/bams/
+

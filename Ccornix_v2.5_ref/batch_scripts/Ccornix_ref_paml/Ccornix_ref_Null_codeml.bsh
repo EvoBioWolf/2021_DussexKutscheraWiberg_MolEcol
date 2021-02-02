@@ -1,0 +1,50 @@
+#!/bin/bash -l
+#SBATCH -A snic2018-3-655
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 2-0:00:00
+#SBATCH -J Null_codeml
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load paml/4.9e
+module load biopython
+
+crowdata=/crex/proj/uppstore2017157/b2013182_nobackup
+
+# Define paml directory
+indir=${crowdata}/bams/Ccornix_ref/paml/${1}/${2}/
+outdir=${crowdata}/bams/Ccornix_ref/paml/${1}/${2}${3}
+
+# check if outdir exists, if not create it.
+if [ ! -d ${outdir} ]; then mkdir ${outdir}; else echo "Output directory exists"; fi
+
+echo "Running CODEML for ${1} ${2}"
+
+# Copy the files from the directory
+#cp ${outdir}*Null.ctl ${SNIC_TMP}/
+#cp ${outdir}*best.nuc_clean.phy ${SNIC_TMP}/
+cp ${crowdata}/bams/Ccornix_ref/paml/${1}/*Nulltree_ur.nex ${SNIC_TMP}/
+
+# Run the Null model codemls
+cd ${SNIC_TMP}/
+for file in $(ls ${indir}*Null.ctl | sed 's;_rm0_eo_Model0_NSs0_Null.ctl;;g'); do
+	echo "Running paml for: ${file##*/}"
+	cp ${file}_rm0_eo_Model0_NSs0_Null.ctl ${SNIC_TMP}/
+	cp ${file}.best.nuc_clean.phy ${SNIC_TMP}/
+	codeml ${file##*/}_rm0_eo_Model0_NSs0_Null.ctl
+	wait
+	cp ${file##*/}*Null.results.txt ${outdir}
+	rm ${file##*/}*;
+done
+wait
+
+# Copy the files back
+for file in $(ls *Null.results.txt); do cp ${file} ${outdir}/; done
+
+# Cleanup
+rm ${SNIC_TMP}/*Null.ctl
+rm ${SNIC_TMP}/*Null.results.txt
+rm ${SNIC_TMP}/*best.nuc_clean.phy
+rm ${SNIC_TMP}/*.nex

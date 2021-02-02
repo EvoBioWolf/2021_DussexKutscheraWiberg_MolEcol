@@ -1,0 +1,36 @@
+#!/bin/bash -l
+#SBATCH -A snic2017-1-599
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J Null_codeml_results
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+crowdata=/crex/proj/uppstore2017157/b2013182_nobackup/
+
+# Define paml directory.
+outdir=${crowdata}/bams/Ccornix_ref/paml/${1}/${2}/
+
+# Copy the files from the directory
+cp ${outdir}*Null.results.txt ${SNIC_TMP}/
+
+# Run the Null model codemls
+cd ${SNIC_TMP}/
+for file in $(ls ${outdir}*Null.results.txt); do
+	echo "Running codemlResultsParser.py for: ${file##*/}"
+	cp ${file} ${SNIC_TMP}/
+	codemlResultsParser.py -fil ${file##*/} >> ${1}_Null_results_${2}.txt
+	wait
+	rm ${file##*/}*;
+done
+wait
+
+# Copy the files back
+cp ${1}_Null_results_${2}.txt ${crowdata}/bams/Ccornix_ref/paml/${1}/
+
+# Cleanup
+rm ${SNIC_TMP}/*Null.results.txt
+rm ${SNIC_TMP}/${1}_Null_results_${2}.txt

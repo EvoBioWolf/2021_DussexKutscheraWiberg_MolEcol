@@ -1,0 +1,66 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p node
+#SBATCH -N 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J merge_species_bam_files
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#ID of bam files to use: ${1}
+#ID to name list of .bams: ${2}
+module load bioinfo-tools
+module load samtools/1.3
+module load bamtools/2.3.0
+
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp ${crowdata}/nobackup/bams/Ccornix_ref/bams/bwa_Cmon_*rmdup.bam ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Create a list of all the _sorted.bam files: NC3
+ls -1 bwa_Cmon_*NC3_*rmdup.bam > NC3_sorted_bams
+# Merge the bams from the list
+bamtools merge -list NC3_sorted_bams -out NC3.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cmon_NC3.bam NC3.bam
+
+# Create a list of all the _sorted.bam files: NC5
+ls -1 bwa_Cmon_*NC5_*rmdup.bam > NC5_sorted_bams
+# Merge the bams from the list
+bamtools merge -list NC5_sorted_bams -out NC5.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cmon_NC5.bam NC5.bam
+
+# Create a list of all the _sorted.bam files: NC6
+ls -1 bwa_Cmon_*NC6_*rmdup.bam > NC6_sorted_bams
+# Merge the bams from the list
+bamtools merge -list NC6_sorted_bams -out NC6.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cmon_NC6.bam NC6.bam
+
+# Create a list of all the _sorted.bam files: NC8
+ls -1 bwa_Cmon_*NC8_*rmdup.bam > NC8_sorted_bams
+# Merge the bams from the list
+bamtools merge -list NC8_sorted_bams -out NC8.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cmon_NC8.bam NC8.bam
+
+# Create a list of all the _sorted.bam files: FS66096
+ls -1 bwa_Cmon_*FS66096_*rmdup.bam > FS66096_sorted_bams
+# Merge the bams from the list
+bamtools merge -list FS66096_sorted_bams -out FS66096.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cmon_FS66096.bam FS66096.bam
+
+#################################################
+####
+## Copy _all_samples.bam files to nobackup
+####
+cp ${SNIC_TMP}/Cmon_*.bam ${crowdata}/private/bams/Ccornix_ref/merged_bams_per_individual/Cmon/
+
+

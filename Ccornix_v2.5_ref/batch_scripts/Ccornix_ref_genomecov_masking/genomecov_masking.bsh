@@ -1,0 +1,37 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core -n 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J genomecov_maskfasta
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#ID of bams to search for: ${1}
+
+module load bioinfo-tools
+module load BEDTools/2.25.0
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+cp ${crowdata}/private/bams/Ccornix_ref/merged_bams_per_species/${1}*rmdup_sorted.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_${1}_${2}.fa ${SNIC_TMP}/
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5* ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+bedtools genomecov -ibam ${1}_all_samples_rmdup_sorted.bam -g genome_HC_allpaths41687_v2.5.fasta -bg > ${1}_genomecov.bed
+# remove bam to make space
+rm ${1}_all_samples_rmdup_sorted.bam
+
+awk '$4 <= 5' ${1}_genomecov.bed > ${1}_genomecov_min5.bed
+bedtools maskfasta -fi consensus_${1}_${2}.fa -bed ${1}_genomecov_min5.bed -fo ${1}_${2}5cov_genome.fa -mc N
+
+
+#################################################
+####
+## Copy .bed files to nobackup
+####
+cp ${SNIC_TMP}/${1}_genomecov_min5.bed ${crowdata}/private/bams/Ccornix_ref/masked_genomes/
+cp ${SNIC_TMP}/${1}_${2}5cov_genome.fa ${crowdata}/private/bams/Ccornix_ref/masked_genomes/

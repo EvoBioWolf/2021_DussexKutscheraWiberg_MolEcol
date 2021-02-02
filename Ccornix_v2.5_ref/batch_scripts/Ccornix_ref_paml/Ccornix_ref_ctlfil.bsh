@@ -1,0 +1,42 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J ctlfil
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+
+crowdata=/proj/b2013182/
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/paml/${1}/${2}/
+
+# Copy the files from the directory
+cp ${outdir}*nuc_clean.phy ${SNIC_TMP}/
+
+# Create Null model .ctl files
+cd ${SNIC_TMP}/
+for f in $(ls *nuc_clean.phy | sed 's/.nuc_clean.phy//g'); \
+do createCodemlCtlFile.py -seqfile ${f}.nuc_clean.phy -treefile ${1}_crows_Nulltree_ur.nex \
+-clock 0 -fix_omega 0 -runmode 0 -model 0 -NSsites 0 -noisy 1 -seqtype 1 -verbose 1 -handle Null
+done
+wait
+
+# Create Alt. model .ctl files
+cd ${SNIC_TMP}/
+for f in $(ls *nuc_clean.phy | sed 's/.nuc_clean.phy//g'); \
+do createCodemlCtlFile.py -seqfile ${f}.nuc_clean.phy -treefile ${1}_crows_Atree_ur.nex \
+-clock 0 -fix_omega 0 -runmode 0 -model 2 -NSsites 0 -noisy 1 -seqtype 1 -verbose 1 -handle A
+done
+wait
+
+# Copy the files back
+for file in $(ls *.ctl); do cp ${file} ${outdir}/; done
+
+# Cleanup
+rm ${SNIC_TMP}/*nuc_clean.phy
+rm ${SNIC_TMP}/*.ctl

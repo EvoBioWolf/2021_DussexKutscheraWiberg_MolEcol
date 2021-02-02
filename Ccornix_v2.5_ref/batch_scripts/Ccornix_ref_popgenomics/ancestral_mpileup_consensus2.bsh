@@ -1,0 +1,50 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 3
+#SBATCH -t 8-00:00:00
+#SBATCH -J mpileup_consensus_ancestral
+
+# STEP 2: FILTER THE CONSENSUS VCF FILE
+# KEEP ONLY SNPS (REMOVE INDELS).
+
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load bcftools/1.3
+module load samtools/1.3
+module load htslib/1.3
+module load GATK/3.4.0
+module load vcftools/0.1.14
+
+crowdata=/proj/b2013182
+
+# Copy reference genome
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths*_v2.5* ${SNIC_TMP}/
+
+# Copy vcf file
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_3sp_Ccornix_Cdau_Cfru.vcf* ${SNIC_TMP}/
+
+# Move to the temp directory
+cd ${SNIC_TMP}
+
+gunzip consensus_3sp_Ccornix_Cdau_Cfru.vcf.gz
+# Remove INDELS from consensus.vcf
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5.fasta --variant:VCF consensus_3sp_Ccornix_Cdau_Cfru.vcf -o consensus_3sp_Ccornix_Cdau_Cfru_snps.vcf --selectTypeToExclude INDEL
+
+#zip and index
+bgzip consensus_3sp_Ccornix_Cdau_Cfru_snps.vcf
+tabix -p vcf consensus_3sp_Ccornix_Cdau_Cfru_snps.vcf.gz
+# Copy file back to home
+cp ${SNIC_TMP}/consensus_3sp_Ccornix_Cdau_Cfru_snps* ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/
+
+# Cleanup
+rm ${SNIC_TMP}/*.vcf*
+
+
+
+
+

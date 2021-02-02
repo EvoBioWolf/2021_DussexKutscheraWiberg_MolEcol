@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 2-0:00:00
+#SBATCH -J concat_busco_alns
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython/1.68
+
+crowdata=/proj/b2013182/
+species_set=${1}
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/all_seqs
+
+# Copy the files from the directory
+cp ${outdir}/*.best.nuc.fas ${SNIC_TMP}/
+
+# Concatenate the fasta files.
+cd ${SNIC_TMP}/
+concatFasta.py -f *best.nuc.fas > all_busco_alns.fas
+
+# Copy the files back
+cp all_busco_alns.fas ${outdir}/
+
+# Cleanup
+rm ${SNIC_TMP}/*.fas

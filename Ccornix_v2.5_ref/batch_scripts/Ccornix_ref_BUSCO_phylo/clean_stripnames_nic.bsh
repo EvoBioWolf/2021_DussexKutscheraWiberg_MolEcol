@@ -1,0 +1,40 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J clean_stripnames
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load biopython/1.68
+
+crowdata=/proj/b2013182
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Copy over the sequences data
+cp -r ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/all_seqs/*.fa ${SNIC_TMP}/
+
+# For each gene clean the fasta file
+for gene in $(ls *.fa | sed 's/.fa//g'); do
+	# Run cleanFasta.py
+	cleanFasta.py -f ${gene}.fa -o ${gene}_cl.fa -c 20; done
+ls -1 | head
+# For each strip the fasta names
+for gene in $(ls *_cl.fa | sed 's/.fa//g'); do
+	# Run stripFastaNames.py
+	stripFastaNames.py -f ${gene}.fa -of ${gene}_rnm; done
+ls -1 | head
+# Copy all the files back to the home
+cp *_cl_rnm.fasta ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/all_seqs/
+
+# Now remove the .fasta files
+rm *.fa 
+
+
+

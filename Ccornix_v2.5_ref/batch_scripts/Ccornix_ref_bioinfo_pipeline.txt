@@ -1,0 +1,96 @@
+Crow bioinformatic pipeline:
+Reference genome: Ccornix v2.5
+
+1) Mapping
+Software:
+BWA v0.7.12 mem
+
+see batch script: 
+
+/proj/b2013182/nobackup/batch_scripts/mapping/All_mapping_JAN16_Ccornix.bsh
+
+Notes:
+This step maps the reads from each sample of each individual from each species to the Ccornix reference genome.
+This step also removes duplicate reads/alignments from the resulting .bam files but keeps a set of .bam files that
+still contains them.
+
+2) Consensus genome building
+Software:
+samtools v0.1.9 mpileup
+bcftools v1.2
+vcftools v0.1.14
+
+see batch script: 
+
+/proj/b2013182/nobackup/batch_scripts/Ccornix_ref_consensus_mpileup/mpileup_consensus.bsh
+
+Notes:
+This step makes a .vcf and a .fq file that represents the consensus genome for each species mapped to the Ccornix 
+reference genome. Each consensus genome should be the same length as the reference.
+
+3) Merging
+Software:
+bamtools v2.3.0
+samtools v0.1.9
+
+see batch script:
+
+/proj/b2013182/nobackup/batch_scripts/Ccornix_ref_merge_bams/merge_bams.bsh
+
+Notes:
+This step merges all .bam files for a species into one.
+
+4) Genome coverage and Masking
+Software:
+bedtools v2.25.0
+
+see batch script:
+
+/proj/b2013182/nobackup/batch_scripts/Ccornix_ref_genomecov_masking/.bsh
+
+Notes:
+This step calculates coverage for each position in the genome based on the merged .bam files for each species.
+Then each position in the consensus genome where coverage is <= 5 is replaced with "N"
+
+
+6) Obtaining orthologs
+Software:
+gffread
+
+
+Notes:
+This step extracts the spliced CDS from each consesnsus genome based on the Ccornix annotation.
+Mitochondrial genome removed from analysis at this stage due to issues with the NCBI annotation.
+Annotation file modified to remove all mitochondrial gene entries.
+
+7) Gene Completeness
+Software:
+fastaStats.py
+
+Notes:
+This step assesses the "completeness" of each gene model that is recovered from the re-sequenced species. This includes 
+presence/absence determination.
+
+#####
+##NOTES:
+#####
+
+For the C. cornix species group (3sp) we combine the following individuals.
+C.cornix B_So_H04 S5
+C.cornix ITA_Ro_H11 S1
+C.cornix RUS_No_H03 S1
+C.cornix S_Up_H03 S5
+C.cornix S_Up_H09 S5
+
+C.corone D_Ko_C13 S4
+C.corone E_Vi_C01 S1
+C.corone D_Ra_C16 S4
+C.corone E_Vi_C57 S1
+C.corone D_Ko_C04 S3
+
+C.orientalis RUS_Tv_O01 S1
+C.orientalis RUS_Pr_O01 S5
+C.orientalis RUS_Pr_O02 S7
+C.orientalis RUS_Pr_O05 S3
+C.orientalis RUS_Pr_O05 S1
+

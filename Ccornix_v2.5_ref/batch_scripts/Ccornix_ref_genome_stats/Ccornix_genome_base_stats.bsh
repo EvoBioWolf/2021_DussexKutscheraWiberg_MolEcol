@@ -1,0 +1,25 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J genome_stats_Ccornix
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+
+# Copy the files:
+cp /proj/b2013182/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5.fa* ${SNIC_TMP}/
+
+# Move to tmp
+cd ${SNIC_TMP}
+
+# Get stats from fasta file.
+fastaStats.py -f genome_HC_allpaths41687_v2.5.fasta -t p > Ccornix_genome_summary_stats.fa_summary
+
+# Copy results back and cleanup
+cp Ccornix_genome_summary_stats.fa_summary ${crowdata}/private/bams/Ccornix_ref/Ccornix_reference_genome_data/
+rm genome_HC_allpaths41687*
+rm Ccornix_genome_summary_stats.fa_summary

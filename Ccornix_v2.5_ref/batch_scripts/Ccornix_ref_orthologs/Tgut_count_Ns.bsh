@@ -1,0 +1,28 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J ortholog_countN_Tgut
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+
+##### count Ns in ortholog sets
+#wget hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/faCount
+#chmod a+x faCount
+  
+
+#####loop for multiple species: faCount
+#cd /proj/b2013182/private/bams/Ccornix_ref/orthologs
+#for i in $(ls *.fa | sed 's/.fa//g');do \
+#/proj/b2013182/nobackup/batch_scripts/Ccornix_ref/Ccornix_ref_orthologs/faCount ${i}.fa -summary > summary_${i}.fa_summary; \
+#done
+
+#more C* > all_species_summary
+
+#####loop for multiple species: fastaStats.py
+cd /proj/b2013182/private/bams/Ccornix_ref/orthologs
+fastaStats.py -f Tgut_reference_lCDS_nucl_rnm3.fa -t p > Tgut_orthologs_rnm_stats.tab

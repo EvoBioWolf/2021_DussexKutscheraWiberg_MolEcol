@@ -1,0 +1,49 @@
+#!/bin/bash -l
+#SBATCH -A snic2018-3-655
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J run_BUSCO_reference_genomes
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load BUSCO/1.22
+
+#export AUGUSTUS_CONFIG_PATH=/home/axelw/augustus_config
+#echo $AUGUSTUS_CONFIG_PATH
+
+cd ${SNIC_TMP}
+source ${BUSCO_SETUP}
+
+crowdata=/crex/proj/uppstore2017157/b2013182/private/assemblies
+
+# Copy the C. cornix reference genome
+cp ${crowdata}/Ccornix/genome_HC_allpaths41687_v2.5.fasta ${SNIC_TMP}/
+
+# Copy the C. moneduloides reference genome
+cp ${crowdata}/Cmoneduloides/otago-temp/nc_crow-final.assembly.fasta.gapcloser-1.fa ${SNIC_TMP}/
+
+## Move to tmp/ directory
+
+
+# Run BUSCO
+BUSCO -l $BUSCO_LINEAGE_SETS/vertebrata -in genome_HC_allpaths41687_v2.5.fasta --cpu 1 -o Ccornix_reference_busco -f
+# Copy files back
+mv ${SNIC_TMP}/Ccornix_reference_busco ~/
+mv ${SNIC_TMP}/run_*_busco ~/
+rm -r *busco
+
+BUSCO -l $BUSCO_LINEAGE_SETS/vertebrata -in nc_crow-final.assembly.fasta.gapcloser-1.fa --cpu 1 -o Cmon_reference_busco -f
+# Copy files back
+mv ${SNIC_TMP}/Cmon_reference_busco ~/
+mv ${SNIC_TMP}/run_*_busco ~/
+rm -r *busco
+
+# Cleanup
+rm -r ${SNIC_TMP}/*
+
+
+

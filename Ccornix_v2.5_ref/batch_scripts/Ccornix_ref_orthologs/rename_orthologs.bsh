@@ -1,0 +1,32 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core -n 1
+#SBATCH -t 0-04:00:00
+#SBATCH -J rename_ortholog_sets_Ccornix
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+### annotation C. cornix: NCBI version
+cp ${crowdata}/private/bams/Ccornix_ref/orthologs/${1}_orthologs.fa ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Remove unecessary stuff from the species name (i.e. the "af0.5" or "mskVars" identifiers)
+sp=${1}
+sp=$(echo ${sp} | sed 's;_mskVars;;g')
+sp=$(echo ${sp} | sed 's;_af0.5;;g')
+### Remove garbage and add species ID
+sed 's/>.*gene=/>'${sp}'\|/g' ${1}_orthologs.fa > ${1}_orthologs_rnm.fa
+
+
+#################################################
+####
+## Copy .fa files to private
+####
+cp ${SNIC_TMP}/*_orthologs_rnm.fa ${crowdata}/private/bams/Ccornix_ref/orthologs/

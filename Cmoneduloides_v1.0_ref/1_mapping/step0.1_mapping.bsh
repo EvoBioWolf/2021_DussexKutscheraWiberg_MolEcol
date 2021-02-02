@@ -1,0 +1,57 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J mapping_bwa_1by1
+
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+#difference to version from Oct 15: location of trimmed reads
+
+module load bioinfo-tools
+module load bwa
+module load Stampy
+module load samtools
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+cp ${crowdata}/nobackup/trimmed_reads/$1*pe* ${SNIC_TMP}/
+cp ${crowdata}/private/assemblies/Cmoneduloides/otago-temp/nc_crow-final.assembly.fasta.gapcloser-1* ${SNIC_TMP}/
+
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+####
+##map with BWA
+####
+## Make index for reference
+######## not required every time. Just copy from the index in genome directory
+#bwa index nc_crow-final.assembly.fasta.gapcloser-1
+
+## Align the read files
+
+## Mapping: make .bam files
+bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 ${1}_tqc_pe_R1.fq.gz ${1}_tqc_pe_R2.fq.gz | samtools view -Sb -q 10 - > bwa_${1}.bam;
+
+##sorting for later use with mpileup
+samtools sort bwa_${1}.bam bwa_${1}_sorted -@ 16 -m 4G
+
+####remove duplicates
+#for i in $(ls bwa_.bam); do  samtools rmdup $i $i.rmdup; done
+
+####
+## Remove the read files from tmp to save space
+####
+rm ${SNIC_TMP}/*.fq.gz
+
+
+####
+## Copy .bam files to nobackup
+####
+cp ${SNIC_TMP}/*sorted.bam ${crowdata}/private/bams/Cmon_Ref/bams
+

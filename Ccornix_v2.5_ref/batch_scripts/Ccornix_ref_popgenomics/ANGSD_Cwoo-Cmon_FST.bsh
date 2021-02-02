@@ -1,0 +1,57 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p node
+#SBATCH -N 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J ANGSD_FST
+#SBATCH -C usage_mail
+#SBATCH -C fat
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load samtools/1.3
+module load ANGSD/0.917-g6522d3e
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+#copy files from home to tmp directory
+#Reference genome: masked repeat regions
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/genome_HC_allpaths41687_v2.5_mskReps.fa ${SNIC_TMP}/
+#Ancestral genome: masked vars, repeats, low cov
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa ${SNIC_TMP}/
+#C. moneduloides individual bam files.
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_Cmon_*indraln*   ${SNIC_TMP}/
+#C. moneduloides sfs files.
+cp ${crowdata}/private/bams/Ccornix_ref/pop_genomics/Cmon_run.*  ${SNIC_TMP}/
+#C. moneduloides individual bam files.
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_Cwoo_*indraln*   ${SNIC_TMP}/
+#C. moneduloides sfs files.
+cp ${crowdata}/private/bams/Ccornix_ref/pop_genomics/Cwoo_run.*  ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Combine SFS
+realSFS Cmon_run.saf.idx Cwoo_run.saf.idx -P 10 > Cmon_Cwoo.ml
+
+# Prepare the fst for easy window analysis etc
+realSFS fst index Cmon_run.saf.idx Cwoo_run.saf.idx -sfs Cmon_Cwoo.ml -fstout Cmon_Cwoo -P 10
+
+# Get the global estimate
+realSFS fst stats -P 10 Cmon_Cwoo.fst.idx
+
+# Below is not tested that much, but seems to work
+realSFS fst stats2 Cmon_Cwoo.fst.idx -win 50000 -step 10000 -P 24 > Cmon_Cwoo_Fst_slidingwindow50kb.tab
+realSFS fst stats2 Cmon_Cwoo.fst.idx -win 500000 -step 10000 -P 24 > Cmon_Cwoo_Fst_slidingwindow500kb.tab
+
+####
+## Copy files back
+####
+cp ${SNIC_TMP}/Cmon_Cwoo*  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/
+cp ${SNIC_TMP}/*.ml  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/
+cp ${SNIC_TMP}/Cmon_Cwoo_Fst_slidingwindow.tab  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/
+
+

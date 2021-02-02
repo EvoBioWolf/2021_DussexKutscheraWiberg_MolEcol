@@ -1,0 +1,39 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J rename_sequences_Tgut
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load cufflinks/2.2.1
+module load biopython/1.68
+
+crowdata=/proj/b2013182
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Copy over the sequences data
+cp -r ${crowdata}/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/Tgut_${1}_seqs/*.fa ${SNIC_TMP}/
+# For each gene
+for gene in $(ls *_nucl.fa | sed 's/_nucl.fa//g'); do
+	# Run renameFasta.py
+	renameFasta.py -f ${gene}_nucl.fa -ha Tgut -a 2 > ${gene}_nucl_rnm.fa;
+done
+# Copy all the files back to the home
+cp *_nucl_rnm.fa ${crowdata}/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/Tgut_${1}_seqs/
+# Now remove the .fasta files
+rm *.fa 
+# and the genomes
+rm GCF_000151805.1_Taeniopygia_guttata-3.2.4_genomic.fna
+
+# Cleanup: remove the lists
+rm ${SNIC_TMP}/*.list
+
+
+

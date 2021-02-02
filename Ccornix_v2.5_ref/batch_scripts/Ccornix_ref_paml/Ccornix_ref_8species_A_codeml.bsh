@@ -1,0 +1,38 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 5-0:00:00
+#SBATCH -J A_codeml
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load paml/4.6
+module load biopython
+
+crowdata=/proj/b2013182/
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/paml/8species/${1}/
+
+# Copy the files from the directory
+cp ${outdir}*A.ctl ${SNIC_TMP}/
+cp ${outdir}*best.nuc_clean.phy ${SNIC_TMP}/
+cp ${outdir}*Atree_ur.nex ${SNIC_TMP}/
+
+# Run the Null model codemls
+cd ${SNIC_TMP}/
+for file in $(ls *A.ctl); \
+do codeml ${file}; \
+done
+wait
+
+# Copy the files back
+for file in $(ls *A.results.txt); do cp ${file} ${outdir}/; done
+
+# Cleanup
+rm ${SNIC_TMP}/*A.ctl
+rm ${SNIC_TMP}/*A.results.txt
+rm ${SNIC_TMP}/*best.nuc_clean.phy
+rm ${SNIC_TMP}/*.nex

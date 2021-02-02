@@ -1,0 +1,40 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 6
+#SBATCH -t 8-00:00:00
+#SBATCH -J Cwoo_ANGSD
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load samtools/1.3
+module load ANGSD/0.917-g6522d3e
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+#Reference genome: masked repeat regions
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/genome_HC_allpaths41687_v2.5_mskReps.fa ${SNIC_TMP}/
+#Ancestral genome: masked vars, repeats, low cov
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa ${SNIC_TMP}/
+#C. moneduloides individual bam files.
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_Cwoo_*indraln*  ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+#index for reference and ancestral genome
+samtools faidx genome_HC_allpaths41687_v2.5_mskReps.fa
+samtools faidx consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa
+
+#list of bam files
+ls -1 *.bam > Cwoo_bams.list
+
+angsd -bam Cwoo_bams.list -GL 2 -doSaf 1 -anc consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa -baq 1 -C 50 -ref genome_HC_allpaths41687_v2.5_mskReps.fa -minMapQ 1 -minQ 20 -P 24 -out Cwoo_run
+
+#################################################
+####
+## Copy _all_samples.bam files to nobackup
+####
+cp ${SNIC_TMP}/Cwoo_run*  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/

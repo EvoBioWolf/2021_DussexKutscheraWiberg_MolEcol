@@ -1,0 +1,522 @@
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_B_So_H04_S1_sorted_rg.bam
+@RG	ID:448	LB:BC2F2RACXX	PL:illumina	SM:B04	PU:B04.448_130920_L007i
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_B_So_H04_S1_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_B_So_H04_S2_sorted_rg.bam
+@RG	ID:468	LB:AC2J16ACXX	PL:illumina	SM:B04	PU:B04.468_131003_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_B_So_H04_S2_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_B_So_H04_S3_sorted_rg.bam
+@RG	ID:545	LB:AC3UGUACXX	PL:illumina	SM:B04	PU:B04.545_140312_L005e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_B_So_H04_S3_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_B_So_H04_S4_sorted_rg.bam
+@RG	ID:546	LB:AC3UGUACXX	PL:illumina	SM:B04	PU:B04.546_140312_L006e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_B_So_H04_S4_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_B_So_H04_S5_sorted_rg.bam
+@RG	ID:557	LB:BC431CACXX	PL:illumina	SM:B04	PU:B04.557_140515_L002j
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_B_So_H04_S5_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ISR_TA_H01_S1_sorted_rg.bam
+@RG	ID:440	LB:BC2F2RACXX	PL:illumina	SM:Z01	PU:Z01.440_130920_L006i
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ISR_TA_H01_S1_tqc_pe_R1.fq.gz C.cornix_ISR_TA_H01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ISR_TA_H01_S2_sorted_rg.bam
+@RG	ID:460	LB:AC2J16ACXX	PL:illumina	SM:Z01	PU:Z01.460_131003_L001c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ISR_TA_H01_S2_tqc_pe_R1.fq.gz C.cornix_ISR_TA_H01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ISR_TA_H01_S5_sorted_rg.bam
+@RG	ID:549	LB:BC431CACXX	PL:illumina	SM:Z01	PU:Z01.549_140515_L001j
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ISR_TA_H01_S5_tqc_pe_R1.fq.gz C.cornix_ISR_TA_H01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H11_S1_sorted_rg.bam
+@RG	ID:477	LB:AC3U27ACXX	PL:illumina	SM:IT11	PU:IT11.477_140227_L007d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H11_S1_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H11_S2_sorted_rg.bam
+@RG	ID:478	LB:AC3U27ACXX	PL:illumina	SM:IT11	PU:IT11.478_140227_L008d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H11_S2_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H11_S3_sorted_rg.bam
+@RG	ID:517	LB:AC3UGUACXX	PL:illumina	SM:IT11	PU:IT11.517_140312_L001e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H11_S3_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H11_S4_sorted_rg.bam
+@RG	ID:518	LB:AC3UGUACXX	PL:illumina	SM:IT11	PU:IT11.518_140312_L002e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H11_S4_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H12_S1_sorted_rg.bam
+@RG	ID:446	LB:BC2F2RACXX	PL:illumina	SM:IT12	PU:IT12.446_130920_L007i
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H12_S1_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H12_S2_sorted_rg.bam
+@RG	ID:466	LB:AC2J16ACXX	PL:illumina	SM:IT12	PU:IT12.466_131003_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H12_S2_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H12_S3_sorted_rg.bam
+@RG	ID:541	LB:AC3UGUACXX	PL:illumina	SM:IT12	PU:IT12.541_140312_L005e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H12_S3_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H12_S4_sorted_rg.bam
+@RG	ID:542	LB:AC3UGUACXX	PL:illumina	SM:IT12	PU:IT12.542_140312_L006e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H12_S4_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_ITA_Ro_H12_S5_sorted_rg.bam
+@RG	ID:555	LB:BC431CACXX	PL:illumina	SM:IT12	PU:IT12.555_140515_L002j
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_ITA_Ro_H12_S5_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_PL_Wa_H22_S1_sorted_rg.bam
+@RG	ID:91	LB:AD18MTACXX	PL:illumina	SM:P10	PU:P10.91_120913_L005ga
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_PL_Wa_H22_S1_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_PL_Wa_H22_S2_sorted_rg.bam
+@RG	ID:214	LB:AD1BJNACXX	PL:illumina	SM:P10	PU:P10.214_120927_L001h
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_PL_Wa_H22_S2_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_PL_Wa_H22_S3_sorted_rg.bam
+@RG	ID:215	LB:AD1BJNACXX	PL:illumina	SM:P10	PU:P10.215_120927_L002h
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_PL_Wa_H22_S3_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_PL_Wa_H22_S4_sorted_rg.bam
+@RG	ID:216	LB:AD1BJNACXX	PL:illumina	SM:P10	PU:P10.216_120927_L003h
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_PL_Wa_H22_S4_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_RUS_No_H03_S1_sorted_rg.bam
+@RG	ID:426	LB:BD1YU2ACXX	PL:illumina	SM:A12	PU:A12.426_130426_L008m
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_RUS_No_H03_S1_tqc_pe_R1.fq.gz C.cornix_RUS_No_H03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H03_S1_sorted_rg.bam
+@RG	ID:23	LB:AD10TUACXX	PL:illumina	SM:S01	PU:S01.23_120806_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H03_S1_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H03_S2_sorted_rg.bam
+@RG	ID:100	LB:AD18MTACXX	PL:illumina	SM:S01	PU:S01.100_120913_L003ga
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H03_S2_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H03_S3_sorted_rg.bam
+@RG	ID:101	LB:AD18MTACXX	PL:illumina	SM:S01	PU:S01.101_120913_L004ga
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H03_S3_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H03_S4_sorted_rg.bam
+@RG	ID:308	LB:AC1392ACXX	PL:illumina	SM:S01	PU:S01.308_120815_L002aa
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H03_S4_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H03_S5_sorted_rg.bam
+@RG	ID:334	LB:BD1D8BACXX	PL:illumina	SM:S01	PU:S01.334_121026_L004lb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H03_S5_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H09_S1_sorted_rg.bam
+@RG	ID:24	LB:AD10TUACXX	PL:illumina	SM:S02	PU:S02.24_120806_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H09_S1_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H09_S2_sorted_rg.bam
+@RG	ID:102	LB:AD18MTACXX	PL:illumina	SM:S02	PU:S02.102_120913_L003ga
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H09_S2_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H09_S3_sorted_rg.bam
+@RG	ID:103	LB:AD18MTACXX	PL:illumina	SM:S02	PU:S02.103_120913_L004ga
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H09_S3_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H09_S4_sorted_rg.bam
+@RG	ID:309	LB:AC1392ACXX	PL:illumina	SM:S02	PU:S02.309_120815_L002aa
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H09_S4_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.cornix_S_Up_H09_S5_sorted_rg.bam
+@RG	ID:335	LB:BD1D8BACXX	PL:illumina	SM:S02	PU:S02.335_121026_L002lb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.cornix_S_Up_H09_S5_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C04_S2_sorted_rg.bam
+@RG	ID:36	LB:AD18MTACXX	PL:illumina	SM:D02	PU:D02.36_120913_L001g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C04_S2_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C04_S3_sorted_rg.bam
+@RG	ID:37	LB:AD18MTACXX	PL:illumina	SM:D02	PU:D02.37_120913_L002g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C04_S3_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C04_S4_sorted_rg.bam
+@RG	ID:291	LB:AC1392ACXX	PL:illumina	SM:D02	PU:D02.291_120815_L001a
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C04_S4_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C04_S5_sorted_rg.bam
+@RG	ID:324	LB:BD1D8BACXX	PL:illumina	SM:D02	PU:D02.324_121026_L004la
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C04_S5_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C13_S1_sorted_rg.bam
+@RG	ID:41	LB:AD18MTACXX	PL:illumina	SM:D05	PU:D05.41_120913_L005g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C13_S1_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C13_S2_sorted_rg.bam
+@RG	ID:156	LB:AD1BJNACXX	PL:illumina	SM:D05	PU:D05.156_120927_L001ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C13_S2_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C13_S3_sorted_rg.bam
+@RG	ID:157	LB:AD1BJNACXX	PL:illumina	SM:D05	PU:D05.157_120927_L002ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C13_S3_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C13_S4_sorted_rg.bam
+@RG	ID:158	LB:AD1BJNACXX	PL:illumina	SM:D05	PU:D05.158_120927_L003ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C13_S4_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C13_S5_sorted_rg.bam
+@RG	ID:325	LB:BD1D8BACXX	PL:illumina	SM:D05	PU:D05.325_121026_L002la
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C13_S5_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C15_S1_sorted_rg.bam
+@RG	ID:42	LB:AD18MTACXX	PL:illumina	SM:D06	PU:D06.42_120913_L005g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C15_S1_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C15_S2_sorted_rg.bam
+@RG	ID:159	LB:AD1BJNACXX	PL:illumina	SM:D06	PU:D06.159_120927_L001ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C15_S2_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C15_S3_sorted_rg.bam
+@RG	ID:160	LB:AD1BJNACXX	PL:illumina	SM:D06	PU:D06.160_120927_L002ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C15_S3_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C15_S4_sorted_rg.bam
+@RG	ID:161	LB:AD1BJNACXX	PL:illumina	SM:D06	PU:D06.161_120927_L003ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C15_S4_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ko_C15_S5_sorted_rg.bam
+@RG	ID:326	LB:BD1D8BACXX	PL:illumina	SM:D06	PU:D06.326_121026_L001la
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ko_C15_S5_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C05_S1_sorted_rg.bam
+@RG	ID:48	LB:AD18MTACXX	PL:illumina	SM:D10	PU:D10.48_120913_L007g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C05_S1_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C05_S2_sorted_rg.bam
+@RG	ID:164	LB:AD1BJNACXX	PL:illumina	SM:D10	PU:D10.164_120927_L007ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C05_S2_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C05_S3_sorted_rg.bam
+@RG	ID:165	LB:AD1BJNACXX	PL:illumina	SM:D10	PU:D10.165_120927_L008ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C05_S3_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C05_S4_sorted_rg.bam
+@RG	ID:264	LB:BD1BNAACXX	PL:illumina	SM:D10	PU:D10.264_120927_L001k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C05_S4_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C05_S5_sorted_rg.bam
+@RG	ID:265	LB:BD1BNAACXX	PL:illumina	SM:D10	PU:D10.265_120927_L002k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C05_S5_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C05_S6_sorted_rg.bam
+@RG	ID:328	LB:BD1D8BACXX	PL:illumina	SM:D10	PU:D10.328_121026_L002la
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C05_S6_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S6_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C16_S1_sorted_rg.bam
+@RG	ID:52	LB:AD18MTACXX	PL:illumina	SM:D13	PU:D13.52_120913_L005g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C16_S1_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C16_S2_sorted_rg.bam
+@RG	ID:169	LB:AD1BJNACXX	PL:illumina	SM:D13	PU:D13.169_120927_L001ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C16_S2_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C16_S4_sorted_rg.bam
+@RG	ID:171	LB:AD1BJNACXX	PL:illumina	SM:D13	PU:D13.171_120927_L003ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C16_S4_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_D_Ra_C16_S5_sorted_rg.bam
+@RG	ID:329	LB:BD1D8BACXX	PL:illumina	SM:D13	PU:D13.329_121026_L002la
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_D_Ra_C16_S5_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C01_S1_sorted_rg.bam
+@RG	ID:55	LB:AD18MTACXX	PL:illumina	SM:E01	PU:E01.55_120913_L007g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C01_S1_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C01_S2_sorted_rg.bam
+@RG	ID:177	LB:AD1BJNACXX	PL:illumina	SM:E01	PU:E01.177_120927_L007ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C01_S2_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C01_S3_sorted_rg.bam
+@RG	ID:178	LB:AD1BJNACXX	PL:illumina	SM:E01	PU:E01.178_120927_L008ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C01_S3_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C01_S4_sorted_rg.bam
+@RG	ID:268	LB:BD1BNAACXX	PL:illumina	SM:E01	PU:E01.268_120927_L001k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C01_S4_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C01_S5_sorted_rg.bam
+@RG	ID:269	LB:BD1BNAACXX	PL:illumina	SM:E01	PU:E01.269_120927_L002k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C01_S5_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C57_S1_sorted_rg.bam
+@RG	ID:74	LB:AD18MTACXX	PL:illumina	SM:E14	PU:E14.74_120913_L005g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C57_S1_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C57_S2_sorted_rg.bam
+@RG	ID:195	LB:AD1BJNACXX	PL:illumina	SM:E14	PU:E14.195_120927_L001ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C57_S2_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C57_S3_sorted_rg.bam
+@RG	ID:196	LB:AD1BJNACXX	PL:illumina	SM:E14	PU:E14.196_120927_L002ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C57_S3_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C57_S4_sorted_rg.bam
+@RG	ID:197	LB:AD1BJNACXX	PL:illumina	SM:E14	PU:E14.197_120927_L003ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C57_S4_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C58_S1_sorted_rg.bam
+@RG	ID:75	LB:AD18MTACXX	PL:illumina	SM:E15	PU:E15.75_120913_L005g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C58_S1_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C58_S2_sorted_rg.bam
+@RG	ID:198	LB:AD1BJNACXX	PL:illumina	SM:E15	PU:E15.198_120927_L001ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C58_S2_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C58_S3_sorted_rg.bam
+@RG	ID:199	LB:AD1BJNACXX	PL:illumina	SM:E15	PU:E15.199_120927_L002ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C58_S3_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.corone_E_Vi_C58_S4_sorted_rg.bam
+@RG	ID:200	LB:AD1BJNACXX	PL:illumina	SM:E15	PU:E15.200_120927_L003ha
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.corone_E_Vi_C58_S4_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Ccorx_2407-51841_S1_sorted_rg.bam
+@RG	ID:1020	LB:HB4TGADXX	PL:illumina	SM:2407-51841	PU:2407-51841.1020_261114_L002u
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Ccorx_2407-51841_S1_tqc_pe_R1.fq.gz Ccorx_2407-51841_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_DDCHN_Gu_D02_S1_sorted_rg.bam
+@RG	ID:558	LB:L1a	PL:illumina	SM:DDCHN	PU:DDCHN.558_XXXXXX_L1a
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_DDCHN_Gu_D02_S1_tqc_pe_R1.fq.gz Cdau_DDCHN_Gu_D02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D01_S1_sorted_rg.bam
+@RG	ID:473	LB:L007e	PL:illumina	SM:DD01	PU:DD01.473_140227_L007e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D01_S1_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D01_S2_sorted_rg.bam
+@RG	ID:474	LB:L008e	PL:illumina	SM:DD01	PU:DD01.474_140227_L008e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D01_S2_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D01_S3_sorted_rg.bam
+@RG	ID:507	LB:L001d	PL:illumina	SM:DD01	PU:DD01.507_140312_L001d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D01_S3_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D01_S4_sorted_rg.bam
+@RG	ID:508	LB:L002d	PL:illumina	SM:DD01	PU:DD01.508_140312_L002d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D01_S4_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D01_S5_sorted_rg.bam
+@RG	ID:548	LB:L001c	PL:illumina	SM:DD01	PU:DD01.548_140515_L001c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D01_S5_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D02_S1_sorted_rg.bam
+@RG	ID:485	LB:L007e	PL:illumina	SM:DD02	PU:DD02.485_140227_L007e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D02_S1_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D02_S2_sorted_rg.bam
+@RG	ID:486	LB:L008e	PL:illumina	SM:DD02	PU:DD02.486_140227_L008e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D02_S2_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D02_S3_sorted_rg.bam
+@RG	ID:537	LB:L001d	PL:illumina	SM:DD02	PU:DD02.537_140312_L001d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D02_S3_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D02_S4_sorted_rg.bam
+@RG	ID:538	LB:L002d	PL:illumina	SM:DD02	PU:DD02.538_140312_L002d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D02_S4_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D02_S5_sorted_rg.bam
+@RG	ID:554	LB:L001c	PL:illumina	SM:DD02	PU:DD02.554_140515_L001c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D02_S5_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D03_S1_sorted_rg.bam
+@RG	ID:481	LB:L007e	PL:illumina	SM:DD03	PU:DD03.481_140227_L007e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D03_S1_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D03_S2_sorted_rg.bam
+@RG	ID:482	LB:L008e	PL:illumina	SM:DD03	PU:DD03.482_140227_L008e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D03_S2_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D03_S3_sorted_rg.bam
+@RG	ID:523	LB:L001d	PL:illumina	SM:DD03	PU:DD03.523_140312_L001d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D03_S3_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D03_S4_sorted_rg.bam
+@RG	ID:524	LB:L002d	PL:illumina	SM:DD03	PU:DD03.524_140312_L002d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D03_S4_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cdau_MON_Kh_D03_S5_sorted_rg.bam
+@RG	ID:550	LB:L001c	PL:illumina	SM:DD03	PU:DD03.550_140515_L001c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cdau_MON_Kh_D03_S5_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_IRL_Lm_R01_S1_sorted_rg.bam
+@RG	ID:225	LB:L007i	PL:illumina	SM:R01	PU:R01.225_120927_L007i
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_IRL_Lm_R01_S1_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_IRL_Lm_R01_S2_sorted_rg.bam
+@RG	ID:226	LB:L008i	PL:illumina	SM:R01	PU:R01.226_120927_L008i
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_IRL_Lm_R01_S2_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_IRL_Lm_R01_S3_sorted_rg.bam
+@RG	ID:280	LB:L001j	PL:illumina	SM:R01	PU:R01.280_120927_L001j
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_IRL_Lm_R01_S3_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_IRL_Lm_R01_S4_sorted_rg.bam
+@RG	ID:281	LB:L002j	PL:illumina	SM:R01	PU:R01.281_120927_L002j
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_IRL_Lm_R01_S4_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_IRL_Lm_R01_S5_sorted_rg.bam
+@RG	ID:99	LB:L007g	PL:illumina	SM:R01	PU:R01.99_120913_L007g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_IRL_Lm_R01_S5_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_IRL_Lm_R05_S1_sorted_rg.bam
+@RG	ID:137	LB:L003h	PL:illumina	SM:R02	PU:R02.137_120913_L003h
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_IRL_Lm_R05_S1_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R03_S1_sorted_rg.bam
+@RG	ID:433	LB:L006k	PL:illumina	SM:RR01	PU:RR01.433_130920_L006k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R03_S1_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R03_S2_sorted_rg.bam
+@RG	ID:453	LB:L001l	PL:illumina	SM:RR01	PU:RR01.453_131003_L001l
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R03_S2_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R03_S3_sorted_rg.bam
+@RG	ID:497	LB:L003m	PL:illumina	SM:RR01	PU:RR01.497_140312_L003m
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R03_S3_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R03_S4_sorted_rg.bam
+@RG	ID:498	LB:L004m	PL:illumina	SM:RR01	PU:RR01.498_140312_L004m
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R03_S4_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R03_S5_sorted_rg.bam
+@RG	ID:547	LB:L001n	PL:illumina	SM:RR01	PU:RR01.547_140515_L001n
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R03_S5_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R04_S1_sorted_rg.bam
+@RG	ID:444	LB:L007k	PL:illumina	SM:RR02	PU:RR02.444_130920_L007k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R04_S1_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R04_S2_sorted_rg.bam
+@RG	ID:464	LB:L002l	PL:illumina	SM:RR02	PU:RR02.464_131003_L002l
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R04_S2_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R04_S3_sorted_rg.bam
+@RG	ID:533	LB:L005m	PL:illumina	SM:RR02	PU:RR02.533_140312_L005m
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R04_S3_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R04_S4_sorted_rg.bam
+@RG	ID:534	LB:L006m	PL:illumina	SM:RR02	PU:RR02.534_140312_L006m
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R04_S4_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cfru_RUS_Mu_R04_S5_sorted_rg.bam
+@RG	ID:553	LB:L002n	PL:illumina	SM:RR02	PU:RR02.553_140515_L002n
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cfru_RUS_Mu_R04_S5_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Chaw_Oli-Studbook67_S1_sorted_rg.bam
+@RG	ID:1021	LB:HB51GADXX	PL:illumina	SM:Oli-Studbook67	PU:Oli-Studbook67.1021_261114_L001v
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Chaw_Oli-Studbook67_S1_tqc_pe_R1.fq.gz Chaw_Oli-Studbook67_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Ckub_Rota_21-23-1_S1_sorted_rg.bam
+@RG	ID:1019	LB:L002h	PL:illumina	SM:Rota_21-23-1	PU:Rota_21-23-1.1019_20514_L002h
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Ckub_Rota_21-23-1_S1_tqc_pe_R1.fq.gz Ckub_Rota_21-23-1_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J01_S1_sorted_rg.bam
+@RG	ID:135	LB:L003k	PL:illumina	SM:J01	PU:J01.135_120913_L003k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J01_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J02_S1_sorted_rg.bam
+@RG	ID:429	LB:L007g	PL:illumina	SM:J05	PU:J05.429_130920_L007g
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J02_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J02_S2_sorted_rg.bam
+@RG	ID:449	LB:L002f	PL:illumina	SM:J05	PU:J05.449_131003_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J02_S2_tqc_pe_R1.fq.gz Cmone_S_Ri_J02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J03_S1_sorted_rg.bam
+@RG	ID:479	LB:L007e	PL:illumina	SM:J03	PU:J03.479_140227_L007e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J03_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J03_S2_sorted_rg.bam
+@RG	ID:480	LB:L008e	PL:illumina	SM:J03	PU:J03.480_140227_L008e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J03_S2_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J03_S3_sorted_rg.bam
+@RG	ID:521	LB:L001d	PL:illumina	SM:J03	PU:J03.521_140312_L001d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J03_S3_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J03_S4_sorted_rg.bam
+@RG	ID:522	LB:L002d	PL:illumina	SM:J03	PU:J03.522_140312_L002d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J03_S4_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J08_S1_sorted_rg.bam
+@RG	ID:136	LB:L003k	PL:illumina	SM:J02	PU:J02.136_120913_L003k
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J08_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J08_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J08_S2_sorted_rg.bam
+@RG	ID:489	LB:L005d	PL:illumina	SM:J02	PU:J02.489_140312_L005d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J08_S2_tqc_pe_R1.fq.gz Cmone_S_Ri_J08_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmone_S_Ri_J08_S3_sorted_rg.bam
+@RG	ID:490	LB:L006d	PL:illumina	SM:J02	PU:J02.490_140312_L006d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmone_S_Ri_J08_S3_tqc_pe_R1.fq.gz Cmone_S_Ri_J08_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_FS66096_S2_sorted_rg.bam
+@RG	ID:1001	LB:L001a	PL:illumina	SM:FS66096	PU:FS66096.1001_140514_L001a
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_FS66096_S2_tqc_pe_R1.fq.gz Cmon_FS66096_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_FS66096_S3_sorted_rg.bam
+@RG	ID:1002	LB:L007d	PL:illumina	SM:FS66096	PU:FS66096.1002_140514_L007d
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_FS66096_S3_tqc_pe_R1.fq.gz Cmon_FS66096_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC3_S1_sorted_rg.bam
+@RG	ID:1003	LB:L007b	PL:illumina	SM:NC3	PU:NC3.1003_130729_L007b
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC3_S1_tqc_pe_R1.fq.gz Cmon_NC3_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC3_S2_sorted_rg.bam
+@RG	ID:1004	LB:L002e	PL:illumina	SM:NC3	PU:NC3.1004_130729_L002e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC3_S2_tqc_pe_R1.fq.gz Cmon_NC3_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC3_S3_sorted_rg.bam
+@RG	ID:1005	LB:L001e	PL:illumina	SM:NC3	PU:NC3.1005_130729_L001e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC3_S3_tqc_pe_R1.fq.gz Cmon_NC3_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC3_S4_sorted_rg.bam
+@RG	ID:1006	LB:L001e	PL:illumina	SM:NC3	PU:NC3.1006_130729_L001e
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC3_S4_tqc_pe_R1.fq.gz Cmon_NC3_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC5_S1_sorted_rg.bam
+@RG	ID:1007	LB:L001f	PL:illumina	SM:NC5	PU:NC5.1007_131023_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC5_S1_tqc_pe_R1.fq.gz Cmon_NC5_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC5_S2_sorted_rg.bam
+@RG	ID:1008	LB:L002f	PL:illumina	SM:NC5	PU:NC5.1008_131023_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC5_S2_tqc_pe_R1.fq.gz Cmon_NC5_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC6_S1_sorted_rg.bam
+@RG	ID:1009	LB:L001f	PL:illumina	SM:NC6	PU:NC6.1009_131023_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC6_S1_tqc_pe_R1.fq.gz Cmon_NC6_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC6_S2_sorted_rg.bam
+@RG	ID:1010	LB:L002f	PL:illumina	SM:NC6	PU:NC6.1010_131023_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC6_S2_tqc_pe_R1.fq.gz Cmon_NC6_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC8_S1_sorted_rg.bam
+@RG	ID:1011	LB:L001f	PL:illumina	SM:NC8	PU:NC8.1011_131023_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC8_S1_tqc_pe_R1.fq.gz Cmon_NC8_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cmon_NC8_S2_sorted_rg.bam
+@RG	ID:1012	LB:L002f	PL:illumina	SM:NC8	PU:NC8.1012_131023_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cmon_NC8_S2_tqc_pe_R1.fq.gz Cmon_NC8_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O01_S1_sorted_rg.bam
+@RG	ID:28	LB:AD18MTACXX	PL:illumina	SM:A01	PU:A01.28_120913_L005gb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O01_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O01_S2_sorted_rg.bam
+@RG	ID:138	LB:AD1BJNACXX	PL:illumina	SM:A01	PU:A01.138_120927_L001hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O01_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O01_S3_sorted_rg.bam
+@RG	ID:139	LB:AD1BJNACXX	PL:illumina	SM:A01	PU:A01.139_120927_L002hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O01_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O01_S4_sorted_rg.bam
+@RG	ID:140	LB:AD1BJNACXX	PL:illumina	SM:A01	PU:A01.140_120927_L003hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O01_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O01_S5_sorted_rg.bam
+@RG	ID:322	LB:BD1D8BACXX	PL:illumina	SM:A01	PU:A01.322_121026_L001l
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O01_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S1_sorted_rg.bam
+@RG	ID:29	LB:AD18MTACXX	PL:illumina	SM:A02	PU:A02.29_120913_L007gb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S2_sorted_rg.bam
+@RG	ID:141	LB:AD1BJNACXX	PL:illumina	SM:A02	PU:A02.141_120927_L007hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S3_sorted_rg.bam
+@RG	ID:142	LB:AD1BJNACXX	PL:illumina	SM:A02	PU:A02.142_120927_L008hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S4_sorted_rg.bam
+@RG	ID:256	LB:BD1BNAACXX	PL:illumina	SM:A02	PU:A02.256_120927_L001ka
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S5_sorted_rg.bam
+@RG	ID:257	LB:BD1BNAACXX	PL:illumina	SM:A02	PU:A02.257_120927_L002ka
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S6_sorted_rg.bam
+@RG	ID:323	LB:BD1D8BACXX	PL:illumina	SM:A02	PU:A02.323_121026_L003l
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S6_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S6_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O02_S7_sorted_rg.bam
+@RG	ID:425	LB:BD1YU2ACXX	PL:illumina	SM:A02	PU:A02.425_130426_L008ma
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O02_S7_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S7_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O03_S1_sorted_rg.bam
+@RG	ID:30	LB:AD18MTACXX	PL:illumina	SM:A03	PU:A03.30_120913_L005gb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O03_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O03_S2_sorted_rg.bam
+@RG	ID:143	LB:AD1BJNACXX	PL:illumina	SM:A03	PU:A03.143_120927_L004hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O03_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O03_S3_sorted_rg.bam
+@RG	ID:144	LB:AD1BJNACXX	PL:illumina	SM:A03	PU:A03.144_120927_L005hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O03_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O03_S4_sorted_rg.bam
+@RG	ID:145	LB:AD1BJNACXX	PL:illumina	SM:A03	PU:A03.145_120927_L006hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O03_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O03_S5_sorted_rg.bam
+@RG	ID:421	LB:BD1YU2ACXX	PL:illumina	SM:A03	PU:A03.421_130426_L008ma
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O03_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O04_S1_sorted_rg.bam
+@RG	ID:31	LB:AD18MTACXX	PL:illumina	SM:A04	PU:A04.31_120913_L007gb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O04_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O04_S2_sorted_rg.bam
+@RG	ID:146	LB:AD1BJNACXX	PL:illumina	SM:A04	PU:A04.146_120927_L007hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O04_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O04_S3_sorted_rg.bam
+@RG	ID:147	LB:AD1BJNACXX	PL:illumina	SM:A04	PU:A04.147_120927_L008hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O04_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O04_S4_sorted_rg.bam
+@RG	ID:258	LB:BD1BNAACXX	PL:illumina	SM:A04	PU:A04.258_120927_L001ka
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O04_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O04_S5_sorted_rg.bam
+@RG	ID:259	LB:BD1BNAACXX	PL:illumina	SM:A04	PU:A04.259_120927_L002ka
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O04_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O05_S1_sorted_rg.bam
+@RG	ID:32	LB:AD18MTACXX	PL:illumina	SM:A05	PU:A05.32_120913_L005gb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O05_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O05_S2_sorted_rg.bam
+@RG	ID:148	LB:AD1BJNACXX	PL:illumina	SM:A05	PU:A05.148_120927_L004hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O05_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O05_S3_sorted_rg.bam
+@RG	ID:149	LB:AD1BJNACXX	PL:illumina	SM:A05	PU:A05.149_120927_L005hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O05_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Pr_O05_S4_sorted_rg.bam
+@RG	ID:150	LB:AD1BJNACXX	PL:illumina	SM:A05	PU:A05.150_120927_L006hb
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Pr_O05_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_C.orientalis_RUS_Tv_O01_S1_sorted_rg.bam
+@RG	ID:428	LB:AC23TWACXX	PL:illumina	SM:A18	PU:A18.428_130426_L006b
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 C.orientalis_RUS_Tv_O01_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Tv_O01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_CKW77_L002_sorted_rg.bam
+@RG	ID:1023	LB:L002c	PL:illumina	SM:CKW77	PU:CKW77.1023_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_CKW77_L002_tqc_pe_R1.fq.gz Csplendens_CKW77_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_CKW77_L003_sorted_rg.bam
+@RG	ID:1024	LB:L003c	PL:illumina	SM:CKW77	PU:CKW77.1024_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_CKW77_L003_tqc_pe_R1.fq.gz Csplendens_CKW77_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_CSW7069_L002_sorted_rg.bam
+@RG	ID:1025	LB:L002c	PL:illumina	SM:CSW7069	PU:CSW7069.1025_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_CSW7069_L002_tqc_pe_R1.fq.gz Csplendens_CSW7069_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_CSW7069_L003_sorted_rg.bam
+@RG	ID:1026	LB:L003c	PL:illumina	SM:CSW7069	PU:CSW7069.1026_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_CSW7069_L003_tqc_pe_R1.fq.gz Csplendens_CSW7069_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_EVL981_L002_sorted_rg.bam
+@RG	ID:1027	LB:L002c	PL:illumina	SM:EVL981	PU:EVL981.1027_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_EVL981_L002_tqc_pe_R1.fq.gz Csplendens_EVL981_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_EVL981_L003_sorted_rg.bam
+@RG	ID:1028	LB:L003c	PL:illumina	SM:EVL981	PU:EVL981.1028_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_EVL981_L003_tqc_pe_R1.fq.gz Csplendens_EVL981_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_LKW131_L002_sorted_rg.bam
+@RG	ID:1029	LB:L002c	PL:illumina	SM:LKW131	PU:LKW131.1029_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_LKW131_L002_tqc_pe_R1.fq.gz Csplendens_LKW131_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_LKW131_L003_sorted_rg.bam
+@RG	ID:1030	LB:L003c	PL:illumina	SM:LKW131	PU:LKW131.1030_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_LKW131_L003_tqc_pe_R1.fq.gz Csplendens_LKW131_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_PJG222_L002_sorted_rg.bam
+@RG	ID:1031	LB:L002c	PL:illumina	SM:PJG222	PU:PJG222.1031_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_PJG222_L002_tqc_pe_R1.fq.gz Csplendens_PJG222_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Csplendens_PJG222_L003_sorted_rg.bam
+@RG	ID:1032	LB:L003c	PL:illumina	SM:PJG222	PU:PJG222.1032_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Csplendens_PJG222_L003_tqc_pe_R1.fq.gz Csplendens_PJG222_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Ctas_B44919_S1_sorted_rg.bam
+@RG	ID:1022	LB:HB51GADXX	PL:illumina	SM:B44919	PU:B44919.1022_261114_L002v
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Ctas_B44919_S1_tqc_pe_R1.fq.gz Ctas_B44919_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoodfordi_CROW12_L002_sorted_rg.bam
+@RG	ID:1033	LB:L002c	PL:illumina	SM:CROW12	PU:CROW12.1033_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoodfordi_CROW12_L002_tqc_pe_R1.fq.gz Cwoodfordi_CROW12_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoodfordi_CROW12_L003_sorted_rg.bam
+@RG	ID:1034	LB:L003c	PL:illumina	SM:CROW12	PU:CROW12.1034_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoodfordi_CROW12_L003_tqc_pe_R1.fq.gz Cwoodfordi_CROW12_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoodfordi_CROWR21_L002_sorted_rg.bam
+@RG	ID:1035	LB:L002c	PL:illumina	SM:CROWR21	PU:CROWR21.1035_151015_L002c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoodfordi_CROWR21_L002_tqc_pe_R1.fq.gz Cwoodfordi_CROWR21_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoodfordi_CROWR21_L003_sorted_rg.bam
+@RG	ID:1036	LB:L003c	PL:illumina	SM:CROWR21	PU:CROWR21.1036_151015_L003c
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoodfordi_CROWR21_L003_tqc_pe_R1.fq.gz Cwoodfordi_CROWR21_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoo_MLK164_S1_sorted_rg.bam
+@RG	ID:1015	LB:L001f	PL:illumina	SM:MLK164	PU:MLK164.1015_131023_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoo_MLK164_S1_tqc_pe_R1.fq.gz Cwoo_MLK164_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoo_MLK164_S2_sorted_rg.bam
+@RG	ID:1016	LB:L002f	PL:illumina	SM:MLK164	PU:MLK164.1016_131023_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoo_MLK164_S2_tqc_pe_R1.fq.gz Cwoo_MLK164_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoo_MLK166_S1_sorted_rg.bam
+@RG	ID:1017	LB:L001f	PL:illumina	SM:MLK166	PU:MLK166.1017_131023_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoo_MLK166_S1_tqc_pe_R1.fq.gz Cwoo_MLK166_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoo_MLK166_S2_sorted_rg.bam
+@RG	ID:1018	LB:L002f	PL:illumina	SM:MLK166	PU:MLK166.1018_131023_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoo_MLK166_S2_tqc_pe_R1.fq.gz Cwoo_MLK166_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoo_MLK92_S1_sorted_rg.bam
+@RG	ID:1013	LB:L001f	PL:illumina	SM:MLK92	PU:MLK92.1013_131023_L001f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoo_MLK92_S1_tqc_pe_R1.fq.gz Cwoo_MLK92_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/nobackup/PHYLO/Cmoneduloides_v1/processed_bams/bwa_Cwoo_MLK92_S2_sorted_rg.bam
+@RG	ID:1014	LB:L002f	PL:illumina	SM:MLK92	PU:MLK92.1014_131023_L002f
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 nc_crow-final.assembly.fasta.gapcloser-1 Cwoo_MLK92_S2_tqc_pe_R1.fq.gz Cwoo_MLK92_S2_tqc_pe_R2.fq.gz

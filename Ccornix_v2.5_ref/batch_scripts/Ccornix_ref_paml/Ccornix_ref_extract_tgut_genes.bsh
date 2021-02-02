@@ -1,0 +1,39 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J extract_Tgut_genes
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+
+crowdata=/proj/b2013182/
+
+# Define output directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/paml/${1}/Tgut/
+
+# Try to remove the output directory to clear any old files
+rm -r ${outdir}
+
+# Remake output directory
+mkdir ${outdir}
+
+# Copy the full Tgut CDS fasta file with only the longest CDS per gene to tmp
+cp ${crowdata}/private/bams/Ccornix_ref/orthologs/Tgut_reference_lCDS_nucl_rnm3.fa ${SNIC_TMP}/
+
+# Copy the list of IDs to tmp
+cp ${crowdata}/nobackup/bams/Ccornix_ref/paml/${1}_ccornix_v_tgut_unamb_genes.tab ${SNIC_TMP}/
+
+# Extract individual genes and place them in individual fasta files
+for ccornix in $(cat ${SNIC_TMP}/${1}_ccornix_v_tgut_unamb_genes.tab | awk '{print $2}' | sed 's/Ccornix|//g'); \
+do zfinch=$(grep -w "Ccornix|${ccornix}" ${SNIC_TMP}/${1}_ccornix_v_tgut_unamb_genes.tab | awk '{print $1}' | sed 's/Tgut|//g'); \
+if [ -n  "${zfinch}" ]; \
+then (getFasta.py -IDs ${zfinch} -fasta ${SNIC_TMP}/Tgut_reference_lCDS_nucl_rnm3.fa -task f -outfile ${ccornix} -outdir ${outdir})fi; \
+done
+
+# Cleanup
+rm ${SNIC_TMP}/Tgut_reference_lCDS_nucl_rnm3.fa
+rm ${SNIC_TMP}/${1}_ccornix_v_tgut_unamb_genes.tab

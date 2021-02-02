@@ -1,0 +1,35 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 2-0:00:00
+#SBATCH -J crows_prank
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+module load prank/150803
+
+crowdata=/proj/b2013182/
+species_set=${1}
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/paml/${1}/${2}/
+
+# Copy the files from the directory
+cp ${outdir}*_clean_names.fasta ${SNIC_TMP}/
+
+# Clean the individual fasta files
+cd ${SNIC_TMP}/
+for f in $(ls *_clean_names.fasta | sed 's/_clean_names.fasta//g'); \
+do prank -d=${f}_clean_names.fasta -translate -o=${f} -f='paml'; \
+done
+wait
+
+# Copy the files back
+for file in $(ls *best.nuc.phy); do cp ${file} ${outdir}/; done
+
+# Cleanup
+rm ${SNIC_TMP}/*_clean_names.fasta
+rm ${SNIC_TMP}/*.phy

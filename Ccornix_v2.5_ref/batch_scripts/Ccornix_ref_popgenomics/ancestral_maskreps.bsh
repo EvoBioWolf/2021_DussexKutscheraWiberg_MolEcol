@@ -1,0 +1,42 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J ancestral_maskreps
+
+# STEP 3: FILTER THE CONSENSUS VCF FILE
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load BEDTools/2.25.0
+
+crowdata=/proj/b2013182
+
+# Copy ancestral genome
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_3sp_Ccornix_Cdau_Cfru_mskVars.fa ${SNIC_TMP}/
+
+# Copy the repeat regions bed file
+cp /proj/b2013182/private/annotation/Ccornix/genome_HC_allpaths41687_v2.5.fasta.out.bed ${SNIC_TMP}/
+
+# List the files to log.
+ls -h ${SNIC_TMP}/
+
+# Move to the temp directory
+cd ${SNIC_TMP}
+
+# Use bedtools to mask repeat regions
+bedtools maskfasta -fi consensus_3sp_Ccornix_Cdau_Cfru_mskVars.fa -bed genome_HC_allpaths41687_v2.5.fasta.out.bed \
+-fo consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa -mc N
+
+#copy files back
+cp ${SNIC_TMP}/consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/
+
+
+
+
+
+

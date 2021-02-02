@@ -1,0 +1,35 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J genomecov_maskfasta
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load bwa
+module load BEDTools/2.25.0
+
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+cp ${crowdata}/nobackup/bams/Cmon_Ref/Merged_bam_per_species/$1_all_samples_rmdup_sorted.bam ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Cmon_Ref/Consensus_per_species_nodup/Consensus_$1.fasta ${SNIC_TMP}/
+cp ${crowdata}/private/assemblies/Cmoneduloides/otago-temp/nc_crow-final.assembly.fasta.gapcloser-1 ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+bedtools genomecov -ibam $1_all_samples_rmdup_sorted.bam -g nc_crow-final.assembly.fasta.gapcloser-1 -bg > $1_genomecov.bed
+awk '$4 <= 5' $1_genomecov.bed > $1_genomecov_min5.bed
+bedtools maskfasta -fi Consensus_$1.fasta -bed $1_genomecov_min5.bed -fo $1_masked_genome.fa -mc N
+
+
+#################################################
+####
+## Copy .bed files to nobackup
+####
+cp ${SNIC_TMP}/$1_genomecov_min5.bed ${crowdata}/private/bams/Cmon_Ref/Masked_genomes
+cp ${SNIC_TMP}/$1_masked_genome.fa ${crowdata}/private/bams/Cmon_Ref/Masked_genomes

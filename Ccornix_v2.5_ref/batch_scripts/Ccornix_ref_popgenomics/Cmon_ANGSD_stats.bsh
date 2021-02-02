@@ -1,0 +1,66 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 9
+#SBATCH -t 1-10:00:00
+#SBATCH -J ANGSD_Cmon_stats
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load samtools/1.3
+#module load htslib/1.3
+module load ANGSD/0.917-g6522d3e
+
+#ANGSDDIR='/home/axelw/angsd'
+crowdata=/proj/b2013182
+#copy files from home to tmp directory
+#Reference genome: masked repeat regions
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/genome_HC_allpaths41687_v2.5_mskReps.fa ${SNIC_TMP}/
+#Ancestral genome: masked vars, repeats, low cov
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa ${SNIC_TMP}/
+#C. moneduloides individual bam files.
+cp ${crowdata}/nobackup/PHYLO/Ccornix_v2.5/processed_bams/bwa_Cmon_*indraln*  ${SNIC_TMP}/
+#C. moneduloides sfs files.
+cp ${crowdata}/private/bams/Ccornix_ref/pop_genomics/Cmon_run.*  ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+#list of bam files
+ls -1 *.bam > Cmon_sorted_bams.list
+
+ls -h ${SNIC_TMP}
+echo "Running realSFS"
+realSFS Cmon_run.saf.idx > Cmon.sfs
+echo "DONE..."
+
+echo "Running ANGSD"
+### calculate thetas for each site
+angsd -bam Cmon_sorted_bams.list -doThetas 1 -doSaf 1 -pest Cmon.sfs -anc consensus_3sp_Ccornix_Cdau_Cfru_mskVarsReps.fa -GL 1 -P 24 -out Cmon_stats
+echo "DONE..."
+
+ls -a ${SNIC_TMP}
+
+echo "Running thetaStat"
+#calculate Tajimas D
+thetaStat do_stat Cmon_stats.thetas.idx
+echo "DONE..."
+
+echo "Running thetaStat window analaysis"
+#sliding window analysis
+thetaStat do_stat Cmon_stats.thetas.idx -win 50000 -step 10000  -outnames theta.thetasWindow50kb_Cmon.gz
+thetaStat do_stat Cmon_stats.thetas.idx -win 500000 -step 10000  -outnames theta.thetasWindow500kb_Cmon.gz
+echo "DONE"
+
+#################################################
+####
+## Copy _all_samples.bam files to nobackup
+####
+cp ${SNIC_TMP}/Cmon.sfs*  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/
+cp ${SNIC_TMP}/Cmon_stats*  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/
+cp ${SNIC_TMP}/theta.thetasWindow*  ${crowdata}/private/bams/Ccornix_ref/pop_genomics/
+
+

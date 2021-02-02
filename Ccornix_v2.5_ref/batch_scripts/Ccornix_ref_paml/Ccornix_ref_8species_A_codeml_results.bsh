@@ -1,0 +1,32 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J A_codeml_results_8species
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+crowdata=/proj/b2013182/
+
+# Define paml directory.
+outdir=${crowdata}/nobackup/bams/Ccornix_ref/paml/8species/${1}/
+
+# Copy the files from the directory
+cp ${outdir}*_A*results.txt ${SNIC_TMP}/
+
+# Run the Null model codemls
+cd ${SNIC_TMP}/
+for file in $(ls *_A*results.txt); \
+do codemlResultsParser.py -fil ${file} >> 8species_A_results_${1}.txt; \
+done
+wait
+
+# Copy the files back
+cp 8species_A_results_${1}.txt ${crowdata}/nobackup/bams/Ccornix_ref/paml/8species/
+
+# Cleanup
+rm ${SNIC_TMP}/*A*results.txt
+rm ${SNIC_TMP}/8species_A_results_${1}.txt

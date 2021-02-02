@@ -1,0 +1,104 @@
+Pipeline for obtaining gene sequences using Ccornix reference annotation.
+
+1) move to the batch scripts directory. This will ensure logs are saved in this directory.
+
+$ cd /proj/b2013182/nobackup/batch_scripts/Ccornix_ref_genomecov_masking/
+
+2) run the merging scripts for each species
+
+#C. corax
+$ sbatch orthologs.bsh Ccorx
+
+#C. tasmanicus
+$ sbatch orthologs.bsh Ctas
+
+#C. hawaiiensis
+$ sbatch orthologs.bsh Chaw
+
+#C. kubaryi
+$ sbatch orthologs.bsh Ckub
+
+#C. moneduloides
+$ sbatch orthologs.bsh Cmon
+
+#C. woodfordii
+$ sbatch orthologs.bsh Cwoo
+
+#C. monedula
+$ sbatch orthologs.bsh Cmone
+
+#C. splendens
+$ sbatch orthologs.bsh Csple
+
+#C. dauuricus
+$ sbatch orthologs.bsh Cdau
+
+#C. brachyrhynchos
+$ sbatch orthologs.bsh Cbrach
+
+#C. frugilegus
+$ sbatch orthologs.bsh Cfru
+
+#4_sp C. corone
+$ sbatch orthologs.bsh 4sp_Ccornix
+
+#3_sp C. corone
+$ sbatch orthologs.bsh 3sp_Ccornix
+
+3) Rename genes in fasta
+$ sed 's/>.*gene=/>[Species]_/g' consensus.fa > consensus_rnm.fa
+
+#C. corax
+$ sbatch rename_orthologs.bsh Ccorx
+
+#C. tasmanicus
+$ sbatch rename_orthologs.bsh Ctas
+
+#C. hawaiiensis
+$ sbatch rename_orthologs.bsh Chaw
+
+#C. kubaryi
+$ sbatch rename_orthologs.bsh Ckub
+
+#C. moneduloides
+$ sbatch rename_orthologs.bsh Cmon
+
+#C. woodfordii
+$ sbatch rename_orthologs.bsh Cwoo
+
+#C. monedula
+$ sbatch rename_orthologs.bsh Cmone
+
+#C. splendens
+$ sbatch rename_orthologs.bsh Csple
+
+#C. dauuricus
+$ sbatch rename_orthologs.bsh Cdau
+
+#C. brachyrhynchos
+$ sbatch rename_orthologs.bsh Cbrach
+
+#C. frugilegus
+$ sbatch rename_orthologs.bsh Cfru
+
+#4_sp C. corone
+$ sbatch rename_orthologs.bsh 4sp_Ccornix
+
+#3_sp C. corone
+$ sbatch rename_orthologs.bsh 3sp_Ccornix
+
+4) Count Ns for each species
+
+# This will loop over all species.
+$ sbatch count_Ns.bsh
+ 
+5) Get coverage for each species.
+
+#C. corax
+$ sbatch coverage_per_gene.bsh Ccorx bwa_Ccorx_2407-51841_S1_sorted_rmdup.bam
+
+
+
+
+
+

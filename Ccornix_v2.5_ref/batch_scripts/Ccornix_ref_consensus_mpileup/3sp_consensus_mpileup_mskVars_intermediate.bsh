@@ -1,0 +1,82 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH	-p core -n 3
+#SBATCH -t 7-00:00:00
+#SBATCH -J 3sp_mpileup_consensus_mskVars
+
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#species ID to name input list of bams: ${1}
+
+module load bioinfo-tools
+module load samtools/1.3
+module load GATK/3.4.0
+module load bcftools/1.3
+module load htslib/1.3
+module load vcftools/0.1.14
+
+# Define variables
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5* ${SNIC_TMP}/
+
+cp ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/consensus_${1}.vcf* ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# 2) FILTER THE VCF FILE
+########################
+# Remove INDELS from consensus.vcf
+# This keeps the genome lengths the same and means the annotation coordinates will match up.
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5.fasta --variant:VCF consensus_${1}.vcf.gz -o consensus_${1}_snps.vcf --selectTypeToExclude INDEL
+# Zip and indext the vcf files
+bgzip consensus_${1}_snps.vcf
+tabix -p vcf consensus_${1}_snps.vcf.gz
+
+ls -1 ${SNIC_TMP}
+
+# Get the positions of all sites with depth < 5x
+java -jar /sw/apps/bioinfo/GATK/3.4.0/GenomeAnalysisTK.jar -T SelectVariants -R genome_HC_allpaths41687_v2.5.fasta --variant:VCF consensus_${1}.vcf.gz -o consensus_${1}_lowDP.vcf -select "DP < 5"
+# Zip and index the vcf file
+bgzip consensus_${1}_lowDP.vcf
+tabix -p vcf consensus_${1}_lowDP.vcf.gz
+
+# Filter the vcf file to get only trully polymorphic SNPs
+# I am using the vcf files where INDELs and sites with coverage < 5x have already been removed
+vcftools --gzvcf consensus_${1}.vcf.gz --maf 0.00001 --max-maf 0.99999 --min-alleles 2 --recode --recode-INFO-all --out consensus_${1}_snps_trueSNPs
+# Zip and index the vcf file
+bgzip consensus_${1}_snps_trueSNPs.recode.vcf
+tabix -p vcf consensus_${1}_snps_trueSNPs.recode.vcf.gz
+
+ls -1 ${SNIC_TMP}
+
+# Convert these vcf files to simple bed coordinate files by extracting the first two columns
+bgzip -cd consensus_${1}_snps_trueSNPs.recode.vcf.gz | grep -v '^#' | awk '{print $1 "\t" $2}' > consensus_${1}_snps_trueSNPs.tab
+bgzip -cd consensus_${1}_lowDP.vcf.gz | grep -v '^#' | awk '{print $1 "\t" $2}' > consensus_${1}_lowDP.tab
+
+# Combine the bed files, sort by position, take only unique rows, remove all "chrM" entries
+cat consensus_${1}_lowDP.tab consensus_${1}_snps_trueSNPs.tab | sort -k1,1 -k2,2n -u > consensus_${1}_lowDP_trueSNPs.tab
+
+ls -1 ${SNIC_TMP}
+
+# 3) BUILD CONSENSUS GENOME
+###########################
+
+# Convert consensus .vcf (without indels) to .fasta, masking sites from the list file
+bcftools consensus --mask consensus_${1}_lowDP_trueSNPs.tab --fasta-ref genome_HC_allpaths41687_v2.5.fasta consensus_${1}_snps.vcf.gz > ${1}_unfixed_mskVars.fa
+
+# Rename fasta headers
+perl -pne 's/>\d+\s+(.*):.*/>\1/' ${1}_unfixed_mskVars.fa > consensus_${1}_mskVars.fa
+
+# Move files back to
+cp ${SNIC_TMP}/consensus_${1}_mskVars.fa ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/
+cp ${SNIC_TMP}/consensus_${1}.vcf* ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/
+cp ${SNIC_TMP}/consensus_${1}_lowDP_trueSNPs.tab ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/snp_vcf/
+
+# Move files back to
+cp ${SNIC_TMP}/consensus*_snps.vc* ${crowdata}/private/bams/Ccornix_ref/consensus_per_species/
+

@@ -1,0 +1,50 @@
+
+Pipeline for merging the .bam files
+
+1) move to the batch scripts directory. This will ensure logs are saved in this directory.
+
+$ cd /proj/b2013182/nobackup/batch_scripts/Ccornix_ref_genomecov_masking/
+
+2) run the merging scripts for each species
+
+# C. corax
+$ sbatch genomecov_masking.bsh Ccorx
+
+# C. woodfordii
+$ sbatch genomecov_masking.bsh Cwoo
+
+# C. moneduloides
+$ sbatch genomecov_masking.bsh Cmon
+
+# C. monedula
+$ sbatch genomecov_masking.bsh Cmone
+
+# C. brachyrhynchos
+$ sbatch genomecov_masking.bsh Cbrach
+
+# C. tasmanicus
+$ sbatch genomecov_masking.bsh Ctas
+
+# C. frugilegus
+$ sbatch genomecov_masking.bsh Cfru
+
+# C. hawaiiensis
+$ sbatch genomecov_masking.bsh Chaw
+
+# C. dauricus
+$ sbatch genomecov_masking.bsh Cdau
+
+# C. kubaryi
+$ sbatch genomecov_masking.bsh Ckub
+
+# C. splendens
+$ sbatch genomecov_masking.bsh Csple
+
+# 4sp C. corone
+$ sbatch genomecov_masking.bsh 4sp_Ccornix
+
+# 3sp C. corone
+$ sbatch genomecov_masking.bsh 3sp_Ccornix
+
+# N. columbiana
+$ sbatch genomecov_masking.bsh Ncol

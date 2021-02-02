@@ -1,0 +1,50 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J extract_common_genes
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load cufflinks/2.2.1
+
+crowdata=/proj/b2013182
+
+# Copy the species and common genes list
+cp ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/common_complete_genes.list ${SNIC_TMP}/
+cp ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/species.list ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Loop through all the species in the species.list
+for sp in $(cat species.list); do
+	# Make sure there is an empty output directory for the fasta files
+	rm -rf ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/${sp}_seqs
+	mkdir ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/${sp}_seqs
+	# Copy over the genome
+	cp /proj/b2013182/private/bams/Cmon_Ref/Consensus_per_species_nodup/${sp}_consensus.fa ${SNIC_TMP}/
+	# Copy over the busco data
+	cp -r ~/nic_BUSCO/run_${sp}* ${SNIC_TMP}/
+	# For each gene in common_complete_genes.list
+	for gene in $(cat common_complete_genes.list | awk '{print $1}' ); do
+		# Run gffread
+		gffread -g ${sp}_consensus.fa -x ${gene}_nucl.fa run_${sp}_busco/gffs/${gene}.gff;
+	done
+	# Copy all the files back to the home
+	cp *_nucl.fa ${crowdata}/nobackup/bams/Cmon_Ref/BUSCO_phylo/${sp}_seqs/
+	# Now remove the .fasta files
+	rm *_nucl.fa 
+	# and the genomes
+	rm ${sp}_consensus.fa ;
+done
+
+# Cleanup: remove the lists
+rm ${SNIC_TMP}/*.list
+
+
+

@@ -1,0 +1,32 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p node
+#SBATCH -N 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J Cmon_merged_coverage
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#ID of bam files to use: ${1}
+#ID to name list of .bams: ${2}
+module load bioinfo-tools
+module load BEDtools/2.25.0
+
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp ${crowdata}/private/bams/Ccornix_ref/merged_bams_per_individual/Cmon/*.bam ${SNIC_TMP}/
+cp ${crowdata}/private/assemblies/Ccornix/genome_HC_allpaths41687_v2.5* ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+for bam in $(ls *.bam | sed 's/.bam//g'); do bedtools genomecov -ibam ${bam}.bam -g genome_HC_allpaths41687_v2.5.fasta -bga > ${bam}_genomecov.tab; done
+
+# Print the coverage to the log file
+for cov in $(ls *.tab); do echo ${cov} && awk 'BEGIN{FS=OFS="\t"}{dpth=dpth+$4}END{print dpth/NR}' ${cov}; done
+
+# Copy the files back
+cp ${SNIC_TMP}/*_genomecov.tab ${crowdata}/private/bams/Ccornix_ref/merged_bams_per_individual/Cmon/
+
+

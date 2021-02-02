@@ -1,0 +1,44 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 3-00:00:00
+#SBATCH -J rename_sequences
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load cufflinks/2.2.1
+module load biopython/1.68
+
+crowdata=/proj/b2013182
+
+# Copy the species list
+cp ${crowdata}/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/species.list ${SNIC_TMP}/
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Loop through all the species in the species.list
+for sp in $(cat species.list); do
+	# Copy over the fasta files
+	cp ${crowdata}/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/${sp}_${1}_seqs/*.fa ${SNIC_TMP}/
+	# For each gene in common_complete_genes.list
+	for gene in $(ls *_nucl.fa | sed 's/_nucl.fa//g'); do
+		# Run gffread
+		renameFasta.py -f ${gene}_nucl.fa -ha ${sp} -a 2 > ${gene}_nucl_rnm.fa;
+	done
+	# Copy all the files back to the home
+	cp *_nucl_rnm.fa ${crowdata}/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/${sp}_${1}_seqs/
+	# Now remove the .fasta files
+	rm *_nucl_rnm.fa
+	rm *_nucl.fa ;
+done
+
+# Cleanup: remove the lists
+rm ${SNIC_TMP}/*.list
+
+
+

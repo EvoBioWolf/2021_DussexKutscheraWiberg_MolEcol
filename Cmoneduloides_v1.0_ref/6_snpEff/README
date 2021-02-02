@@ -1,0 +1,3 @@
+build_snpEff_database_gff.sh Script to build a snpEff database from NCcrow GFF file (https://datadryad.org/stash/dataset/doi:10.5061/dryad.w0vt4b8m9) 
+annotate_vcf.sh Script to annotate VCF file based on the database using snpEff 
+vcf_file_check.sh Script to check basic summary stats of the annotated VCF file

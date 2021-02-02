@@ -1,0 +1,181 @@
+### Pipeline to perform McDonald-Kreitman statistics using different PAML runs as divergence data ###
+# R version 3.3.2
+
+###
+# Input files and directories
+###
+
+### 1) Divergence data ###
+# PAML output from branch-model, based on 5, 6, 7, or 8 species plus zebra finch as outgroup.
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_5sp/results_unrooted
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_6sp/results_unrooted
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_7sp/results_unrooted
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_8sp_H_NC/results_unrooted
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_8sp_H_NC_convergence/results_unrooted
+# input files: [gene].fa_mod_rm0_eo_Model2_NSs0_A.results.txt
+
+# Old directories (runs with rooted tree)
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_5sp
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/no_outgroup/genes_80_5sp_no_T
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_6sp
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/no_outgroup/genes_80_6sp_no_T
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/genes_80_7sp
+/proj/b2013182/nobackup/bams/Cmon_Ref/PAML/masked_var_sites/no_outgroup/genes_80_7sp_no_T
+# input files: [gene].fa_mod_eo_M2_M2.results.txt
+
+
+### 2) Polymorphism data ###
+# VCF file of 5 C. moneduloides individuals mapped against the C. moneduloides reference. After VQSR keeping only sites passing the filter, and annotated using snpEff:
+/proj/b2013182/nobackup/POPseq/vcf/Cmoneduloides_v1/Cmoneduloides/5inds_gatk_HC_ERC/snpEff/Cmon_gatkHC_allSites_vqsr99_Q6_pass.ann.vcf.gz
+
+
+### 3) McDonald-Kreitman test directory ###
+/proj/b2013182/nobackup/POPseq/mk_tests
+
+
+###
+# Scripts and code
+###
+
+### 1 ###
+#scripts to extract N*dN and S*dS from PAML output files (replace XXX by actual file names and doublecheck directories before running the scripts!)
+sbatch 1_extract_N_S_from_PAML_XXX.sh
+
+
+##########
+# manual command line edits of the divergence tables
+# !!! replace XXX by actual directory and file names !!!
+
+#move to directory containing PAML output
+cd /proj/b2013182/nobackup/bams/Cmon_Ref/PAML/genes_80_XXX
+
+#get numbers of genes with output files
+ll *.fa_mod_rm0_eo_Model2_NSs0_A.results.txt | wc -l
+
+#move to directory containing McDonald-Kreitman test output
+cd /proj/b2013182/nobackup/POPseq/mk_tests
+
+#check duplicates in table. If OK, remove duplicates
+awk '$0==s{print s RS $0}{s=$0}' mkt_table_N_S_80_XXX.txt
+
+#remove duplicates
+sort -u mkt_table_N_S_80_XXX.txt > mkt_table_N_S_80_XXX_sorted_unique.txt
+
+#get numbers of unique genes in table
+grep -v '^gene' mkt_table_N_S_80_XXX_sorted_unique.txt | wc -l
+
+
+##########
+
+### 2 ###
+#get a table of all sites incl their genotypes, depths, annotations and warnings
+sbatch 2_extract_cds_annotations_from_ann_vcf.sh
+
+##########
+# manual command line edits of the vcf annotation table
+cd /proj/b2013182/nobackup/POPseq/mk_tests
+
+#modify header of new table
+touch Cmon_allSites_annotations_160818_header.txt
+head -n1 Cmon_allSites_annotations_160818.txt >> Cmon_allSites_annotations_160818_header.txt
+
+# !!! manually in nano !!! duplicate columns for GT and DP, remove "[*]" from the header
+nano Cmon_allSites_annotations_160818_header.txt
+
+grep -v '#' Cmon_allSites_annotations_160818.txt >> Cmon_allSites_annotations_160818_header.txt
+rm Cmon_allSites_annotations_160818.txt
+mv Cmon_allSites_annotations_160818_header.txt Cmon_allSites_annotations_160818.txt
+
+
+##########
+
+# !!! manually check all files generated above before moving on !!!
+
+### 3 ###
+#various filtering steps, editing and filtering the annotation table
+bash 3_vcf_annotation_table_edits.sh
+
+
+### 4 ###
+#generate the polymorphism table from the annotation table
+Rscript 4_generate_mkt_polymorphism_table.R
+
+
+### 5 ###
+#edit the polymorphism table
+bash 5_edit_mkt_polymorphism_table.sh
+
+# !!! manually check all output	files before moving on !!!
+
+
+### 6 ###
+#scripts to generate the MKT test tables for the polymorphism data with each of the PAML data sets (replace XXX by actual file names!). Contains check for missing genes.
+Rscript 6_generate_mkt_table_XXX.R
+
+
+### 7 ###
+#various unix commands to double check the tables regarding missing data
+bash 7_edit_check_mkt_tables.sh
+
+# !!! manually check all output files before moving on !!!
+
+
+##########
+
+# manual check of the files containing info about missing data: 
+# 1) compare numbers of lines (=genes) among files
+for i in $(ls mkt_table_N_S_80_*_sorted_unique.txt); do wc -l $i; done
+for i in $(ls mkt_table_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*); do wc -l $i; done
+
+# 2) check genes with missing polymorphism data: extract numbers of entries from original VCF annotation file
+for i in $(ls mkt_table_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_missing_genes_pN_pS_vs_allSites_vcf_annotation_file.txt); do echo ${i}; awk -F'\t' '{print $16}' ${i} | sort -u | wc -l; done
+
+# check how many of them have warnings about multiple stopp codons (and vice versa)
+for i in $(ls mkt_table_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_missing_genes_pN_pS_vs_allSites_vcf_annotation_file.txt); do echo ${i}; awk -F'\t' '$18 == "WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS" {print $16}' ${i} | sort -u | wc -l; done
+for i in $(ls mkt_table_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_missing_genes_pN_pS_vs_allSites_vcf_annotation_file.txt); do echo ${i}; awk -F'\t' '$18 != "WARNING_TRANSCRIPT_MULTIPLE_STOP_CODONS" {print $16}' ${i} | sort -u | wc -l; done
+
+
+##########
+
+### 8 ###
+#remove genes with missing divergence data or warnings about multiple stopp codons, replace "NA" by "0" for genes that are present in the large annotation table but which were removed out due to depth etc.
+bash 8_remove_edit_genes_mkt_tables.sh
+
+
+##########
+
+# check files manually, incl. numbers of lines in the output files
+for i in $(ls *missingSetTo0.txt); do wc -l $i; done
+
+
+### 9 ###
+#run the McDonald-Kreitman test: estimate p-values using the Fisher's exact test incl. Benjamini-Hochberg method to generate "adjusted" p-values, and the Neutrality index NI (replace XXX by actual file names!)
+Rscript 9_MKT_Fishers_NI_XXX.R
+
+##########
+
+# !!! manually check all output files from now on !!!
+
+# sort by NI
+for i in $(ls MKT_Fishers_NI_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*missingSetTo0.txt | sed 's/.txt//g'); do grep -v '^gene' ${i}.txt | sort -t " " -k8,8 ${i}.txt > ${i}_NIsort_noHeader.txt; done
+
+# add header line “gene pN N.dN pS S.dS Fishers.p.value BH NI”
+for i in $(ls MKT_Fishers_NI_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_NIsort_noHeader.txt | sed 's/_noHeader.txt//g'); do echo -e "gene pN N.dN pS S.dS Fishers.p.value BH NI" | cat - ${i}_noHeader.txt > ${i}.txt; done
+
+# sort by p value
+for i in $(ls MKT_Fishers_NI_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*missingSetTo0.txt | sed 's/.txt//g'); do grep -v '^gene' ${i}.txt | sort -t " " -k6,6 ${i}.txt > ${i}_FishersSort_noHeader.txt; done
+
+# add header line “gene pN N.dN pS S.dS Fishers.p.value BH NI”
+for i in $(ls MKT_Fishers_NI_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_FishersSort_noHeader.txt | sed 's/_noHeader.txt//g'); do echo -e "gene pN N.dN pS S.dS Fishers.p.value BH NI" | cat - ${i}_noHeader.txt > ${i}.txt; done
+
+# get only genes with substitutions on NC crow lineage
+for i in $(ls MKT_Fishers_NI_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_sorted_unique_missingSetTo0.txt | sed 's/.txt//g'); do awk '$3 > 0 || $5 > 0 {print}' ${i}.txt > ${i}_substitutions.txt; done
+for i in $(ls MKT_Fishers_NI_pN_pS_noMultiStop_minDP3_maxMiss3_N_S_80_*_sorted_unique_missingSetTo0.txt | sed 's/.txt//g'); do awk '$2 > 0 || $3 > 0 || $4 > 0 || $5 > 0 {print}' ${i}.txt > ${i}_variable_genes.txt; done
+
+# get orthologs to zebra finch, darwin finch and C. cornix
+touch candidate_genes_MKT.txt
+# use nano and add list of candidate genes
+for i in `cat candidate_genes_MKT.txt`; do grep 'Cmone|Cmoneduloides_001-${i}' orthologs-tgut.abc >> candidate_genes_MKT_zf_orthologs.txt; done
+for i in `cat candidate_genes_MKT.txt`; do grep 'Cmone|Cmoneduloides_001-${i}' orthologs-gfort.abc >> candidate_genes_MKT_df_orthologs.txt; done
+for i in `cat candidate_genes_MKT.txt`; do grep ${i} orthologs-ccornix.abc >> candidate_genes_MKT_cc_orthologs.txt; done
+

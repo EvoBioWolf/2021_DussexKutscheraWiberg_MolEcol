@@ -1,0 +1,67 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p node
+#SBATCH -N 1
+#SBATCH -t 1-00:00:00
+#SBATCH -J merge_species_bam_files
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+#ID of bam files to use: ${1}
+#ID to name list of .bams: ${2}
+module load bioinfo-tools
+module load samtools/1.3
+module load bamtools/2.3.0
+
+crowdata=/proj/b2013182
+
+# Copy files from home to tmp directory
+cp ${crowdata}/nobackup/bams/Ccornix_ref/bams/bwa_Cwoo*rmdup.bam ${SNIC_TMP}/
+
+# Move to tmp/ directory
+cd ${SNIC_TMP}
+
+# Create a list of all the _sorted.bam files: MLK164
+ls -1 bwa_Cwoo*MLK164*rmdup.bam > MLK164_sorted_bams
+# Merge the bams from the list
+bamtools merge -list MLK164_sorted_bams -out MLK164.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cwoo_MLK164.bam MLK164.bam
+
+# Create a list of all the _sorted.bam files: MLK166
+ls -1 bwa_Cwoo*MLK166*rmdup.bam > MLK166_sorted_bams
+# Merge the bams from the list
+bamtools merge -list MLK166_sorted_bams -out MLK166.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cwoo_MLK166.bam MLK166.bam
+
+# Create a list of all the _sorted.bam files: MLK92
+ls -1 bwa_Cwoo*MLK92*rmdup.bam > MLK92_sorted_bams
+# Merge the bams from the list
+bamtools merge -list MLK92_sorted_bams -out MLK92.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cwoo_MLK92.bam MLK92.bam
+
+# Create a list of all the _sorted.bam files: CROW12
+ls -1 bwa_Cwoo*CROW12*rmdup.bam > CROW12_sorted_bams
+# Merge the bams from the list
+bamtools merge -list CROW12_sorted_bams -out CROW12.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cwoo_CROW12.bam CROW12.bam
+
+# Create a list of all the _sorted.bam files: CROWR21
+ls -1 bwa_Cwoo*CROWR21*rmdup.bam > CROWR21_sorted_bams
+# Merge the bams from the list
+bamtools merge -list CROWR21_sorted_bams -out CROWR21.bam
+# Sort the merged file by coordinate
+samtools sort -@ 16 -m 4G -O bam -o Cwoo_CROWR21.bam CROWR21.bam
+
+#################################################
+####
+## Copy _all_samples.bam files to nobackup
+####
+cp ${SNIC_TMP}/Cwoo_*.bam ${crowdata}/private/bams/Ccornix_ref/merged_bams_per_individual/Cwoo/
+
+
+

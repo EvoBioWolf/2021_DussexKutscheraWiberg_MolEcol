@@ -1,0 +1,414 @@
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B01_S1_tqc_pe_R1.fq.gz Cbrach_USA_CA_B01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B01_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B01_S2_tqc_pe_R1.fq.gz Cbrach_USA_CA_B01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B01_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B01_S3_tqc_pe_R1.fq.gz Cbrach_USA_CA_B01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B01_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B01_S4_tqc_pe_R1.fq.gz Cbrach_USA_CA_B01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B01_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B01_S5_tqc_pe_R1.fq.gz Cbrach_USA_CA_B01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B03_S1_tqc_pe_R1.fq.gz Cbrach_USA_CA_B03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B03_S2_tqc_pe_R1.fq.gz Cbrach_USA_CA_B03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B03_S3_tqc_pe_R1.fq.gz Cbrach_USA_CA_B03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B03_S4_tqc_pe_R1.fq.gz Cbrach_USA_CA_B03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B03_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B03_S5_tqc_pe_R1.fq.gz Cbrach_USA_CA_B03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B08_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B08_S1_tqc_pe_R1.fq.gz Cbrach_USA_CA_B08_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_CA_B08_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_CA_B08_S2_tqc_pe_R1.fq.gz Cbrach_USA_CA_B08_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NJ_B02_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NJ_B02_S1_tqc_pe_R1.fq.gz Cbrach_USA_NJ_B02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NJ_B02_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NJ_B02_S2_tqc_pe_R1.fq.gz Cbrach_USA_NJ_B02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NJ_B02_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NJ_B02_S3_tqc_pe_R1.fq.gz Cbrach_USA_NJ_B02_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NJ_B02_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NJ_B02_S4_tqc_pe_R1.fq.gz Cbrach_USA_NJ_B02_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NJ_B02_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NJ_B02_S5_tqc_pe_R1.fq.gz Cbrach_USA_NJ_B02_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NJ_B02_S6_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NJ_B02_S6_tqc_pe_R1.fq.gz Cbrach_USA_NJ_B02_S6_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B03_S1_tqc_pe_R1.fq.gz Cbrach_USA_NY_B03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B03_S2_tqc_pe_R1.fq.gz Cbrach_USA_NY_B03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B03_S3_tqc_pe_R1.fq.gz Cbrach_USA_NY_B03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B03_S4_tqc_pe_R1.fq.gz Cbrach_USA_NY_B03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B03_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B03_S5_tqc_pe_R1.fq.gz Cbrach_USA_NY_B03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B04_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B04_S1_tqc_pe_R1.fq.gz Cbrach_USA_NY_B04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B04_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B04_S2_tqc_pe_R1.fq.gz Cbrach_USA_NY_B04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B04_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B04_S3_tqc_pe_R1.fq.gz Cbrach_USA_NY_B04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B04_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B04_S4_tqc_pe_R1.fq.gz Cbrach_USA_NY_B04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B04_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B04_S5_tqc_pe_R1.fq.gz Cbrach_USA_NY_B04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B05_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B05_S1_tqc_pe_R1.fq.gz Cbrach_USA_NY_B05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B05_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B05_S2_tqc_pe_R1.fq.gz Cbrach_USA_NY_B05_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B05_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B05_S3_tqc_pe_R1.fq.gz Cbrach_USA_NY_B05_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cbrach_USA_NY_B05_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cbrach_USA_NY_B05_S4_tqc_pe_R1.fq.gz Cbrach_USA_NY_B05_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_B_So_H04_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_B_So_H04_S1_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_B_So_H04_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.12-r1039	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_B_So_H04_S2_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_B_So_H04_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_B_So_H04_S3_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_B_So_H04_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_B_So_H04_S4_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_B_So_H04_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_B_So_H04_S5_tqc_pe_R1.fq.gz C.cornix_B_So_H04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ISR_TA_H01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ISR_TA_H01_S1_tqc_pe_R1.fq.gz C.cornix_ISR_TA_H01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ISR_TA_H01_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ISR_TA_H01_S2_tqc_pe_R1.fq.gz C.cornix_ISR_TA_H01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ISR_TA_H01_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ISR_TA_H01_S5_tqc_pe_R1.fq.gz C.cornix_ISR_TA_H01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H11_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H11_S1_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H11_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H11_S2_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H11_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H11_S3_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H11_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H11_S4_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H11_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H12_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H12_S1_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H12_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H12_S2_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H12_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H12_S3_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H12_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H12_S4_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_ITA_Ro_H12_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_ITA_Ro_H12_S5_tqc_pe_R1.fq.gz C.cornix_ITA_Ro_H12_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_PL_Wa_H22_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_PL_Wa_H22_S1_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_PL_Wa_H22_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_PL_Wa_H22_S2_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_PL_Wa_H22_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_PL_Wa_H22_S3_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_PL_Wa_H22_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_PL_Wa_H22_S4_tqc_pe_R1.fq.gz C.cornix_PL_Wa_H22_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_RUS_No_H03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_RUS_No_H03_S1_tqc_pe_R1.fq.gz C.cornix_RUS_No_H03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H03_S1_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H03_S2_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H03_S3_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H03_S4_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H03_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H03_S5_tqc_pe_R1.fq.gz C.cornix_S_Up_H03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H09_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H09_S1_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H09_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H09_S2_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H09_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H09_S3_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H09_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H09_S4_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.cornix_S_Up_H09_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.cornix_S_Up_H09_S5_tqc_pe_R1.fq.gz C.cornix_S_Up_H09_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C04_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C04_S2_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C04_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C04_S3_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C04_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C04_S4_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C04_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C04_S5_tqc_pe_R1.fq.gz C.corone_D_Ko_C04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C13_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C13_S1_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C13_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C13_S2_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C13_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C13_S3_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C13_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C13_S4_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C13_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C13_S5_tqc_pe_R1.fq.gz C.corone_D_Ko_C13_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C15_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C15_S1_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C15_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C15_S2_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C15_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C15_S3_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C15_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C15_S4_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ko_C15_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ko_C15_S5_tqc_pe_R1.fq.gz C.corone_D_Ko_C15_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C05_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C05_S1_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C05_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C05_S2_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C05_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C05_S3_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C05_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C05_S4_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C05_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C05_S5_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C05_S6_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C05_S6_tqc_pe_R1.fq.gz C.corone_D_Ra_C05_S6_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C16_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C16_S1_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C16_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C16_S2_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C16_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C16_S4_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_D_Ra_C16_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_D_Ra_C16_S5_tqc_pe_R1.fq.gz C.corone_D_Ra_C16_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C01_S1_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C01_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C01_S2_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C01_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C01_S3_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C01_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C01_S4_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C01_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C01_S5_tqc_pe_R1.fq.gz C.corone_E_Vi_C01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C57_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C57_S1_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C57_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C57_S2_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C57_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C57_S3_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C57_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C57_S4_tqc_pe_R1.fq.gz C.corone_E_Vi_C57_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C58_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C58_S1_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C58_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C58_S2_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C58_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C58_S3_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.corone_E_Vi_C58_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.corone_E_Vi_C58_S4_tqc_pe_R1.fq.gz C.corone_E_Vi_C58_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Ccorx_2407-51841_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Ccorx_2407-51841_S1_tqc_pe_R1.fq.gz Ccorx_2407-51841_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_DDCHN_Gu_D02_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_DDCHN_Gu_D02_S1_tqc_pe_R1.fq.gz Cdau_DDCHN_Gu_D02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D01_S1_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D01_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D01_S2_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D01_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D01_S3_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D01_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D01_S4_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D01_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D01_S5_tqc_pe_R1.fq.gz Cdau_MON_Kh_D01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D02_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D02_S1_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D02_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D02_S2_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D02_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D02_S3_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D02_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D02_S4_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D02_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D02_S5_tqc_pe_R1.fq.gz Cdau_MON_Kh_D02_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D03_S1_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D03_S2_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D03_S3_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D03_S4_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cdau_MON_Kh_D03_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cdau_MON_Kh_D03_S5_tqc_pe_R1.fq.gz Cdau_MON_Kh_D03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_IRL_Lm_R01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_IRL_Lm_R01_S1_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_IRL_Lm_R01_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_IRL_Lm_R01_S2_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_IRL_Lm_R01_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_IRL_Lm_R01_S3_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_IRL_Lm_R01_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_IRL_Lm_R01_S4_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_IRL_Lm_R01_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_IRL_Lm_R01_S5_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_IRL_Lm_R05_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_IRL_Lm_R05_S1_tqc_pe_R1.fq.gz Cfru_IRL_Lm_R05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R03_S1_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R03_S2_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R03_S3_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R03_S4_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R03_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R03_S5_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R04_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R04_S1_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R04_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R04_S2_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R04_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R04_S3_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R04_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R04_S4_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cfru_RUS_Mu_R04_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cfru_RUS_Mu_R04_S5_tqc_pe_R1.fq.gz Cfru_RUS_Mu_R04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Chaw_Oli-Studbook67_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Chaw_Oli-Studbook67_S1_tqc_pe_R1.fq.gz Chaw_Oli-Studbook67_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Ckub_Rota_21-23-1_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Ckub_Rota_21-23-1_S1_tqc_pe_R1.fq.gz Ckub_Rota_21-23-1_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J01_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J02_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J02_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J02_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J02_S2_tqc_pe_R1.fq.gz Cmone_S_Ri_J02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J03_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J03_S2_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J03_S3_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J03_S4_tqc_pe_R1.fq.gz Cmone_S_Ri_J03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J08_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J08_S1_tqc_pe_R1.fq.gz Cmone_S_Ri_J08_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J08_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J08_S2_tqc_pe_R1.fq.gz Cmone_S_Ri_J08_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmone_S_Ri_J08_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmone_S_Ri_J08_S3_tqc_pe_R1.fq.gz Cmone_S_Ri_J08_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_FS66096_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_FS66096_S2_tqc_pe_R1.fq.gz Cmon_FS66096_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_FS66096_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_FS66096_S3_tqc_pe_R1.fq.gz Cmon_FS66096_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC3_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC3_S1_tqc_pe_R1.fq.gz Cmon_NC3_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC3_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC3_S2_tqc_pe_R1.fq.gz Cmon_NC3_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC3_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC3_S3_tqc_pe_R1.fq.gz Cmon_NC3_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC3_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC3_S4_tqc_pe_R1.fq.gz Cmon_NC3_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC5_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC5_S1_tqc_pe_R1.fq.gz Cmon_NC5_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC5_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC5_S2_tqc_pe_R1.fq.gz Cmon_NC5_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC6_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC6_S1_tqc_pe_R1.fq.gz Cmon_NC6_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC6_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC6_S2_tqc_pe_R1.fq.gz Cmon_NC6_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC8_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC8_S1_tqc_pe_R1.fq.gz Cmon_NC8_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cmon_NC8_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cmon_NC8_S2_tqc_pe_R1.fq.gz Cmon_NC8_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O01_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O01_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O01_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O01_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O01_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O01_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O01_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O01_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O01_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O01_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S6_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S6_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S6_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O02_S7_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O02_S7_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O02_S7_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O03_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O03_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O03_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O03_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O03_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O03_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O03_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O03_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O03_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O03_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O03_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O04_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O04_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O04_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O04_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O04_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O04_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O04_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O04_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O04_S5_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O04_S5_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O04_S5_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O05_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O05_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O05_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O05_S2_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O05_S3_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O05_S3_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S3_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Pr_O05_S4_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Pr_O05_S4_tqc_pe_R1.fq.gz C.orientalis_RUS_Pr_O05_S4_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_C.orientalis_RUS_Tv_O01_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta C.orientalis_RUS_Tv_O01_S1_tqc_pe_R1.fq.gz C.orientalis_RUS_Tv_O01_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_CKW77_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_CKW77_L002_tqc_pe_R1.fq.gz Csplendens_CKW77_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_CKW77_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_CKW77_L003_tqc_pe_R1.fq.gz Csplendens_CKW77_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_CSW7069_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_CSW7069_L002_tqc_pe_R1.fq.gz Csplendens_CSW7069_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_CSW7069_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_CSW7069_L003_tqc_pe_R1.fq.gz Csplendens_CSW7069_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_EVL981_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_EVL981_L002_tqc_pe_R1.fq.gz Csplendens_EVL981_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_EVL981_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_EVL981_L003_tqc_pe_R1.fq.gz Csplendens_EVL981_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_LKW131_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_LKW131_L002_tqc_pe_R1.fq.gz Csplendens_LKW131_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_LKW131_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_LKW131_L003_tqc_pe_R1.fq.gz Csplendens_LKW131_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_PJG222_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_PJG222_L002_tqc_pe_R1.fq.gz Csplendens_PJG222_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Csplendens_PJG222_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Csplendens_PJG222_L003_tqc_pe_R1.fq.gz Csplendens_PJG222_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Ctas_B44919_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Ctas_B44919_S1_tqc_pe_R1.fq.gz Ctas_B44919_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_CROW12_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoodfordi_CROW12_L002_tqc_pe_R1.fq.gz Cwoodfordi_CROW12_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_CROW12_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoodfordi_CROW12_L003_tqc_pe_R1.fq.gz Cwoodfordi_CROW12_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_CROWR21_L002_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoodfordi_CROWR21_L002_tqc_pe_R1.fq.gz Cwoodfordi_CROWR21_L002_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_CROWR21_L003_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoodfordi_CROWR21_L003_tqc_pe_R1.fq.gz Cwoodfordi_CROWR21_L003_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_MLK164_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoo_MLK164_S1_tqc_pe_R1.fq.gz Cwoo_MLK164_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_MLK164_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoo_MLK164_S2_tqc_pe_R1.fq.gz Cwoo_MLK164_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_MLK166_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoo_MLK166_S1_tqc_pe_R1.fq.gz Cwoo_MLK166_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_MLK166_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoo_MLK166_S2_tqc_pe_R1.fq.gz Cwoo_MLK166_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_MLK92_S1_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoo_MLK92_S1_tqc_pe_R1.fq.gz Cwoo_MLK92_S1_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_Cwoo_MLK92_S2_sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta Cwoo_MLK92_S2_tqc_pe_R1.fq.gz Cwoo_MLK92_S2_tqc_pe_R2.fq.gz
+/proj/b2013182/private/bams/Ccornix_ref/bams/bwa_SRR1166560__sorted_rmdup.bam
+@PG	ID:bwa	PN:bwa	VN:0.7.13-r1126	CL:bwa mem -t 16 genome_HC_allpaths41687_v2.5.fasta SRR1166560_pe_1.fastq.gz SRR1166560_pe_2.fastq.gz

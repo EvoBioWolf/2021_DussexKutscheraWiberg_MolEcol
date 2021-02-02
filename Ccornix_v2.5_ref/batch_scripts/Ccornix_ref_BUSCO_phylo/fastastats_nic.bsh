@@ -1,0 +1,35 @@
+#!/bin/bash -l
+#SBATCH -A b2013182
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 3-00:00:00
+#SBATCH -J nic_fastastats
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+
+module load bioinfo-tools
+module load biopython
+
+crowdata=/proj/b2013182
+
+# Copy the species genome
+#cp ${crowdata}/private/bams/Cmon_Ref/Consensus_per_species_nodup_NO_IUPAC_af0.5/*_consensus.fa ${SNIC_TMP}/
+cp ${crowdata}/private/bams/Cmon_Ref/Consensus_per_species_nodup/*_consensus.fa ${SNIC_TMP}/
+
+
+## Move to tmp/ directory
+cd ${SNIC_TMP}
+
+#Run fastaStats.py
+for fa in $(ls -1 *_consensus.fa | sed 's/_consensus.fa//g'); do echo ${fa} && fastaStats.py -f ${fa}_consensus.fa -t p > ${fa}_fastastats_nic.tab; done
+
+
+# Copy files back
+#cp ${SNIC_TMP}/${1}_busco* /proj/b2013182/nobackup/bams/Ccornix_ref/bams/BUSCO_phylo/
+#cp *_fastastats_nic.tab ~/nic_BUSCO_af0.5/
+cp *_fastastats_nic.tab ~/nic_BUSCO/
+
+
+

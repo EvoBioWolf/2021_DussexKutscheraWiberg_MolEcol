@@ -1,0 +1,35 @@
+#!/bin/bash -l
+#SBATCH -A snic2017-1-599
+#SBATCH	-p core
+#SBATCH -n 1
+#SBATCH -t 1-0:00:00
+#SBATCH -J extract_genes
+
+#job id: $SLURM_JOB_ID
+#job name (-J): $SLURM_JOB_NAME
+#tmp directory: $SNIC_TMP
+module load biopython
+
+crowdata=/crex/proj/uppstore2017157/b2013182/
+
+# Define output directory.
+outdir=${crowdata}/private/bams/Ccornix_ref/paml/${2}/${1}/
+
+# Try to remove the output directory
+# this is to clean out old files when re-making this.
+rm -r ${outdir}
+
+# Remake output directory
+mkdir ${outdir}
+
+# Copy the full CDS fasta file to tmp
+cp ${crowdata}/private/bams/Ccornix_ref/orthologs/${1}_orthologs_rnm.fa ${SNIC_TMP}/
+# Copy the list of IDs to tmp
+cp ${crowdata}/private/bams/Ccornix_ref/paml/${2}_common_unamb_genes.txt ${SNIC_TMP}/
+
+# Extract individual genes and place them in individual fasta files
+getFasta.py -IDs ${SNIC_TMP}/${2}_common_unamb_genes.txt -fasta ${SNIC_TMP}/${1}_orthologs_rnm.fa -task fs -outdir ${outdir}
+
+# Cleanup
+rm ${SNIC_TMP}/${1}_orthologs_rnm2.fa
+rm ${SNIC_TMP}/${2}_common_unamb_genes.txt
